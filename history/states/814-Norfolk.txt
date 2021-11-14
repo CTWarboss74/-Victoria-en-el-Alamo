@@ -1,0 +1,41 @@
+state={
+	id=814
+	name="STATE_814"
+	provinces={
+		788 3925 11738 
+	}
+	manpower=1552721
+	state_category = city
+	buildings_max_level_factor=1.000
+	history={
+		owner = NOV
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			dockyard = 4
+			air_base = 10
+			fuel_silo = 1
+			788 = {
+				naval_base = 10
+
+			}
+
+		}
+		add_core_of = VIR
+		victory_points = {
+			788 10 
+		}
+		victory_points = {
+			10412 15 
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 4
+				dockyard = 5
+
+			}
+
+		}
+
+	}
+}

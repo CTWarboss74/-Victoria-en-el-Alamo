@@ -1,25 +1,24 @@
 state={
-	id=807
-	name="STATE_807"
+	id=813
+	name="STATE_813"
 	provinces={
-		9450 
+		4627 6971 7558 9779 
 	}
 	manpower=0
-	state_category = metropolis
+	state_category = city
 	buildings_max_level_factor=1.000
 	history={
 		owner = FSA
 		buildings = {
-			infrastructure = 7
-			arms_factory = 1
-			industrial_complex = 11
-			air_base = 3
-
+			infrastructure = 5
+			industrial_complex = 3
+			air_base = 4
 		}
 		add_core_of = FSA
 		victory_points = {
-			9450 30.0 
+			6696 1 
 		}
 
 	}
+
 }

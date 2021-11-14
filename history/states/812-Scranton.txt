@@ -1,0 +1,26 @@
+state={
+	id=812
+	name="STATE_812"
+
+	history={
+		owner = MAS
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			air_base = 4
+
+		}
+		add_core_of = MAS
+		victory_points = {
+			6696 1 
+		}
+
+	}
+
+	provinces={
+		862 891 894 3697 3897 9820 11799 11817 
+	}
+	manpower=505833
+	state_category = city
+	buildings_max_level_factor=1.000
+}

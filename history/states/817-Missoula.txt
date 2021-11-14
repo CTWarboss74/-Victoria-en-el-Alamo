@@ -1,0 +1,20 @@
+state={
+	id=817
+	name="STATE_817"
+	provinces={
+		1736 1854 4838 6742 7779 12676 
+	}
+	manpower=73710
+	state_category = town
+	buildings_max_level_factor=1.000
+	history={
+		owner = CAL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = CAL
+		victory_points = {
+			6742 5
+		}
+	}
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=380
+	name="STATE_380"
+	resources={
+		tungsten=76.000
+	}
+
+	history={
+		owner = CAL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = CAL
+		victory_points = {
+			4865 1 
+		}
+
+	}
+
+	provinces={
+		1663 4865 10582 10651 12573 12699 13153 
+	}
+	manpower=507846
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
