@@ -1,0 +1,10 @@
+spriteTypes = {	
+
+
+
+	SpriteType = {
+		name = "GFX_idea_the_founding_fathers_fsa"
+		texturefile = "gfx/interface/ideas/the_founding_fathers_fsa.dds"
+	}
+
+}
