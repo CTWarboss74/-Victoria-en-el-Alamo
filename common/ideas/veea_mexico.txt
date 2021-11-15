@@ -1,0 +1,62 @@
+ideas = {
+
+	country = {
+		widespread_federation_support = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_factor = -0.05
+				democratic_drift = 0.05
+				political_power_gain = -0.2
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_economic_stagnation = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.10
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.05
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_texan_resistance = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = chi_war_of_resistance
+			
+			modifier = {
+				
+			}
+			
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}
