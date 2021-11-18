@@ -91,8 +91,8 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Robert M. La Follette Jr."
-	desc = "Robert La Follette Jr. was born in 1895, in Madison, Wisconsin. He joined the political circle at the young age of 25 in 1920, after being introduced to the Republican Party by his father, who was Senator for Wisconsin and a Republican. After his father died, beating incubent Democrat John J. Blaine in a landslide. He served as Secretary of Education from 1925 to 1930, and then went on to win the Republican nomination to run against Democrat Martin L. Davey for the presidency, which he won, thanks to his promises of education and economic reform."
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+	desc = "robert_la_follette_desc"
+	picture = "Robert La Follette.dds"
 	ideology = conservatism
 	traits = {
 		#
