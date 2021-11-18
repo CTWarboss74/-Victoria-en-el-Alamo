@@ -58,5 +58,64 @@ ideas = {
 				factor = 0
 			}
 		}
+		mex_underperfroming_army1 = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = chi_army_corruption
+			
+			modifier = {
+				army_attack_factor = -0.07
+				army_defence_factor = -0.07
+				dig_in_speed_factor = -0.25
+				max_dig_in_factor = -0.25
+				planning_speed = -0.25
+			}
+			
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		mex_idea_four_year_plan = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.10
+				consumer_goods_factor = 0.03
+				political_power_gain = -0.05
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_idea_socialist_education = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_speed_factor = 0.04
+				political_power_gain = 0.05
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
 	}
 }

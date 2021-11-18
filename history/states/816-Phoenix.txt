@@ -4,7 +4,7 @@ state={
 	provinces={
 		853 1793 3834 4796 6897 7747 7821 7920 10573 10783 12765 
 	}
-	manpower=35572
+	manpower=435572
 	state_category = town
 	buildings_max_level_factor=1.000
 	history={
@@ -12,6 +12,7 @@ state={
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+			arms_factory = 1
 			air_base = 2
 
 		}

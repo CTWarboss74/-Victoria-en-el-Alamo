@@ -3,8 +3,8 @@ state={
 	id=377
 	name="STATE_377"
 	resources={
-		steel=20.000
-		oil=5.000
+		steel=3.000
+		oil=1.000
 		aluminium=8.000
 	}
 
@@ -20,13 +20,13 @@ state={
 		victory_points = {
 			853 3 
 		}
-
+		
 	}
 
 	provinces={
 		850 8115 11814 
 	}
-	manpower=435572
+	manpower=35572
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

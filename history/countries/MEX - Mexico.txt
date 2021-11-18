@@ -1,6 +1,6 @@
 ﻿capital = 277
 
-oob = "MEX_1936"
+oob = "veea_MEX_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "MEX_1936_naval_mtg"
@@ -42,21 +42,7 @@ if = {
 	}
 }
 
-# Resistance in Texas
-374 = {
-	start_resistance = yes
-	set_compliance = 3
-	set_resistance = 5
-	set_garrison_strength = 0.8
-}
-375 = {
-	start_resistance = yes
-	set_compliance = 6
-	set_resistance = 15
-	set_garrison_strength = 0.65
-}
-
-set_convoys = 45
+set_convoys = 200
 set_stability = 0.5
 set_war_support = 0.3
 
@@ -64,13 +50,14 @@ add_ideas = {
 	widespread_federation_support
 	mex_economic_stagnation
 	mex_texan_resistance
+	mex_underperfroming_army1
 }
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1934.7.1"
+	last_election = "1925.3.3"
 	election_frequency = 72
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 28
@@ -80,11 +67,11 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "YET TO BE ADDED"
-	desc = "POLITICS_YTBA_DESC"
-	picture = "Portrait_Mexico_Lazaro_Cardenas.dds"
+	name = "María Josepha"
+	desc = "POLITICS_MARIA_JOSEPHA_DESC"
+	picture = "GFX_portrait_hol_wilhelmina"
 	expire = "1965.1.1"
-	ideology = moderatism
+	ideology = despotism
 	traits = {
 		#
 	}
