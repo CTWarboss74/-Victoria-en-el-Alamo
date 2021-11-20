@@ -1,0 +1,102 @@
+﻿division_template = {
+	name = "Infantry Division"
+	division_names_group = "Infantry Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Tank Brigade"  
+	division_names_group = "Tank Corps"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	##### FSA forces	#####
+	division= {	# "34th Chicago Infantry Division"
+		name = "34th Chicago Infantry"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9450 # Chicago
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "29th Ohio Infantry"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6890
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "34th Chicago Infantry Division"
+		name = "19th Kentucky Infantry"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12568
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "34th Chicago Infantry Division"
+		name = "12th Indiana Infantry"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1595
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "1st Michigan Tank Corps"
+		name = "1st Michigan Tank Corps"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6710 # Detroit
+		division_template = "Tank Brigade" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+
+	##### No Notable Naval Forces #####
+}
+
+##### No Notable Air Forces #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "CUB"
+		}
+		requested_factories = 1
+		progress = 0.54
+		efficiency = 100
+	}
+}
