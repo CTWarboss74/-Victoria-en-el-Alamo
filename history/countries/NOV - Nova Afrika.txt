@@ -6,11 +6,13 @@ set_technology = {
 	tech_support
 }
 add_ideas = {
-    unstable_country
-	internal_factions
-	the_white_menace
-	red_militias
+    Unstable_country
+	Internal_factions
+	The_white_menace
+	Red_militias
 }
+
+OOB = "NOV_1936"
 
 set_convoys = 20
 
