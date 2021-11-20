@@ -91,7 +91,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Harry Haywood"
-	desc = "POLITICS_HARRY_HAYWOOD_DESC"
+	desc = "harry_haywood_desc"
 	picture = "gfx/leaders/NOV/Harry_Haywood.dds"
 	ideology = marxism
 	traits = {
