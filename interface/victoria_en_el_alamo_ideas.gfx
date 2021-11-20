@@ -7,4 +7,27 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/the_founding_fathers_fsa.dds"
 	}
 
+
+
+
+#### Nova Afrika ####
+
+
+	SpriteType = {
+		name = "GFX_idea_unstable_country_nov"
+		texturefile = "gfx/interface/ideas/unstable_country_nov.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_internal_factions_nov"
+		texturefile = "gfx/interface/ideas/internal_factions_nov.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_the_white_menace_nov"
+		texturefile = "gfx/interface/ideas/the_white_menace_nov.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_red_militias_nov"
+		texturefile = "gfx/interface/ideas/red_militias_nov.dds"
+	}
+
 }
