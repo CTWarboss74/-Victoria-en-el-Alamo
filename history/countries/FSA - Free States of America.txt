@@ -1,8 +1,12 @@
 ﻿capital = 807
 
+oob = "FSA_1936"
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	gwtank = 1
+	motorised_infantry = 1
 }
 
 set_convoys = 20
@@ -25,7 +29,7 @@ set_convoys = 20
 		tech_recon = 1
 		support_weapons = 1
 		gw_artillery = 1
-
+		motorised_infantry = 1
 		#doctrines
 		air_superiority = 1
 		grand_battle_plan = 1

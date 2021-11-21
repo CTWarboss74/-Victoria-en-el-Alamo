@@ -1,0 +1,119 @@
+ideas = {	
+
+	country = {
+		Unstable_country = {
+			picture = unstable_country_nov
+			
+			allowed = {
+			tag = NOV
+			}
+			
+			available = {
+			
+			}
+			
+			cancel = {
+			
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+				war_support_factor = -0.25
+				stability_factor = -0.10
+			}
+		}
+	}
+	country = {
+		internal_factions = {
+			picture = internal_factions_nov
+			
+			allowed = {
+			tag = NOV
+			}
+			
+			available = {
+			
+			}
+			
+			cancel = {
+			
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = -0.1
+				fascism_drift = 0.1
+				democratic_drift = 0.1
+			}
+		}
+	}
+	country = {
+		the_white_menace = {
+			picture = the_white_menace_nov
+			
+			allowed = {
+			tag = NOV
+			}
+			
+			available = {
+			
+			}
+			
+			cancel = {
+			
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = -30
+				stability_weekly = -0.01
+				
+			}
+		}
+	}
+	country = {
+		red_militias = {
+			picture = red_militias_nov
+			
+			allowed = {
+			tag = NOV
+			}
+			
+			available = {
+			
+			}
+			
+			cancel = {
+			
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				attrition = 0.1
+				army_org = -0.1
+				army_attack_factor = -0.15
+			}
+		}
+	}
+}
