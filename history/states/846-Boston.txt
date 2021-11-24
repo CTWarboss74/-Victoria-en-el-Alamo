@@ -1,0 +1,31 @@
+state={
+	id=846
+	name="STATE_846"
+	provinces={
+		6732 
+	}
+	manpower=1987345
+	state_category = metropolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.5
+	history={
+		owner = MAS
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 2
+			6732 = {
+				naval_base = 8
+
+			}
+
+		}
+		add_core_of = MAS
+		victory_points = {
+			6732 30 
+		}
+
+	}
+
+}

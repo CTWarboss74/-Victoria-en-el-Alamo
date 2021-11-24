@@ -1,0 +1,26 @@
+state={
+	id=840
+	name="STATE_840"
+
+	history={
+		owner = MAS
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = MAS
+		victory_points = {
+			6696 1 
+		}
+
+	}
+
+	provinces={
+		862 891 894 3697 3897 9820 11799 11817 
+	}
+	manpower=505833
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.0 
+}

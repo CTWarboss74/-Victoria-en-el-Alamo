@@ -1,0 +1,32 @@
+state={
+	id=842
+	name="STATE_842"
+	provinces={
+		788 3925 11738 
+	}
+	manpower=1352721
+	state_category = city
+	buildings_max_level_factor=1.000
+    local_supplies=0.0
+	history={
+		owner = NOV
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			dockyard = 2
+			air_base = 4
+			788 = {
+				naval_base = 6
+
+			}
+
+		}
+		add_core_of = VIR
+		victory_points = {
+			788 10 
+		}
+		victory_points = {
+			10412 15 
+		}
+	}
+}

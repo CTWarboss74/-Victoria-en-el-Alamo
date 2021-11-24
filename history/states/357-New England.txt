@@ -9,11 +9,10 @@ state={
 	history={
 		owner = MAS
 		buildings = {
-			infrastructure = 7
+			infrastructure = 3
 			arms_factory = 1
-			industrial_complex = 5
-			dockyard = 4
-			air_base = 10
+			industrial_complex = 2
+			air_base = 4
 			6732 = {
 				naval_base = 8
 
@@ -42,5 +41,6 @@ state={
 	}
 	manpower=579152
 	buildings_max_level_factor=1.000
-	state_category=metropolis
+	state_category=town
+	local_supplies=0.0 
 }
