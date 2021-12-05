@@ -1,0 +1,126 @@
+﻿division_template = {
+	name = "Red Militia"
+	division_names_group = "Red Militia"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Red Cavalry"  
+	division_names_group = "Red Cavalry"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	##### FSA forces	#####
+	division= {	# "Red Militia"
+		name = "Red Militia"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7480
+		division_template = "Red Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Red Militia"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12735
+		division_template = "Red Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "Red Militia"
+		name = "Red Militia"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12384
+		division_template = "Red Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "Red Militia"
+		name = "Red Militia"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7202
+		division_template = "Red Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "Red Militia"
+		name = "Red Militia"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1843
+		division_template = "Red Militia" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "Red Cavalry"
+		name = "Red Cavalry"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12501
+		division_template = "Red Cavalry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "Red Cavalry"
+		name = "Red Cavalry"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7552
+		division_template = "Red Cavalry" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+
+	##### No Notable Naval Forces #####
+}
+
+##### No Notable Air Forces #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "NOV"
+		}
+		requested_factories = 1
+		progress = 0.54
+		efficiency = 100
+	}
+}

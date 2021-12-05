@@ -1,0 +1,19 @@
+state={
+	id=843
+	name="STATE_843"
+	provinces={
+		1740 1756 4668 4742 7764 7818 10662 
+	}
+	manpower=35572
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = MEX
+
+	}
+}
