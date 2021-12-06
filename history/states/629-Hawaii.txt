@@ -4,14 +4,18 @@ state={
 	name="STATE_629"
 	manpower = 368336
 	state_category = town
+	local_supplies=8.0
 	history={
 		owner = HAW
 		add_core_of = HAW
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
 			air_base = 5
 			4180 = {
-				naval_base = 10
+				naval_base = 4
 			}
 		}
 		victory_points = {

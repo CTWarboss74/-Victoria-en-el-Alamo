@@ -5,6 +5,7 @@ state={
 		1740 1756 4668 4742 7764 7818 10662 
 	}
 	manpower=35572
+	local_supplies=0.0
 	state_category = pastoral
 	buildings_max_level_factor=1.000
 	history={

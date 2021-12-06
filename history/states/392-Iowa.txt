@@ -5,22 +5,18 @@ state={
 	manpower = 2470938
 	
 	state_category = city
+	local_supplies=0.0
 
 	history={
 		owner = FSA
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			industrial_complex = 4
+			arms_factory = 1
 		}
 		add_core_of = FSA
 		victory_points = {
 			1770 3 
-		}
-
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 5
-			}
 		}
 
 	}

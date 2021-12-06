@@ -2,7 +2,8 @@ state = {
 	id=484
 	name="STATE_484"
 	manpower = 108841
-	state_category = rural
+	state_category = pastoral
+	local_supplies=0.0
 	
 	history={
 		owner = MEX

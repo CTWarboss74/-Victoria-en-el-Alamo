@@ -2,6 +2,7 @@ state={
 	id=816
 	name="STATE_816"
 	state_category = town
+	local_supplies=0.0
 	history={
 		owner = VIR
 		add_core_of = VIR
@@ -19,5 +20,4 @@ state={
 	}
 	manpower=1901974
 	buildings_max_level_factor=1.000
-	state_category = town
 }
