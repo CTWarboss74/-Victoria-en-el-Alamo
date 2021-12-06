@@ -12,8 +12,47 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.05
-				democratic_drift = 0.05
+				democratic_drift = 0.1
 				political_power_gain = -0.2
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_eumdm = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				stability_factor = -0.05
+				democratic_drift = 0.03
+				fascism_drift = 0.03
+				communism_drift = 0.03
+				political_power_gain = -0.1
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_eumdm_limit = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				stability_factor = -0.04
+				political_power_gain = -0.15
 			}
 	
 			ai_will_do = {
@@ -30,10 +69,50 @@ ideas = {
 			picture = generic_production_bonus
 			
 			modifier = {
-				industrial_capacity_factory = -0.05
-				production_speed_buildings_factor = -0.10
-				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.03
+				consumer_goods_factor = 0.02
 				political_power_gain = -0.05
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_second_new_plan = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_economic_increase
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.07
+				consumer_goods_factor = 0.02
+				political_power_gain = 0.05
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_caribbean_investment_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_foreign_capital
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.02
+				political_power_gain = 0.05
 			}
 	
 			ai_will_do = {
@@ -80,42 +159,128 @@ ideas = {
 				factor = 0
 			}
 		}
+		MEX_mexican_congress = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				democratic_drift = 0.1
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		MEX_stability_returns_idea = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_neutrality_drift_bonus
+			
+			modifier = {
+				monarchism_drift = 0.1
+				political_power_gain = 0.15
+				stability_factor = 0.03
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		MEX_motorization_factories_idea = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = FRA_motorized_focus
+			
+			modifier = {
+				
+			}
+
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		MEX_socialist_education_funding_idea = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_foreign_capital
+			
+			modifier = {
+				communism_drift = 0.05
+				political_power_cost = 0.1
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		MEX_socialist_military_academies_idea = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_army_war_college
+			
+			modifier = {
+				army_attack_factor = 0.05
+				conscription = 0.01
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	industrial_concern = {
 		
-		mex_idea_four_year_plan = {
+		mex_mrc = { #
 			
+			picture = generic_build_infrastructure
+
 			allowed = {
-				always = no
+				original_TAG = MEX
+				
+			}
+			
+			available = {
+				has_completed_focus = MEX_focus_establish_cmif
 			}
 
-			picture = man_five_year_plan_industry
-			
-			modifier = {
-				industrial_capacity_factory = 0.05
-				production_speed_buildings_factor = 0.10
-				consumer_goods_factor = 0.03
-				political_power_gain = -0.05
-			}
-	
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		mex_idea_socialist_education = {
-			
-			allowed = {
-				always = no
-			}
+			cost = 75
 
-			picture = generic_research_bonus
+			research_bonus = {
+				train_tech = 0.1
+			}
 			
-			modifier = {
-				research_speed_factor = 0.04
-				political_power_gain = 0.05
-			}
-	
-			ai_will_do = {
-				factor = 0
-			}
+			traits = { railway_company }
 		}
+
 	}
 }

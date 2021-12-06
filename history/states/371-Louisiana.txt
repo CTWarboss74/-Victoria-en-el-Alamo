@@ -4,17 +4,20 @@ state={
 	name="STATE_371"
 	manpower = 2101592
 	
-	state_category = city
+	state_category = large_town
+	local_supplies=0.0
 	
 	resources={
-		oil=44 # was: 66
+		oil=28
 	}
 
 	history={
 		owner = NOV
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3
 			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
 			air_base = 5
 			7552 = {
 				naval_base = 5

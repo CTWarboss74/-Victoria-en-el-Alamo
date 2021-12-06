@@ -3,12 +3,13 @@ state={
 	id=381
 	name="STATE_381"
 	manpower = 225564
-	state_category = rural
+	state_category = pastoral
+	local_supplies=0.0
 	
 	history={
 		owner = DAK
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 		}
 		add_core_of = DAK
 	}

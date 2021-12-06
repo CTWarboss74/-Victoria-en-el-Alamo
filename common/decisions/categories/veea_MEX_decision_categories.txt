@@ -1,0 +1,30 @@
+MEX_category_second_new_plan = {
+
+	icon = GFX_decision_category_generic_industry
+	visible_when_empty = yes
+
+
+	priority = 94
+
+	allowed = {
+		#has_completed_focus = MEX_focus_start_second_new_plan
+		original_tag = MEX
+	}
+}
+MEX_category_socialist_advisors = {
+
+	icon = GFX_decision_category_generic_industry
+	visible_when_empty = yes
+
+
+	visible = {
+		#has_completed_focus = MEX_focus_seek_advice_socialist_advisors
+	}
+	priority = 90
+
+	allowed = {
+		original_tag = MEX
+	}
+}
+
+

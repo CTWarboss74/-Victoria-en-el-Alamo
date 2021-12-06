@@ -8,13 +8,13 @@ state={
 	
 	resources={
 		oil=8
-		#steel=4 sent to Mexico City
+		steel=4
 	}
 
 	history={
 		owner = MEX
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 3
 		}

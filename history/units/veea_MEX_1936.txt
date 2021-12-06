@@ -74,6 +74,67 @@ division_template = {
 	}
 }
 
+## UNITS OF THE EUMDM ##
+division_template = {
+	name = "Milicia popular" # People's Militia - Communist
+
+	division_names_group = MEX_INF_02
+	is_locked = yes
+	priority = 0
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "Milicia popular montada" # Mounted People's Militia - Communist
+
+	division_names_group = SPAN_CAV_01
+	is_locked = yes
+	priority = 0
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Fuerza Paramilitar Liberal" # Liberal Paramilitary Force - Liberal/Deomcratic
+
+	division_names_group = MEX_INF_02
+	is_locked = yes
+	priority = 0
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+    }
+}
+division_template = {
+	name = "Brigada de Blackcoat" # Blackcoat Brigade - Fascist
+
+	division_names_group = MEX_INF_02
+	is_locked = yes
+	priority = 0
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
 units = {
 	##### Ejército Real Mexicano #####
 	### Royal Infantry Corps - Elite Infantry Division ###
@@ -106,11 +167,39 @@ units = {
 	}
 	### Standard Infantry Corps ###
 	division= {	
+		name = "1ta División de Infantería"
+		location = 853 # Phoenix
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "2ta División de Infantería"
+		location = 10337 # Houston
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "3ta División de Infantería"
+		location = 1827 # Denver
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
 		name = "4ta División de Infantería"
 		location = 12823 # San Salvador
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "5ta División de Infantería"
+		location = 12461 # Tijuana
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.6
 	}
 	division= {	
 		name = "6ta División de Infantería"
@@ -134,200 +223,204 @@ units = {
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "15a División de Infantería"
+		name = "8ta División de Infantería"
 		location = 2077 # Belize City
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 	}
-	
-	
-	##### Ejército Mexicano #####
-	division= {	# "1a División de Infantería"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 1965 # Mexico City
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
-	}
-
-	division= {	# "2a División de Infantería"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 1892 # Baja
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
-	}
-
-	division= {	# "3a División de Infantería"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 13089 # Guadalajara
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
-	}
-
 	division= {	
-		name = "Estado Mayor Presidencial"
-		location = 1965 # Mexico City
+		name = "10a División de Infantería"
+		location = 1806 # Tulsa
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.3
-		force_equipment_variants = { infantry_equipment_1 = { owner = "USA" } }
+		start_equipment_factor = 0.8
 	}
-
-	division= {	# "1a División de Caballería"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 1965 # Mexico City
-		division_template = "División de Caballería"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
-	}
-	division = {	# "2a División de Caballería"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4904 # Compeche
-		division_template = "División de Caballería"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
-	}
-
+	### Militia Forces ###
 	division = {
 		location = 1965 # Mexico City
 		division_template = "Brigada Agrarista"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 	}
-
 	division = {
 		location = 1965 # Mexico City
 		division_template = "Brigada Agrarista"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 	}
-
 	division = {
-		location = 1965 # Mexico City
+		location = 12835 # Monterrey
 		division_template = "Brigada Agrarista"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 	}
-
 	division = {
 		location = 1900
 		division_template = "Brigada Agrarista"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 	}
-
 	division = {
 		location = 2021
 		division_template = "Brigada Agrarista"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 	}
-
 	division = {
 		location = 10889
 		division_template = "Brigada Agrarista"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 	}
-
 	division = {
 		location = 12715
 		division_template = "Brigada Agrarista"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 	}
-
 	division = {
 		location = 8032
 		division_template = "Brigada Agrarista"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 	}
-
 	division = {
 		location = 12461
 		division_template = "Brigada Agrarista"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
 	}
-
 	division = {
 		location = 10765
 		division_template = "Brigada Agrarista"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
 	}
-
 	division = {
 		location = 4908
 		division_template = "Brigada Agrarista"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
 	}
-
 	division = {
 		location = 4977
 		division_template = "Brigada Agrarista"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
 	}
-
 	division = {
 		location = 10730
 		division_template = "Brigada Agrarista"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
 	}
-
 	division = {
 		location = 2051
 		division_template = "Brigada Agrarista"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
 	}
-
 	division = {
 		location = 5015
 		division_template = "Brigada Agrarista"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 10171 # Aguascalientes
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		location = 4975 # Albuquerque
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+
+
+	### EUMDM UNITS ###
+	# People's Militia
+	division= {	
+		name = "Milicia Popular de Guadalajara"
+		location = 13089 # Guadalajara
+		division_template = "Milicia popular"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		name = "Milicia Popular de Veracruz"
+		location = 12810 # Veracruz
+		division_template = "Milicia popular"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Milicia Popular de Sonora"
+		location = 10765 # Hermosillo
+		division_template = "Milicia popular"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Milicia popular montada"
+		location = 8089 # Puebla
+		division_template = "Milicia popular montada"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	# Liberal Paramilitary Force
+	division= {	
+		name = "1er regimiento liberal"
+		location = 8032 # Manzanillo
+		division_template = "Fuerza Paramilitar Liberal"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "2do regimiento liberal"
+		location = 2008 # Leon
+		division_template = "Fuerza Paramilitar Liberal"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	# Blackcoat Brigade
+    division= {	
+		name = "1.a Brigada de Casacas Negras"
+		location = 4887 # Morelia
+		division_template = "Brigada de Blackcoat"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "2.a Brigada de Casacas Negras"
+		location = 10830 # Chihuahua
+		division_template = "Brigada de Blackcoat"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		name = "3.a Brigada de Casacas Negras"
+		location = 12782 # San Antonio
+		division_template = "Brigada de Blackcoat"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		name = "4.a Brigada de Casacas Negras"
+		location = 3960 # Dallas
+		division_template = "Brigada de Blackcoat"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		name = "5.a Brigada de Casacas Negras"
+		location = 10889 # Coatzacoalcos
+		division_template = "Brigada de Blackcoat"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 	}
 }
 
@@ -337,15 +430,15 @@ air_wings = {
 		# CAS Air Group -- de Haviland DH-4Bs
 		CAS_equipment_1 =  {
 			owner = "MEX" 
-			amount = 12
+			amount = 24
 		}
 		fighter_equipment_0 =  {
 			owner = "MEX"
-			amount = 6
+			amount = 24
 		}
 		tac_bomber_equipment_0 =  {
 			owner = "MEX"
-			amount = 6
+			amount = 12
 		}
 	}
 }
@@ -356,7 +449,7 @@ instant_effect = {
 			type = infantry_equipment_0
 			creator = "MEX"
 		}
-		requested_factories = 1
+		requested_factories = 2
 		progress = 0.20
 		efficiency = 100
 	}
@@ -383,7 +476,7 @@ instant_effect = {
 			type = convoy_1
 			creator = "MEX" 
 		}
-		requested_factories = 2
+		requested_factories = 3
 		progress = 0.20
 		efficiency = 100
 	}

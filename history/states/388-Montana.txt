@@ -5,12 +5,13 @@ state={
 	resources={
 		tungsten=11.000
 	}
+	local_supplies=0.0
 
 	history={
 		owner = DAK
 		buildings = {
-			infrastructure = 4
-
+			infrastructure = 3
+			industrial_complex = 1
 		}
 		add_core_of = DAK
 		victory_points = {

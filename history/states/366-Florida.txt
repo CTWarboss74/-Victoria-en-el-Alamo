@@ -4,14 +4,16 @@ state={
 	name="STATE_366"
 	manpower = 1468210
 	
-	state_category = city
+	state_category = large_town
+	local_supplies=0.0 
 
 	history={
 		owner = NOV
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			industrial_complex = 3
-			air_base = 8
+			dockyard = 2
+			air_base = 6
 			1572 = {
 				naval_base = 2
 			}
@@ -29,6 +31,7 @@ state={
 		victory_points = {
 			1843 5 
 		}
+		add_extra_state_shared_building_slots = 1
 
 	}
 

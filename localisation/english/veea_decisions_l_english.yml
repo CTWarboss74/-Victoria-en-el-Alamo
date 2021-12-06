@@ -1,0 +1,12 @@
+﻿l_english:
+ # Tooltips
+ mex_snp_develop_infrastructure_tt:0 "\nAdds §G5§! to the §CInfrastructure Rating§!"
+ mex_snp_invest_in_railways_tt:0 "\nAdds §G2§! to the §CInfrastructure Rating§!"
+ mex_sasa_education_fund_trigger_tt:0 "Maximum amount of times you can increase funding is §C5§! (Times Already Taken:\ [?mex_var_sasa_education_fund_times_taken|C0])"
+ # Categories
+ MEX_category_second_new_plan:0 "§CSecond New Plan§!"
+ MEX_category_second_new_plan_desc:0 "The §CSecond New Plan§! is an ambitious plan to improve Mexico's crumbling economy. With the first plan proving sucessful in stabilizing Mexico's economy in the wake of the §Y1922 London Stock Market Crash§!, leading political figures and economists hope this second plan will be what returns Mexico as a world superpower.\n\nStats of the §YSecond New Plan§!:\n\nInfrastructure Rating:\ [?mex_infrastructure_rating|C0] -> Goal:\ §Y60§!"
+ MEX_category_socialist_advisors:0 "Socialist Investing"
+ # Decisions
+ MEX_snp_develop_infrastructure:0 "Develop Local Infrastructure"
+ MEX_snp_invest_in_railways:0 "Invest in Railway Construction"

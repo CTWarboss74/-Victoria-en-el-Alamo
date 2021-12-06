@@ -5,9 +5,10 @@ state={
 	manpower = 423316
 	
 	state_category = rural
+	local_supplies=0.0
 	
 	resources={
-		oil=1 # was: 20
+		oil=12 # was: 20
 		aluminium=3 # was: 52
 	}
 
@@ -15,7 +16,7 @@ state={
 	history={
 		owner = MEX
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			industrial_complex = 1
 		}
 		add_core_of = MEX

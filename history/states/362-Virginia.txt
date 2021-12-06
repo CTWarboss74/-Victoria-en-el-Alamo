@@ -6,10 +6,10 @@ state={
 	history={
 		owner = VIR
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 4
+			infrastructure = 4
+			industrial_complex = 3
 			arms_factory = 2
-			dockyard = 2
+			dockyard = 1
 			air_base = 10
 			fuel_silo = 1
 			788 = {
@@ -27,6 +27,7 @@ state={
 		}
 
 	}
+	local_supplies=0.0 
 
 	provinces={
 		865 873 951 1506 3823 3917 6846 7466 9931 10343 10412 10439 11841 11873

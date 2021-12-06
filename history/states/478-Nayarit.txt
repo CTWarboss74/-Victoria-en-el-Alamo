@@ -4,10 +4,11 @@ state={
 	name="STATE_478" # Jalisco
 	manpower = 2470875
 	
-	state_category = large_town
+	state_category = city
 	
 	resources={
 		tungsten=8 # was: 10
+		steel=6
 	}
 
 	history={
@@ -15,7 +16,9 @@ state={
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
-			arms_factory = 1
+			arms_factory = 2
+			dockyard = 1
+			air_base = 3
 		}
 		add_core_of = MEX
 		victory_points = {

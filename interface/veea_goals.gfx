@@ -1,0 +1,21 @@
+spriteTypes = {	
+
+	#### VeeA Goal Icons
+	SpriteType = {
+		name = "GFX_goal_generic_build_railway1"
+		texturefile = "gfx/interface/goals/focus_generic_build_railway1.dds"			
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_automobile_investment"
+		texturefile = "gfx/interface/goals/goal_generic_automobile_investment.dds"			
+	}
+	SpriteType = {
+		name = "GFX_goal_mex_form_mexican_congress"
+		texturefile = "gfx/interface/goals/goal_mex_form_mexican_congress.dds"			
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_highway"
+		texturefile = "gfx/interface/goals/goal_generic_highway.dds"			
+	}				
+
+}

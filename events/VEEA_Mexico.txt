@@ -1,0 +1,111 @@
+﻿###########################
+# Mexico Events
+# By CraftyToast
+###########################
+
+add_namespace = mexico
+add_namespace = mexico_flavour
+add_namespace = mexico_news
+
+# Trigger Event for the Fascist Coup
+country_event = {
+	id = mexico.1000
+	title = mexico.1000.t
+	desc = mexico.1000.d
+	
+	fire_only_once = yes
+
+	hidden = yes 
+	
+	trigger = {
+		tag = MEX
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		country_event = {
+			id = mexico.1001 days = 5
+		}
+	}
+
+	option = {
+		name = mexico.1000.a
+	}
+}
+# First in Event Chain - Fascist terrorist attack in Honduras
+country_event = {
+	id = mexico.1001
+	title = mexico.1001.t
+	desc = mexico.1001.d
+
+	picture = GFX_report_event_generic_train
+	
+	fire_only_once = yes 
+	is_triggered_only = yes
+
+	#immediate = {
+	#	country_event = {
+	#		id = mexico.1001 days = 5
+	#	}
+	#}
+
+	option = {
+		name = mexico.1001.a
+		312 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1.0
+			}
+			add_manpower = -137
+		}
+	}
+}
+
+
+## Annexation of Nicaragua ##
+country_event = {
+	id = mexico.1201
+	title = mexico.1201.t
+	desc = mexico.1201.d
+
+	picture = GFX_report_event_generic_conference
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Accept Annexation
+		name = mexico.1201.a
+		NIC = {
+			every_unit_leader = {
+				set_nationality = MEX
+			}
+		}
+		MEX = {
+			annex_country = { target = NIC transfer_troops = yes }
+			add_political_power = 45
+		}
+	}
+	option = { # Decline
+		name = mexico.1201.b
+	}
+}
+
+# The Empress Protests the Seperation of Church and State
+country_event = {
+	id = mexico.1100
+	title = mexico.1100.t
+	desc = mexico.1100.d
+
+	picture = GFX_report_event_generic_train
+	
+	fire_only_once = yes 
+	is_triggered_only = yes
+
+	option = {
+		name = mexico.1100.a
+		
+	}
+}
