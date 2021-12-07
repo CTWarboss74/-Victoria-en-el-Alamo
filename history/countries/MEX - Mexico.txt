@@ -1,4 +1,4 @@
-﻿capital = 277
+﻿capital = 850 # Mexico City
 
 oob = "veea_MEX_1936"
 if = {

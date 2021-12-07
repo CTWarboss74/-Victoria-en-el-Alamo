@@ -1,9 +1,10 @@
-
 state={
-	id=479
-	name="STATE_479"
+	id=851
+	name="STATE_851"
+	provinces={
+		8089 
+	}
 	resources={
-		oil=11.000
 		steel=4.000
 	}
 
@@ -11,22 +12,16 @@ state={
 		owner = MEX
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
-			dockyard = 1
-
+			arms_factory = 1
+			industrial_complex = 2
 		}
 		add_core_of = MEX
 		victory_points = {
-			5015 5 
+			8089 10 
 		}
-
 	}
-
-	provinces={
-		2083 5015 5021 12721 13088 
-	}
-	manpower=432988
-	buildings_max_level_factor=1.000
 	state_category=town
+	manpower=196780
+	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

@@ -1,0 +1,27 @@
+state={
+	id=850
+	name="STATE_850"
+	provinces={
+		1965 12755 
+	}
+	state_category = metropolis
+	resources={
+		steel=18.000
+	}
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 5
+		}
+		add_core_of = MEX
+		victory_points = {
+			1965 35 
+		}
+	}
+	manpower=2398790
+	buildings_max_level_factor=1.000
+	local_supplies=15.000
+}

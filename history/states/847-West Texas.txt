@@ -1,0 +1,21 @@
+state={
+	id=847
+	name="STATE_847"
+	provinces={
+		1954 5038 10740 10894 
+	}
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			10740 1
+		}
+		add_core_of = MEX
+	}
+	manpower=157890
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = pastoral
+}
