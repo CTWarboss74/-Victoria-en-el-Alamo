@@ -73,13 +73,12 @@ set_variable = {
 }
 set_variable = {
 	var = mex_socialist_education_research_speed
-	value = 5
+	value = 0.05
 }
 
 add_ideas = {
 	widespread_federation_support
 	mex_eumdm
-	mex_underperfroming_army1
 	mex_texan_resistance
 	mex_economic_stagnation
 }

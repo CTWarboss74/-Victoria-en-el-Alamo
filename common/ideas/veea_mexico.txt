@@ -137,28 +137,6 @@ ideas = {
 				factor = 0
 			}
 		}
-		mex_underperfroming_army1 = {
-			
-			allowed = {
-				original_tag = MEX
-				always = no
-			}
-
-			picture = chi_army_corruption
-			
-			modifier = {
-				army_attack_factor = -0.07
-				army_defence_factor = -0.07
-				dig_in_speed_factor = -0.25
-				max_dig_in_factor = -0.25
-				planning_speed = -0.25
-			}
-			
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
 		MEX_mexican_congress = {
 			
 			allowed = {
