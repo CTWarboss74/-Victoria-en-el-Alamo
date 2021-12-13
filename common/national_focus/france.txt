@@ -1,0 +1,225 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_CHI_INFLATION}
+### search_filters = {FOCUS_FILTER_USA_CONGRESS}
+### search_filters = {FOCUS_FILTER_TFV_AUTONOMY}
+### search_filters = {FOCUS_FILTER_MEX_CHURCH_AUTHORITY}
+### search_filters = {FOCUS_FILTER_MEX_CAUDILLO_REBELLION}
+
+focus_tree = {
+	id = france_focus_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 70 y = 1100 }
+	
+
+	focus = {
+		id = Haut_les_Fourches
+		icon = GFX_focus_Avanti_Italia
+		x = 15
+		y = 2
+
+		available = {
+		}
+
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			add_popularity = {
+			  ideology = fascism
+			  popularity = 0.3
+			}
+		}
+	}
+	focus = {
+		id = Expand_our_industry
+		icon = GFX_focus_Avanti_Italia
+		x = 13
+		y = 3
+
+		available = {
+		}
+
+		cost = 5
+		
+		prerequisite = { focus = Haut_les_Fourches  }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				state = 16
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				state = 24
+				instant_build = yes
+			}
+		}
+	}
+	focus = {
+		id = Compromise_With_The_Cagoule
+		icon = GFX_focus_Avanti_Italia
+		x = 13
+		y = 4
+
+		available = {
+		}
+
+		cost = 5
+		
+		prerequisite = { focus = Expand_our_industry  }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			add_ideas = Unhappy_Peasantry
+		}
+	}
+focus = {
+		id = Develop_Large_Plantations
+		icon = GFX_focus_Avanti_Italia
+		x = 14
+		y = 5
+
+		available = {
+		}
+
+		cost = 5
+		
+		prerequisite = { focus = Compromise_With_The_Cagoule  }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				state = 15
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				state = 27
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				state = 33
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				state = 21
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				state = 26
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				state = 806
+				instant_build = yes
+			}
+		}
+	}
+	focus = {
+		id = Global_Development
+		icon = GFX_focus_Avanti_Italia
+		x = 14
+		y = 6
+
+		available = {
+		}
+
+		cost = 5
+		
+		prerequisite = { focus = Develop_Large_Plantations  }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            every_controlled_state = {
+             limit = { is_core_of = FRA }
+			 add_building_construction = {
+			
+				type = infrastructure
+				level = 5
+				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = Expand_The_Railroad_Network
+		icon = GFX_focus_Avanti_Italia
+		x = 12
+		y = 5
+
+		available = {
+		}
+
+		cost = 5
+		
+		prerequisite = { focus = Compromise_With_The_Cagoule  }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            every_controlled_state = {
+             limit = { is_core_of = FRA }
+			 add_building_construction = {
+			
+				type = rail_way
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+	}
+
+	
+}
