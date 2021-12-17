@@ -1,0 +1,15 @@
+ENG_category_commonwealth_development_plan = {
+
+	icon = GFX_decision_category_generic_industry
+	visible_when_empty = yes
+
+
+	priority = 50
+
+	allowed = {
+		original_tag = ENG
+		#has_completed_focus = ENG_focus_pass_commonwealth_development_plan
+	}
+}
+
+

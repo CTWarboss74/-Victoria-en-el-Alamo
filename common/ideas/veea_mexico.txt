@@ -137,6 +137,25 @@ ideas = {
 				factor = 0
 			}
 		}
+		mex_socialist_education_idea_one = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_research_bonus
+			
+			modifier = {
+				political_power_gain = 0.05
+				research_speed_factor = 0.05
+			}
+			
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
 		MEX_mexican_congress = {
 			
 			allowed = {

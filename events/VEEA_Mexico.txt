@@ -64,40 +64,11 @@ country_event = {
 	}
 }
 
-
-## Annexation of Nicaragua ##
-country_event = {
-	id = mexico.1201
-	title = mexico.1201.t
-	desc = mexico.1201.d
-
-	picture = GFX_report_event_generic_conference
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = { # Accept Annexation
-		name = mexico.1201.a
-		NIC = {
-			every_unit_leader = {
-				set_nationality = MEX
-			}
-		}
-		MEX = {
-			annex_country = { target = NIC transfer_troops = yes }
-			add_political_power = 45
-		}
-	}
-	option = { # Decline
-		name = mexico.1201.b
-	}
-}
-
 # The Empress Protests the Seperation of Church and State
 country_event = {
-	id = mexico.1100
-	title = mexico.1100.t
-	desc = mexico.1100.d
+	id = mexico_flavour.1
+	title = mexico_flavour.1.t
+	desc = mexico_flavour.1.d
 
 	picture = GFX_report_event_generic_train
 	
@@ -105,7 +76,87 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = mexico.1100.a
+		name = mexico_flavour.1.a
 		
+	}
+}
+
+# Contents of Calfornian-Mexican Trade Deal
+country_event = {
+	id = mexico.1101
+	title = mexico.1101.t
+	desc = mexico.1101.d
+
+	picture = GFX_report_event_generic_train
+	
+	fire_only_once = yes 
+	is_triggered_only = yes
+
+	option = {
+		name = mexico.1101.a
+	}
+}
+# Appeal to London
+country_event = {
+	id = mexico.1102
+	title = mexico.1102.t
+	desc = mexico.1102.d
+
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = yes 
+	is_triggered_only = yes
+
+	option = { # Provide assistance
+		name = mexico.1102.a
+		ai_chance = {
+			base = 85
+		}
+		MEX = {
+			country_event = mexico.1103
+		}
+	}
+	option = { # Don't Provide assistance
+		name = mexico.1102.b
+		ai_chance = {
+			base = 15
+		}
+		MEX = {
+			country_event = mexico.1104
+		}
+	}
+}
+# Britain provides aid
+country_event = {
+	id = mexico.1103
+	title = mexico.1103.t
+	desc = mexico.1103.d
+
+	picture = GFX_report_event_generic_train
+	
+	fire_only_once = yes 
+	is_triggered_only = yes
+
+	option = {
+		name = mexico.1103.a
+	}
+}
+# Britain does not provide aid
+country_event = {
+	id = mexico.1104
+	title = mexico.1104.t
+	desc = mexico.1104.d
+
+	picture = GFX_report_event_generic_train
+	
+	fire_only_once = yes 
+	is_triggered_only = yes
+
+	option = {
+		name = mexico.1104.a
+		add_opinion_modifier = {
+			target = ENG
+			modifier = medium_decrease
+		}
 	}
 }

@@ -1,0 +1,23 @@
+state={
+	id=858
+	name="STATE_858"
+	provinces={
+		4516 
+	}
+	history={
+		owner = RAJ
+		victory_points = {
+			4516 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = RAJ
+	}
+	manpower=452900
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

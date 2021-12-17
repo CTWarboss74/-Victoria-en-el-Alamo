@@ -1,0 +1,30 @@
+state={
+	id=854
+	name="STATE_854"
+	provinces={
+		1159 4245 
+	}
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 1
+			air_base = 3
+			4245 = {
+				naval_base = 6
+
+			}
+
+		}
+		victory_points = {
+			4245 20 
+		}
+		add_core_of = RAJ
+	}
+	manpower=1672341
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=3.000
+}

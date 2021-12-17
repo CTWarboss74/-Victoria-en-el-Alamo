@@ -1,0 +1,140 @@
+ideas = {
+
+	country = {
+
+		# London Stock Market Crash Ideas
+		ENG_london_stock_market_crash_5 = {
+			picture = great_depression
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				political_power_gain = -0.25
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+				production_speed_buildings_factor = -0.30
+			}
+		}
+		ENG_london_stock_market_crash_4 = {
+			picture = great_depression
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				political_power_gain = -0.20
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+				production_factory_max_efficiency_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.15
+				production_speed_buildings_factor = -0.20
+			}
+		}
+
+		ENG_crippled_royal_navy_4 = {
+			picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				political_power_gain = -0.10
+				industrial_capacity_dockyard = -0.30
+				experience_gain_navy_factor = -0.5
+			}
+		}
+		ENG_professional_army = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				army_org_factor = 0.1
+				army_attack_factor = 0.1
+				training_time_factor = 0.3
+			}
+		}
+		ENG_french_republic_exiles = {
+			picture = FRA_undividable
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				
+			}
+		}
+
+		ENG_commonwealth_development_plan_1 = {
+			picture = SOV_second_five_year_plan
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ENG_commonwealth_development_plan_2 = {
+			picture = SOV_second_five_year_plan
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.02
+			}
+		}
+
+	}
+	
+}

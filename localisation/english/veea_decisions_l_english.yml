@@ -7,6 +7,12 @@
  MEX_category_second_new_plan:0 "§CSecond New Plan§!"
  MEX_category_second_new_plan_desc:0 "The §CSecond New Plan§! is an ambitious plan to improve Mexico's crumbling economy. With the first plan proving sucessful in stabilizing Mexico's economy in the wake of the §Y1922 London Stock Market Crash§!, leading political figures and economists hope this second plan will be what returns Mexico as a world superpower.\n\nStats of the §YSecond New Plan§!:\n\nInfrastructure Rating:\ [?mex_infrastructure_rating|C0] -> Goal:\ §Y60§!"
  MEX_category_socialist_advisors:0 "Socialist Investing"
+ 
+ ENG_category_commonwealth_development_plan:0 "Commonwealth Development Plan"
  # Decisions
  MEX_snp_develop_infrastructure:0 "Develop Local Infrastructure"
  MEX_snp_invest_in_railways:0 "Invest in Railway Construction"
+ 
+ ENG_cdp_radio_station_kuwait:0 "Expand BBC Network in Kuwait"
+ ENG_cdp_radio_station_nigeria:0 "Expand BBC Network in Nigeria"
+ ENG_cdp_exploit_bechuanaland_ore_deposits:0 "Exploit Bechuanaland Ore Deposits"

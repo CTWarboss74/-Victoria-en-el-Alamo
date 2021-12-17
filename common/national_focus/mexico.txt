@@ -72,6 +72,7 @@ focus_tree = {
 		y = 1
 
 		cost = 5
+		
 
 		prerequisite = {
 			focus = MEX_focus_start_second_new_plan
@@ -1117,10 +1118,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			add_political_power = 25
-			add_dynamic_modifier = {
-				modifier = MEX_socialist_education_dynamic_modifier
-				scope = MEX
-			}
+			add_ideas = mex_socialist_education_idea_one
 		}
 	}
 	focus = {
@@ -1267,7 +1265,7 @@ focus_tree = {
 		cost = 5
 		mutually_exclusive = {
 			focus = MEX_focus_strengthen_monarchy
-			focus = MEX_focus_fascism_supreme
+			focus = MEX_focus_radicalism_rise
 		}
 
 		ai_will_do = {
@@ -1408,16 +1406,166 @@ focus_tree = {
 			add_political_power = 25
 		}
 	}
-	
-	
 
-	
-	# Caribbean Investment
+	# Trade Deal with Dominion of California
 	focus = {
-		id = MEX_focus_caribbean_relations
+		id = MEX_focus_trade_deal_with_cal
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 34
+		y = 6
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = {
+			focus = MEX_focus_first_elections
+		}
+
+		available = {
+			CAL = {
+				is_subject_of = ENG
+				ENG = {
+					has_government = democratic
+				}
+				has_government = democratic
+			}
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = 25
+			country_event = mexico_flavour.1
+			add_offsite_building = { type = industrial_complex level = 2 }
+		}
+	}
+	# CAL investment
+	focus = {
+		id = MEX_focus_cal_dockyards
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 32
+		y = 7
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = {
+			focus = MEX_focus_trade_deal_with_cal
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			OR = {
+				NOT = {
+					378 = {
+						is_controlled_by = CAL
+					}
+				}
+				378 = {
+					free_building_slots = {
+						building = dockyard
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = 25
+			378 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			CAL = {
+				add_opinion_modifier = {
+					target = MEX
+					modifier = small_increase
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_focus_cal_industrial_complex
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 32
+		y = 8
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = {
+			focus = MEX_focus_cal_dockyards
+		}
+
+		available = {
+		}
+
+		bypass = {
+			OR = {
+				NOT = {
+					378 = {
+						is_controlled_by = CAL
+					}
+				}
+				378 = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = 25
+			378 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			CAL = {
+				add_opinion_modifier = {
+					target = MEX
+					modifier = small_increase
+				}
+			}
+		}
+	}
+	# Draw closer to Britain
+	focus = {
+		id = MEX_focus_draw_closer_to_britain
 		icon = GFX_goal_generic_improve_relations
-		x = 37
-		y = 2
+		x = 34
+		y = 8
 
 		cost = 3
 
@@ -1426,11 +1574,11 @@ focus_tree = {
 		}
 
 		prerequisite = {
-			focus = MEX_focus_fed_power_now
+			focus = MEX_focus_trade_deal_with_cal
 		}
 
 		available = {
-			has_government = democratic
+
 		}
 
 		bypass = {
@@ -1438,70 +1586,43 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INVESTMENT}
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			NIC = {
+			ENG = {
+				add_political_power = 25
 				add_opinion_modifier = {
 					target = MEX
-					modifier = small_increase
+					modifier = medium_increase
 				}
 			}
-			COS = {
-				add_opinion_modifier = {
-					target = MEX
-					modifier = small_increase
-				}
-			}
-			PAN = {
-				add_opinion_modifier = {
-					target = MEX
-					modifier = small_increase
-				}
-			}
-			CUB = {
-				add_opinion_modifier = {
-					target = MEX
-					modifier = small_increase
-				}
-			}
-			HAI = {
-				add_opinion_modifier = {
-					target = MEX
-					modifier = small_increase
-				}
-			}
-			DOM = {
-				add_opinion_modifier = {
-					target = MEX
-					modifier = small_increase
-				}
-			}
-			PUE = {
-				add_opinion_modifier = {
-					target = MEX
-					modifier = small_increase
-				}
+			add_opinion_modifier = {
+				target = ENG
+				modifier = medium_increase
 			}
 		}
 	}
+	# Choice between Liverpool Pact or Appeal to London
 	focus = {
-		id = MEX_focus_caribbean_investment
-		icon = GFX_focus_generic_the_giant_wakes
-		x = 37
-		y = 3
+		id = MEX_focus_liverpool_pact
+		icon = GFX_goal_generic_improve_relations
+		x = 34
+		y = 9
 
-		cost = 7
+		cost = 4
 
 		ai_will_do = {
 			factor = 25
 		}
 
 		prerequisite = {
-			focus = MEX_focus_caribbean_relations
+			focus = MEX_focus_draw_closer_to_britain
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_appeal_to_london
 		}
 
 		available = {
-			has_government = democratic
+
 		}
 
 		bypass = {
@@ -1509,38 +1630,45 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INVESTMENT}
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			NIC = {
-				add_ideas = mex_caribbean_investment_idea
-			}	
+			give_guarantee = ENG
+			add_opinion_modifier = {
+				target = ENG
+				modifier = medium_increase
+			}
+			ENG = {
+				give_guarantee = MEX
+				add_opinion_modifier = {
+					target = MEX
+					modifier = medium_increase
+				}
+			}
 		}
 	}
-	## Annexation of Nicaragua ##
 	focus = {
-		id = MEX_focus_annex_nic
-		icon = GFX_goal_anschluss
-		x = 37
-		y = 4
+		id = MEX_focus_appeal_to_london
+		icon = GFX_goal_generic_improve_relations
+		x = 32
+		y = 9
 
-		cost = 7
+		cost = 4
 
 		ai_will_do = {
 			factor = 25
 		}
 
 		prerequisite = {
-			focus = MEX_focus_caribbean_investment
+			focus = MEX_focus_draw_closer_to_britain
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_liverpool_pact
 		}
 
 		available = {
-			has_government = democratic
-			NIC = {
+			has_war = yes
+			ENG = {
 				has_government = democratic
-				has_country_leader = {
-					ruling_only = yes
-					name = "Placeholder" # Would be an exiled Federalist
-				}
 			}
 		}
 
@@ -1549,10 +1677,12 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			#NIC = {
-			#	country_event = mexico.1201
-			#}	
+			add_political_power = -25
+			ENG = {
+				country_event = mexico.1102
+			}
 		}
 	}
 
@@ -1696,7 +1826,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = MEX_focus_fed_power_now
-			focus = MEX_focus_fascism_supreme
+			focus = MEX_focus_radicalism_rise
 		}
 
 		prerequisite = {
@@ -1822,14 +1952,14 @@ focus_tree = {
 		}
 	}
 
-	## FASCIST ROUTE ##
+	## FASCIST/COMMUNIST ROUTE (Splits into 2 seperate paths the next focus) ##
 	focus = {
-		id = MEX_focus_fascism_supreme
-		icon = GFX_goal_support_fascism
+		id = MEX_focus_radicalism_rise
+		icon = GFX_focus_generic_support_the_left_right
 		x = 56
 		y = 1
 
-		cost = 5
+		cost = 3
 		mutually_exclusive = {
 			focus = MEX_focus_strengthen_monarchy
 			focus = MEX_focus_fed_power_now
@@ -1861,11 +1991,11 @@ focus_tree = {
 			}
 		}
 	}
-	# Strengthen the Party Path
+	# Strengthen the Synarchists Path
 	focus = {
 		id = MEX_focus_synarchist_grand_council
-		icon = GFX_focus_generic_support_the_left_right
-		x = 56
+		icon = GFX_goal_support_fascism
+		x = 54
 		y = 2
 
 		cost = 5
@@ -1875,7 +2005,11 @@ focus_tree = {
 		}
 
 		prerequisite = {
-			focus = MEX_focus_fascism_supreme
+			focus = MEX_focus_radicalism_rise
+		}
+
+		mutually_exclusive = {
+			focus = MEX_focus_counter_revolution
 		}
 
 		available = {
@@ -1892,6 +2026,108 @@ focus_tree = {
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.05
+			}
+		}
+	}
+	# The Counter-Revolution
+    focus = {
+		id = MEX_focus_counter_revolution
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 58
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = {
+			focus = MEX_focus_radicalism_rise
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_synarchist_grand_council
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = MEX_focus_red_mexico
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 58
+		y = 3
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = {
+			focus = MEX_focus_counter_revolution
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+		}
+	}
+	focus = {
+		id = MEX_focus_arm_the_workers
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 58
+		y = 5
+
+		cost = 3
+		#allow_branch = {
+		#	has_political_power > 100
+		#}
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+			has_completed_focus = MEX_focus_red_mexico
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
 			}
 		}
 	}

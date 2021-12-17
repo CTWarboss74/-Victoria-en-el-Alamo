@@ -105,7 +105,7 @@ focus_tree = {
 			add_ideas = Unhappy_Peasantry
 		}
 	}
-focus = {
+	focus = {
 		id = Develop_Large_Plantations
 		icon = GFX_focus_Avanti_Italia
 		x = 14

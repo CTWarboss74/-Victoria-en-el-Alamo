@@ -60,33 +60,15 @@ MEX_category_second_new_plan = {
 MEX_category_socialist_advisors = {
 
 	MEX_sasa_education_funding = {
-		visible = {
-			check_variable = { var:mex_var_sasa_education_fund_times_taken < 5 }
-		}
-		cost = 40
+		cost = 35
 		available = {
 			has_completed_focus = MEX_focus_increase_education_budget
-			custom_trigger_tooltip = {
-				tooltip = mex_sasa_education_fund_trigger_tt
-				check_variable = { var:mex_var_sasa_education_fund_times_taken < 5 }
-			}
 		}
 		modifier = {
 			political_power_cost = 0.03
+			research_speed_factor = 0.05
 		}
 		days_remove = 90
-		remove_effect = {
-			custom_effect_tooltip = mex_sasa_education_fund_tt
-			add_to_variable = {
-				var = mex_socialist_education_research_speed
-				value = 1
-			}
-			clamp_variable = {
-				var = mex_socialist_education_research_speed
-				min = 5
-				max = 15
-			}			
-		}
     }
 
 }

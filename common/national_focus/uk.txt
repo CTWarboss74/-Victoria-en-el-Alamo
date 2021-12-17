@@ -1,0 +1,244 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = british_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	default = no
+	
+	
+	focus = {
+		id = ENG_focus_continue_mosleys_industrial_reforms
+		icon = GFX_focus_generic_treaty
+		x = 5
+		y = 0
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = ENG_london_stock_market_crash_5
+				}
+				swap_ideas = {
+					remove_idea = ENG_london_stock_market_crash_5
+					add_idea = ENG_london_stock_market_crash_4
+				}
+			}
+			add_tech_bonus = {
+				name = ENG_mosley_industrial_reforms_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_focus_establish_industrial_research_subsidies
+		icon = GFX_goal_generic_scientific_exchange
+		x = 0
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_continue_mosleys_industrial_reforms
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_establish_industrial_subsidies_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_focus_pass_commonwealth_development_plan
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = 3
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_continue_mosleys_industrial_reforms
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_subject_of = ENG
+					NOT = {
+						original_tag = CAN
+						original_tag = AST
+						original_tag = CAL
+						original_tag = NZL
+						original_tag = SAF
+					}
+				}
+				add_ideas = ENG_commonwealth_development_plan_1
+			}
+			custom_effect_tooltip = ENG_pass_cdp_tt
+		}
+	}
+	focus = {
+		id = ENG_focus_increase_cd_plan_budget
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = 3
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_pass_commonwealth_development_plan
+		}
+		prerequisite = {
+			focus = ENG_focus_include_the_dominions
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {			
+			every_country = {
+				limit = {
+					has_idea = ENG_commonwealth_development_plan_1
+				}
+				swap_ideas = {
+					remove_idea = ENG_commonwealth_development_plan_1
+					add_idea = ENG_commonwealth_development_plan_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_focus_include_the_dominions
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 2
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_pass_commonwealth_development_plan
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			CAN = {
+				add_ideas = ENG_commonwealth_development_plan_1
+			}
+			CAL = {
+				add_ideas = ENG_commonwealth_development_plan_1
+			}
+			SAF = {
+				add_ideas = ENG_commonwealth_development_plan_1
+			}
+			AST = {
+				add_ideas = ENG_commonwealth_development_plan_1
+			}
+			NZL = {
+				add_ideas = ENG_commonwealth_development_plan_1
+			}
+		}
+	}
+	focus = {
+		id = ENG_focus_african_railways
+		icon = GFX_focus_generic_africa_infrastructure
+		x = 4
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_pass_commonwealth_development_plan
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ENG_focus_consumer_goods_from_colonies
+		icon = GFX_focus_generic_africa_factory
+		x = 4
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_african_railways
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ENG_focus_sway_bbc_cdp
+		icon = GFX_goal_generic_radar
+		x = 6
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_pass_commonwealth_development_plan
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ENG_focus_contact_local_infra_companies
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 8
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_pass_commonwealth_development_plan
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			
+		}
+	}
+	
+
+
+}
