@@ -1,0 +1,19 @@
+state={
+	id=869
+	name="STATE_869"
+	provinces={
+		4513 7497 7574 12375 
+	}
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = RAJ
+
+	}
+	manpower=814562
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

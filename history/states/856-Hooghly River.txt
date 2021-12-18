@@ -14,7 +14,7 @@ state={
 		add_core_of = RAJ
 		add_extra_state_shared_building_slots = -2
 	}
-	manpower=2617800
+	manpower=5617800
 	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=1.000

@@ -13,7 +13,7 @@ ideas = {
 				always = yes
 			}
 			
-			removal_cost = -1
+			removal_cost = -1 
 						
 			modifier = {
 				political_power_gain = -0.25
@@ -132,6 +132,23 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.05
 				consumer_goods_factor = -0.02
+			}
+		}
+
+		ENG_commonwealth_six_keys_idea = {
+			picture = generic_foreign_capital
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				production_speed_buildings_factor = 0.1
 			}
 		}
 

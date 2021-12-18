@@ -5,7 +5,7 @@ state={
 		1637 10471 
 	}
 	history={
-		owner = RAJ
+		owner = I01
 		victory_points = {
 			10471 1
 		}
@@ -13,7 +13,7 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = RAJ
+		add_core_of = I01
 	}
 	manpower=2148970
 	state_category = rural

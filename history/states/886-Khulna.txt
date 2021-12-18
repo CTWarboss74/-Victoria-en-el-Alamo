@@ -1,0 +1,25 @@
+state={
+	id=886
+	name="STATE_886"
+	provinces={
+		2843 7124 9935 
+	}
+	history={
+		add_core_of = RAJ
+		add_core_of = RBD
+		add_core_of = BAN
+		add_core_of = BSU
+		owner = RAJ
+		victory_points = {
+			2843 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+	manpower=1364200
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

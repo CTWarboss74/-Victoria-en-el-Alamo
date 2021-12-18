@@ -1,0 +1,31 @@
+state={
+	id=884
+	name="STATE_884"
+	provinces={
+		11968 
+	}
+	history={
+		add_core_of = RBD
+		add_core_of = BAN
+		add_core_of = BSU
+		owner = RBD
+		victory_points = {
+			11968 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			11968 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+	manpower=873900
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

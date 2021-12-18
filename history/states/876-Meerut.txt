@@ -1,0 +1,23 @@
+state={
+	id=876
+	name="STATE_876"
+	provinces={
+		11955 
+	}
+	history={
+		owner = IND
+		victory_points = {
+			11955 3
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = IND
+	}
+	manpower=2329500
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

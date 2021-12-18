@@ -1,0 +1,28 @@
+
+state={
+	id=866
+	name="STATE_866"
+
+	history={
+		owner = SRI
+		victory_points = {
+			12786 3 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = SRI
+
+	}
+
+	provinces={
+		9973 10751 12786 
+	}
+	manpower=3137830
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

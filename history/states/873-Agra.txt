@@ -1,0 +1,22 @@
+state={
+	id=873
+	name="STATE_873"
+	provinces={
+		5086 10794 
+	}
+	history={
+		owner = MUG
+		victory_points = {
+			10794 3 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = MUG
+	}
+	manpower=3478230
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

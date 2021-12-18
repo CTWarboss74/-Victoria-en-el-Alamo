@@ -1,0 +1,21 @@
+state={
+	id=862
+	name="STATE_862"
+	provinces={
+		1569 2005 
+	}
+	history={
+		owner = SRI
+		victory_points = {
+			1569 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SRI
+	}
+	manpower=1493200
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
+}

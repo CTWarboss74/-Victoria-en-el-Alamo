@@ -1,0 +1,25 @@
+state={
+	id=885
+	name="STATE_885"
+	provinces={
+		4162 7078 10035 11911 
+	}
+	history={
+		add_core_of = RBD
+		add_core_of = BAN
+		add_core_of = BSU
+		owner = BSU
+		victory_points = {
+			10035 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+
+	}
+	manpower=2659300
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

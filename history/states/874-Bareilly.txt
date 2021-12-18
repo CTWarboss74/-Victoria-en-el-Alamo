@@ -1,0 +1,22 @@
+state={
+	id=874
+	name="STATE_874"
+	provinces={
+		9951 
+	}
+	history={
+		owner = I03
+		victory_points = {
+			9951 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = I03
+	}
+	manpower=715900
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

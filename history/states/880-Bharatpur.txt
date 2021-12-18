@@ -1,0 +1,21 @@
+state={
+	id=880
+	name="STATE_880"
+	provinces={
+		4915 
+	}
+	history={
+		owner = MUG
+		victory_points = {
+			4915 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = MUG
+	}
+	manpower=875238
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,12 @@
+# Indian Collapse States
+# Majors
+SRI	= "countries/SR India.txt"
+MUG	= "countries/Mughal Empire.txt"
+IND	= "countries/Republic of India.txt"
+# Warlords
+I01	= "countries/I01.txt"
+I02	= "countries/I02.txt"
+I03	= "countries/I03.txt"
+# Bangladesh States
+RBD	= "countries/Republic of Bangladesh.txt"
+BSU	= "countries/Bengal Sydicalist Union.txt"

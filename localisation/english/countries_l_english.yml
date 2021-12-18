@@ -1713,8 +1713,8 @@
  BAH:0 "Bahamas"
  BAH_DEF:0 "the Bahamas"
  BAH_ADJ:0 "Bahamian"
- BAN_fascism:1 "State of Bengal"
- BAN_fascism_DEF:1 "the State of Bengal"
+ BAN_fascism:1 "Nationalist State of Bengal"
+ BAN_fascism_DEF:1 "the Nationalist State of Bengal"
  BAN_democratic:0 "Bangladesh"
  BAN_democratic_DEF:0 "Bangladesh"
  BAN_neutrality:1 "Sultanate of Bangladesh"
@@ -3270,6 +3270,41 @@
  DAK:0 "Sioux Confederacy"
  DAK_DEF:0 "Sioux Confederacy"
  DAK_ADJ:0 "Sioux"
+ 
+ # Raj Collapse States
+ # Major
+ SRI:0 "Socialist Republic of India"
+ SRI_DEF:0 "the Socialist Republic of India"
+ SRI_ADJ:0 "Indian"
+ MUG:0 "Neo-Mughal Empire"
+ MUG_DEF:0 "the Neo-Mughal Empire"
+ MUG_ADJ:0 "Mughal"
+ IND_democratic:0 "Republic of India"
+ IND_democratic_DEF:0 "the Republic of India"
+ IND_democratic_ADJ:0 "Indian"
+ IND:0 "India"
+ IND_DEF:0 "India"
+ IND_ADJ:0 "Indian"
+ # Warlord
+ I01:0 "Kingdom of Daltonganj"
+ I01_DEF:0 "the Kingdom of Daltonganj"
+ I01_ADJ:0 "Daltonganji"
+ I02:0 "Purnia Syndicate"
+ I02_DEF:0 "the Purnia Syndicate"
+ I02_ADJ:0 "Purnian"
+ I03:0 "Bareilly National Movement"
+ I03_DEF:0 "the Bareilly National Movement"
+ I03_ADJ:0 "Nationalist"
+ # Bangladesh States
+ RBD:0 "Republic of Bangladesh"
+ RBD_DEF:0 "the Republic of Bangladesh"
+ RBD_ADJ:0 "Purnian"
+ BSU:0 "Bengal Syndicalist Union"
+ BSU_DEF:0 "the Bengal Syndicalist Union"
+ BSU_ADJ:0 "Syndicalist"
+ 
+ 
+ 
  ADU_monarchism:0 "Andalusia"
  ADU_monarchism_ADJ:0 "Andalusian"
  ADU_monarchism_DEF:0 "Kingdom of Andalusia"

@@ -1,0 +1,21 @@
+state={
+	id=863
+	name="STATE_863"
+	provinces={
+		10332 
+	}
+	history={
+		owner = RAJ
+		victory_points = {
+			10332 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = RAJ
+	}
+	manpower=472900
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

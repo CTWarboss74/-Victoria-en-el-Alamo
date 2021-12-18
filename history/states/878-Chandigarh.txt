@@ -1,0 +1,26 @@
+
+state={
+	id=878
+	name="STATE_878"
+
+	history={
+		owner = IND
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+
+		}
+		victory_points = {
+			2002 1 
+		}
+
+	}
+
+	provinces={
+		2002 10729 10772 
+	}
+	manpower=913678
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

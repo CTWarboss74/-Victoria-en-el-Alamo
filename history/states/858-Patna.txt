@@ -5,7 +5,7 @@ state={
 		4516 
 	}
 	history={
-		owner = RAJ
+		owner = SRI
 		victory_points = {
 			4516 10 
 		}
@@ -14,9 +14,9 @@ state={
 			industrial_complex = 2
 			arms_factory = 1
 		}
-		add_core_of = RAJ
+		add_core_of = SRI
 	}
-	manpower=452900
+	manpower=852900
 	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

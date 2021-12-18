@@ -1,4 +1,42 @@
 #reload countrycolors
+### Indian Collapse States... Oh boy
+# Majors
+SRI = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 125 13 24 }
+}
+MUG = {
+	color = rgb { 76 153 0 }
+	color_ui = rgb { 76 153 0 }
+}
+IND = {
+	color = rgb { 39 43 207 }
+	color_ui = rgb { 39 43 207 }
+}
+# Warlords
+I01 = { # Daltonganj
+	color = rgb { 128 110 61 }
+	color_ui = rgb { 128 110 61 }
+}
+I02 = { # Purnia
+	color = rgb { 184 29 29 }
+	color_ui = rgb { 184 29 29 }
+}
+I03 = { # Bareilly
+	color = rgb { 82 40 40 }
+	color_ui = rgb { 82 40 40 }
+}
+# Bangladesh States
+RBD = {
+	color = rgb { 207 151 39 }
+	color_ui = rgb { 207 151 39 }
+}
+BSU = {
+	color = rgb { 207 39 39 }
+	color_ui = rgb { 207 39 39 }
+}
+
+
 
 GER = {
 	color = HSV { 0.1 0.15 0.4 }

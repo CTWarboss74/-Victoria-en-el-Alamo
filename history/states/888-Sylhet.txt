@@ -1,0 +1,27 @@
+state={
+	id=888
+	name="STATE_888"
+	provinces={
+		9993 10416 12423 13208 
+	}
+	history={
+		add_core_of = RBD
+		add_core_of = BAN
+		add_core_of = BSU
+		owner = BAN
+		victory_points = {
+			13208 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_extra_state_shared_building_slots = -1
+
+	}
+	manpower=5938210
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

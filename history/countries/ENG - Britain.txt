@@ -228,6 +228,25 @@ UGA = {
 KEN = {
 	set_cosmetic_tag = UK_COLONY
 }
+# Set Up "6 Keys" tags
+CAN = {
+	set_country_flag = commonwealth_six_keys_flag
+}
+CAL = {
+	set_country_flag = commonwealth_six_keys_flag
+}
+AST = {
+	set_country_flag = commonwealth_six_keys_flag
+}
+NZL = {
+	set_country_flag = commonwealth_six_keys_flag
+}
+SAF = {
+	set_country_flag = commonwealth_six_keys_flag
+}
+RAJ = {
+	set_country_flag = commonwealth_six_keys_flag
+}
 
 
 if = {

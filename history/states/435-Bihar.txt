@@ -4,18 +4,19 @@ state={
 	name="STATE_435"
 
 	history={
-		owner = RAJ
+		owner = SRI
 		buildings = {
 			infrastructure = 2
 
 		}
+		add_core_of = SRI
 
 	}
 
 	provinces={
-		1541 1569 4459 7334 10361 10751 10878 
+		1541 4459 7334 10361 10878 
 	}
-	manpower=36574500
+	manpower=4153890
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

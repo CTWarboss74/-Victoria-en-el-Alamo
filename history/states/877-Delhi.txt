@@ -1,0 +1,25 @@
+state={
+	id=877
+	name="STATE_877"
+	provinces={
+		2086 
+	}
+	history={
+		owner = IND
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 4
+
+		}
+		victory_points = {
+			2086 20
+		}
+		add_core_of = IND
+	}
+	manpower=1527390
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
