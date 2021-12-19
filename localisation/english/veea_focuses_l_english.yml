@@ -41,6 +41,8 @@
  ENG_cdp_afr_rail_tt:0 "§YUnlocks decisions to construct the Nile Railroad, Kenyan Regional Railways, and Arabian Pennisula Railway System!§!"
  ENG_cdp_cons_colonies_tt:0 "§YUnlocks decisions to import Consumer Goods from the colonies!§!"
  ENG_cdp_sway_bbc_tt:0 "§YUnlocks decisions to invest in new BBC radio stations, allowing you to contruct Radio Stations in strategic lands!§!"
+
+ eng_government_spending_cut_tt:0 "The Government has §Ynot§! cut spending for industry!"
  # Focus Names/descs
  ENG_focus_continue_mosleys_industrial_reforms:0 "Continue Mosley's Industrial Reforms"
  ENG_focus_establish_industrial_research_subsidies:0 "Establish Industrial Research Subsidies"
@@ -59,3 +61,11 @@
  ENG_focus_invest_in_six_keys_new_zealand:0 "Invest in New Zealand"
  ENG_focus_invest_in_six_keys_south_africa:0 "Invest in South Africa"
  ENG_focus_invest_in_six_keys_british_east_india:0 "Invest in British East India"
+
+ ENG_focus_sorry_state_of_affairs:0 "A Sorry State of Affairs"
+ ENG_focus_emergency_relief_efforts:0 "Emergency Relief Efforts"
+ ENG_focus_cut_government_spending:0 "Cut down of Government Spending"
+ ENG_focus_no_budget_cuts:0 "No Budget Cuts!"
+ ENG_focus_churchill_address_to_parliament:0 "Churchill's Address to Parliament"
+ ENG_focus_vote_mosley_out:0 "Vote Mosley Out!"
+ ENG_focus_mosley_survives_the_vote:0 "Mosley Survives the Vote!"

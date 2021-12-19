@@ -3295,6 +3295,9 @@
  I03:0 "Bareilly National Movement"
  I03_DEF:0 "the Bareilly National Movement"
  I03_ADJ:0 "Nationalist"
+ I04:0 "Commune of Ahmadabad"
+ I04_DEF:0 "the Commune of Ahmadabad"
+ I04_ADJ:0 "Communalist"
  # Bangladesh States
  RBD:0 "Republic of Bangladesh"
  RBD_DEF:0 "the Republic of Bangladesh"

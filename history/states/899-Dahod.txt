@@ -1,0 +1,22 @@
+state={
+	id=899
+	name="STATE_899"
+	provinces={
+		1103 7165 12092 
+	}
+	history={
+		owner = IND
+		victory_points = {
+			7165 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = IND
+		add_extra_state_shared_building_slots = -1
+	}
+	manpower=1162890
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -7,6 +7,7 @@ IND	= "countries/Republic of India.txt"
 I01	= "countries/I01.txt"
 I02	= "countries/I02.txt"
 I03	= "countries/I03.txt"
+I04	= "countries/I04.txt"
 # Bangladesh States
 RBD	= "countries/Republic of Bangladesh.txt"
 BSU	= "countries/Bengal Sydicalist Union.txt"

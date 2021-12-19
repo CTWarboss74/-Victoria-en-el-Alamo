@@ -1,0 +1,25 @@
+state={
+	id=896
+	name="STATE_896"
+	provinces={
+		7150 
+	}
+	history={
+		victory_points = {
+			7150 1
+		}
+		owner = I04
+		buildings = {
+			infrastructure = 2
+			7150 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = I04
+		add_core_of = IND
+	}
+	manpower=427500
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

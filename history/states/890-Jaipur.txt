@@ -1,0 +1,24 @@
+state={
+	id=890
+	name="STATE_890"
+	provinces={
+		2054 
+	}
+	history={
+		victory_points = {
+			2054 3  
+		}
+		owner = IND
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = IND
+		add_extra_state_shared_building_slots = -2
+	}
+	manpower=1025789
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

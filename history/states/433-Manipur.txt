@@ -4,13 +4,9 @@ state={
 	name="STATE_433"
 
 	history={
-		victory_points = {
-			2054 1 
-		}
 		owner = IND
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 1
 
 		}
 		add_core_of = IND
@@ -18,10 +14,10 @@ state={
 	}
 
 	provinces={
-		1199 1908 2054 4149 4971 4984 7905 7998 10847 10866 12041 12718 12743 12829 12844 12876 12886 
+		10847 10866 12041 12718 12844 12876 
 	}
-	manpower=11786000
+	manpower=362459
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=enclave
 	local_supplies=9.000
 }

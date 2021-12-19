@@ -1,0 +1,22 @@
+state={
+	id=891
+	name="STATE_891"
+	provinces={
+		4971 7905 
+	}
+	history={
+		victory_points = {
+			4971 1 
+		}
+		owner = IND
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = IND
+		add_extra_state_shared_building_slots = -1
+	}
+	manpower=578250
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

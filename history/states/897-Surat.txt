@@ -1,23 +1,25 @@
-
 state={
-	id=439
-	name="STATE_439"
-
+	id=897
+	name="STATE_897"
+	provinces={
+		4187 
+	}
 	history={
+		victory_points = {
+			4187 3
+		}
 		owner = IND
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+			4187 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = IND
-
 	}
-
-	provinces={
-		2032 5157 12708 12868 
-	}
-	manpower=3636800
+	manpower=878230
+	state_category = rural
 	buildings_max_level_factor=1.000
-	state_category=rural
 	local_supplies=0.000
 }

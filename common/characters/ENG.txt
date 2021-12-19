@@ -35,15 +35,6 @@ characters={
 				factor  = 1.000
 			}
 		}
-
-		country_leader={
-			ideology=conservatism
-			traits = {
-				british_bulldog
-			}
-			expire="1965.1.1.1"
-			id=-1
-		}
 	}
 
 	ENG_stanley_baldwin={

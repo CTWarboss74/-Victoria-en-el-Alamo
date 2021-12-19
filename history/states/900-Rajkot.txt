@@ -1,0 +1,27 @@
+state={
+	id=900
+	name="STATE_900"
+	provinces={
+		1144 10118 
+	}
+	history={
+		owner = IND
+		victory_points = {
+			10118 5
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+			10118 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = IND
+		add_extra_state_shared_building_slots = -1
+	}
+	manpower=2681670
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

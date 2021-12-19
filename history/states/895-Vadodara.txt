@@ -1,0 +1,24 @@
+state={
+	id=895
+	name="STATE_895"
+	provinces={
+		11952 
+	}
+	history={
+		victory_points = {
+			11952 3 
+		}
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+			11952 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = RAJ
+	}
+	manpower=1079600
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

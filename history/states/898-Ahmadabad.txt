@@ -1,0 +1,30 @@
+state={
+	id=898
+	name="STATE_898"
+	provinces={
+		7207 9975 
+	}
+	history={
+		owner = I04
+		victory_points = {
+			9975 10 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+			9975 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = I04
+		add_core_of = IND
+
+	}
+	manpower=4339560
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

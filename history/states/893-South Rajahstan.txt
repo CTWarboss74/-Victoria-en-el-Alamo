@@ -1,26 +1,21 @@
-
 state={
-	id=428
-	name="STATE_428"
-	resources={
-		oil=3.000
+	id=893
+	name="STATE_893"
+	provinces={
+		4149 4984 12829 12886 
 	}
-
 	history={
+		victory_points = {
+			4984 1 
+		}
 		owner = IND
 		buildings = {
 			infrastructure = 2
-
 		}
 		add_core_of = IND
-
 	}
-
-	provinces={
-		1061 1190 4064 7020 10118 
-	}
-	manpower=1890200
+	manpower=698120
+	state_category = pastoral
 	buildings_max_level_factor=1.000
-	state_category=rural
 	local_supplies=0.000
 }
