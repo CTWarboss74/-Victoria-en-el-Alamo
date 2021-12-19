@@ -5,7 +5,8 @@ state={
 		1349 7013 
 	}
 	history={
-		owner = RAJ
+		owner = HYD
+		add_core_of = HYD
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2

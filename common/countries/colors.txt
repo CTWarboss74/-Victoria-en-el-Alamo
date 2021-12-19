@@ -13,6 +13,10 @@ IND = {
 	color = rgb { 39 43 207 }
 	color_ui = rgb { 39 43 207 }
 }
+HYD = {
+	color = rgb { 184 109 18 }
+	color_ui = rgb { 184 109 18 }
+}
 # Warlords
 I01 = { # Daltonganj
 	color = rgb { 128 110 61 }
@@ -29,6 +33,14 @@ I03 = { # Bareilly
 I04 = { # Ahmadabad
 	color = rgb { 115 15 15 }
 	color_ui = rgb { 115 15 15 }
+}
+I05 = { # Dhule / Tapi
+	color = rgb { 184 109 18 }
+	color_ui = rgb { 184 109 18 }
+}
+I06 = { # Kolhapur
+	color = rgb { 184 109 18 }
+	color_ui = rgb { 184 109 18 }
 }
 # Bangladesh States
 RBD = {

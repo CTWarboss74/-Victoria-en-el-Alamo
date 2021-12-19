@@ -1,22 +1,24 @@
 state={
-	id=903
-	name="STATE_903"
+	id=905
+	name="STATE_905"
 	provinces={
-		4072 7119 
+		7232 
 	}
 	history={
-		owner = HYD
+		owner = ENG
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			7232 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
-			7119 3
+			7232 1
 		}
 		add_core_of = HYD
 	}
-	manpower=1837650
-	state_category = rural
+	manpower=613801
+	state_category = pastoral
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
