@@ -12,7 +12,7 @@
 ### search_filters = {FOCUS_FILTER_MEX_CAUDILLO_REBELLION}
 
 focus_tree = {
-	id = france_focus_tree
+	id = france_focus
 	
 	country = {
 		factor = 0

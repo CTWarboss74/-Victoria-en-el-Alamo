@@ -1,0 +1,29 @@
+state={
+	id=902
+	name="STATE_902"
+	provinces={
+		1349 7013 
+	}
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 2
+			1349 = {
+				naval_base = 6
+
+			}
+
+		}
+		victory_points = {
+			1349 20 
+		}
+
+	}
+	manpower=4618400
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
