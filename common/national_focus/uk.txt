@@ -1,0 +1,1586 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = british_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	default = no
+	
+	
+	focus = {
+		id = ENG_focus_continue_mosleys_industrial_reforms
+		icon = GFX_focus_generic_treaty
+		x = 10
+		y = 0
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = ENG_london_stock_market_crash_5
+				}
+				swap_ideas = {
+					remove_idea = ENG_london_stock_market_crash_5
+					add_idea = ENG_london_stock_market_crash_4
+				}
+			}
+			add_tech_bonus = {
+				name = ENG_mosley_industrial_reforms_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_focus_establish_industrial_research_subsidies
+		icon = GFX_goal_generic_scientific_exchange
+		x = 0
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_continue_mosleys_industrial_reforms
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_establish_industrial_subsidies_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = ENG_focus_dominion_industrial_research_compact
+		icon = GFX_goal_generic_scientific_exchange
+		x = 0
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_establish_industrial_research_subsidies
+		}
+		prerequisite = {
+			focus = ENG_focus_include_the_dominions
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_focus_pass_commonwealth_development_plan
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = 3
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_continue_mosleys_industrial_reforms
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = eng_government_spending_cut_tt
+				NOT = {
+					has_country_flag = eng_government_spending_cut
+				}
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_subject_of = ENG
+					NOT = {
+						original_tag = CAN
+						original_tag = AST
+						original_tag = CAL
+						original_tag = NZL
+						original_tag = SAF
+					}
+				}
+				add_ideas = ENG_commonwealth_development_plan_1
+			}
+			custom_effect_tooltip = ENG_pass_cdp_tt
+		}
+	}
+	focus = {
+		id = ENG_focus_increase_cd_plan_budget
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = 3
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_pass_commonwealth_development_plan
+		}
+		prerequisite = {
+			focus = ENG_focus_include_the_dominions
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = eng_government_spending_cut_tt
+				NOT = {
+					has_country_flag = eng_government_spending_cut
+				}
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {			
+			every_country = {
+				limit = {
+					has_idea = ENG_commonwealth_development_plan_1
+				}
+				swap_ideas = {
+					remove_idea = ENG_commonwealth_development_plan_1
+					add_idea = ENG_commonwealth_development_plan_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_focus_include_the_dominions
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 2
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_pass_commonwealth_development_plan
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			CAN = {
+				add_ideas = ENG_commonwealth_development_plan_1
+			}
+			CAL = {
+				add_ideas = ENG_commonwealth_development_plan_1
+			}
+			SAF = {
+				add_ideas = ENG_commonwealth_development_plan_1
+			}
+			AST = {
+				add_ideas = ENG_commonwealth_development_plan_1
+			}
+			NZL = {
+				add_ideas = ENG_commonwealth_development_plan_1
+			}
+		}
+	}
+	focus = {
+		id = ENG_focus_african_railways
+		icon = GFX_focus_generic_africa_infrastructure
+		x = 4
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_pass_commonwealth_development_plan
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			custom_effect_tooltip = ENG_cdp_afr_rail_tt
+		}
+	}
+	focus = {
+		id = ENG_focus_consumer_goods_from_colonies
+		icon = GFX_focus_generic_africa_factory
+		x = 4
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_african_railways
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			custom_effect_tooltip = ENG_cdp_cons_colonies_tt
+		}
+	}
+	focus = {
+		id = ENG_focus_sway_bbc_cdp
+		icon = GFX_goal_generic_radar
+		x = 6
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_pass_commonwealth_development_plan
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			custom_effect_tooltip = ENG_cdp_sway_bbc_tt
+		}
+	}
+	focus = {
+		id = ENG_focus_produce_war_armaments
+		icon = GFX_goal_generic_construct_mil_factory 
+		x = 8
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_pass_commonwealth_development_plan
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			
+		}
+	}
+	# This is where stuff gets real - The Imperial Federation
+	focus = {
+		id = ENG_focus_invest_in_six_keys
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties 
+		x = 7
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_pass_commonwealth_development_plan
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = eng_government_spending_cut_tt
+				NOT = {
+					has_country_flag = eng_government_spending_cut
+				}
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			every_country = {
+				limit = {
+					has_country_flag = commonwealth_six_keys_flag
+				}
+				add_ideas = ENG_commonwealth_six_keys_idea
+			}
+		}
+	}
+	focus = {
+		id = ENG_focus_invest_in_six_keys_canada
+		icon = GFX_focus_generic_industry_2
+		x = 5
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_invest_in_six_keys
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = eng_government_spending_cut_tt
+				NOT = {
+					has_country_flag = eng_government_spending_cut
+				}
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			682 = {
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+			if = {
+				limit = {
+					276 = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+				276 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					468 = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+					}
+				}
+				468 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					464 = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+				}
+				464 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_focus_invest_in_six_keys_california
+		icon = GFX_focus_generic_industry_2
+		x = 5
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_invest_in_six_keys_canada
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = eng_government_spending_cut_tt
+				NOT = {
+					has_country_flag = eng_government_spending_cut
+				}
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			387 = {
+				add_resource = {
+					type = steel
+					amount = 16
+				}
+				add_resource = {
+					type = chromium
+					amount = 4
+				}
+				add_resource = {
+					type = tungsten
+					amount = 8
+				}
+			}
+			if = {
+				limit = {
+					378 = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+				378 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					385 = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+				}
+				385 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					380 = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+					}
+				}
+				380 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_focus_invest_in_six_keys_austrailia
+		icon = GFX_focus_generic_industry_2 
+		x = 7
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_invest_in_six_keys
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = eng_government_spending_cut_tt
+				NOT = {
+					has_country_flag = eng_government_spending_cut
+				}
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			517 = {
+				add_resource = {
+					type = steel
+					amount = 16
+				}
+				add_resource = {
+					type = chromium
+					amount = 16
+				}
+				if = {
+					limit = {
+						517 = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+						}
+					}
+					517 = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					285 = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+				285 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					521 = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+				}
+				521 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_focus_invest_in_six_keys_new_zealand
+		icon = GFX_focus_generic_industry_2
+		x = 7
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_invest_in_six_keys_austrailia
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = eng_government_spending_cut_tt
+				NOT = {
+					has_country_flag = eng_government_spending_cut
+				}
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			723 = {
+				add_resource = {
+					type = tungsten
+					amount = 16
+				}
+				if = {
+					limit = {
+						723 = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					723 = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					284 = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+				}
+				284 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_focus_invest_in_six_keys_south_africa
+		icon = GFX_focus_generic_industry_2 
+		x = 9
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_invest_in_six_keys
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = eng_government_spending_cut_tt
+				NOT = {
+					has_country_flag = eng_government_spending_cut
+				}
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			275 = {
+				add_resource = {
+					type = steel
+					amount = 24
+				}
+				if = {
+					limit = {
+						275 = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+						}
+					}
+					275 = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					681 = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+				681 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					719 = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+				}
+				719 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						province = 1468
+						type = naval_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_focus_invest_in_six_keys_british_east_india
+		icon = GFX_focus_generic_industry_2 
+		x = 9
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ENG_focus_invest_in_six_keys_south_africa
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = eng_government_spending_cut_tt
+				NOT = {
+					has_country_flag = eng_government_spending_cut
+				}
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_COMMONWEALTH}
+		completion_reward = {
+			855 = {
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = steel
+					amount = 24
+				}		
+			}
+			random_state = {
+				limit = {
+					is_owned_and_controlled_by = RAJ
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					is_owned_and_controlled_by = RAJ
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#### POLITICAL TREE ####
+	focus = {
+		id = ENG_focus_sorry_state_of_affairs
+		icon = GFX_goal_unknown
+		x = 21
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		allow_branch = { NOT = { has_completed_focus = ENG_focus_winstons_cabinet } }
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ENG_focus_emergency_relief_efforts
+		icon = GFX_goal_unknown
+		x = 21
+		y = 1
+		cost = 1
+		prerequisite = {
+			focus = ENG_focus_sorry_state_of_affairs
+		}
+		available = {
+			hidden_trigger = {
+				has_country_flag = eng_second_crash_happened
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_timed_idea = {
+				idea = ENG_emergency_relief_efforts_lsmc_idea
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = ENG_focus_cut_government_spending
+		icon = GFX_goal_unknown
+		x = 20
+		y = 2
+		cost = 2
+		prerequisite = {
+			focus = ENG_focus_emergency_relief_efforts
+		}
+		mutually_exclusive = {
+			focus = ENG_focus_no_budget_cuts
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_stability = 0.05
+			add_timed_idea = {
+				idea = ENG_cut_government_spending_idea
+				days = 365
+			}
+			hidden_effect = {
+				set_country_flag = eng_government_spending_cut
+			}
+		}
+	}
+	focus = {
+		id = ENG_focus_no_budget_cuts
+		icon = GFX_goal_unknown
+		x = 22
+		y = 2
+		cost = 2
+		prerequisite = {
+			focus = ENG_focus_emergency_relief_efforts
+		}
+		mutually_exclusive = {
+			focus = ENG_focus_cut_government_spending
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = -25
+		}
+	}
+	focus = {
+		id = ENG_focus_churchill_address_to_parliament
+		icon = GFX_goal_unknown
+		x = 21
+		y = 3
+		cost = 3
+		prerequisite = {
+			focus = ENG_focus_cut_government_spending
+			focus = ENG_focus_no_budget_cuts
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = ENG_focus_vote_mosley_out
+		icon = GFX_goal_unknown
+		x = 19
+		y = 4
+		cost = 1
+		prerequisite = {
+			focus = ENG_focus_churchill_address_to_parliament
+		}
+		mutually_exclusive = {
+			focus = ENG_focus_mosley_survives_the_vote
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Clement Attlee"
+				desc = "POLITICS_CLEMENT_ATTLEE_DESC"
+				picture = "gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+				expire = "1965.1.1"
+				ideology = socialism
+			}
+		}
+	}
+	focus = {
+		id = ENG_focus_snap_elections
+		icon = GFX_goal_unknown
+		x = 19
+		y = 5
+		cost = 3
+		prerequisite = {
+			focus = ENG_focus_vote_mosley_out
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = ENG_focus_conservatives_win
+		icon = GFX_goal_unknown
+		x = 17
+		y = 6
+		cost = 1
+		prerequisite = {
+			focus = ENG_focus_snap_elections
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ENG_focus_labour_win
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Winston Churchill"
+				desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+				picture = "gfx/leaders/ENG/Portrait_Britain_Winston_Churchill.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					british_bulldog
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_focus_labour_win
+		icon = GFX_goal_unknown
+		x = 19
+		y = 6
+		cost = 1
+		prerequisite = {
+			focus = ENG_focus_snap_elections
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ENG_focus_conservatives_win
+			focus = ENG_focus_emergency_powers_to_mosley
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = ENG_focus_mosley_survives_the_vote
+		icon = GFX_goal_unknown
+		x = 23
+		y = 4
+		cost = 1
+		prerequisite = {
+			focus = ENG_focus_churchill_address_to_parliament
+		}
+
+		mutually_exclusive = {
+			focus = ENG_focus_vote_mosley_out
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = ENG_focus_deal_with_the_strikers
+		icon = GFX_goal_unknown
+		x = 23
+		y = 5
+		cost = 4
+		prerequisite = {
+			focus = ENG_focus_mosley_survives_the_vote
+		}
+		mutually_exclusive = {
+			focus = ENG_focus_let_the_workers_strike
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_stability = -0.05
+			#clr_country_flag = eng_strikers_active_flag
+		}
+	}
+	focus = {
+		id = ENG_focus_emergency_powers_to_mosley
+		icon = GFX_goal_unknown
+		x = 21
+		y = 6
+		cost = 2
+		prerequisite = {
+			focus = ENG_focus_deal_with_the_strikers
+		}
+		mutually_exclusive = {
+			focus = ENG_focus_labour_win
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_stability = 0.05
+			add_country_leader_trait = emergency_powers
+		}
+	}
+	focus = {
+		id = ENG_focus_let_the_workers_strike
+		icon = GFX_goal_unknown
+		x = 25
+		y = 5
+		cost = 2
+		mutually_exclusive = {
+			focus = ENG_focus_deal_with_the_strikers
+		}
+		prerequisite = {
+			focus = ENG_focus_mosley_survives_the_vote
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_stability = -0.05
+			#clr_country_flag = eng_strikers_active_flag
+		}
+	}
+	focus = {
+		id = ENG_focus_a_march_on_london
+		icon = GFX_goal_unknown
+		x = 25
+		y = 6
+		cost = 2
+		prerequisite = {
+			focus = ENG_focus_let_the_workers_strike
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			set_politics = {
+			ruling_party = socialism
+			last_election = "1935.11.14"
+			election_frequency = 48
+			elections_allowed = yes
+}
+		}
+	}
+	
+# Commonwealth on the world stage
+	focus = {
+		id = ENG_focus_the_commonwealth_on_the_world_stage
+		icon = GFX_goal_unknown
+		x = 15
+		y = 12
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = ENG_focus_the_old_alliances
+		icon = GFX_goal_unknown
+		x = 5
+		y = 13
+		cost = 5
+		prerequisite = {
+			focus = ENG_focus_the_commonwealth_on_the_world_stage
+		}
+		mutually_exclusive = {
+			focus = ENG_focus_our_new_friends
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_ideas = ENG_strengthening_old_ties
+		}
+	}
+	focus = {
+		id = ENG_focus_our_allies_on_the_danube
+		icon = GFX_goal_unknown
+		x = 4
+		y = 14
+		cost = 5
+		prerequisite = {
+			focus = ENG_focus_the_old_alliances
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			AUS = { country_event = uk.1 }
+
+		}
+	}
+	focus = {
+		id = ENG_focus_our_iberian_brothers
+		icon = GFX_goal_unknown
+		x = 6
+		y = 14
+		cost = 5
+		prerequisite = {
+			focus = ENG_focus_the_old_alliances
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			POR = { country_event = uk.2}
+
+		}
+	}
+	focus = {
+		id = ENG_focus_our_new_friends
+		icon = GFX_goal_unknown
+		x = 25
+		y = 13
+		cost = 2
+		prerequisite = {
+			focus = ENG_focus_the_commonwealth_on_the_world_stage
+		}
+		mutually_exclusive = {
+			focus = ENG_focus_the_old_alliances
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		add_political_power = 50
+
+		}
+	}
+	focus = {
+		id = ENG_focus_deal_with_french_devil
+		icon = GFX_goal_unknown
+		x = 24
+		y = 14
+		cost = 10
+		prerequisite = {
+			focus = ENG_focus_our_new_friends
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			FRA = { country_event = uk.3}
+		}
+	}
+	focus = {
+		id = ENG_focus_proposal_to_italians
+		icon = GFX_goal_unknown
+		x = 26
+		y = 14
+		cost = 5
+		prerequisite = {
+			focus = ENG_focus_our_new_friends
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			ITA = { country_event = uk.3}
+		}
+	}
+	focus = {
+		id = ENG_focus_state_of_our_empire
+		icon = GFX_goal_unknown
+		x = 15
+		y = 14
+		cost = 5
+		prerequisite = {
+			focus = ENG_focus_the_commonwealth_on_the_world_stage
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_focus_rally_governor_generals
+		icon = GFX_goal_unknown
+		x = 16
+		y = 15
+		cost = 10
+		prerequisite = {
+			focus = ENG_focus_state_of_our_empire
+		}
+		mutually_exclusive = {
+			focus = ENG_focus_the_sun_is_setting
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_focus_the_sun_is_setting
+		icon = GFX_goal_unknown
+		x = 14
+		y = 15
+		cost = 10
+		prerequisite = {
+			focus = ENG_focus_state_of_our_empire
+		}
+		mutually_exclusive = {
+			focus = ENG_focus_rally_governor_generals
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		add_political_power = 50
+
+		}
+	}
+	focus = {
+		id = ENG_focus_the_american_plan
+		icon = GFX_goal_unknown
+		x = 16
+		y = 16
+		cost = 10
+		prerequisite = {
+			focus = ENG_focus_rally_governor_generals
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		add_political_power = 50
+
+		}
+	}
+	focus = {
+		id = ENG_focus_talks_with_free_states
+		icon = GFX_goal_unknown
+		x = 15
+		y = 17
+		cost = 10
+		prerequisite = {
+			focus = ENG_focus_the_american_plan
+		}
+		mutually_exclusive = {
+			focus = ENG_focus_ambassador_bridge_incident
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		add_political_power = 50
+
+		}
+	}
+	focus = {
+		id = ENG_focus_ambassador_bridge_incident
+		icon = GFX_goal_unknown
+		x = 17
+		y = 17
+		cost = 10
+		prerequisite = {
+			focus = ENG_focus_the_american_plan
+		}
+		mutually_exclusive = {
+			focus = ENG_focus_talks_with_free_states
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = FSA
+			expire = 0
+		}
+
+		}
+	}
+	focus = {
+		id = ENG_focus_ambassador_bridge_incident
+		icon = GFX_goal_unknown
+		x = 17
+		y = 17
+		cost = 10
+		prerequisite = {
+			focus = ENG_focus_the_american_plan
+		}
+		mutually_exclusive = {
+			focus = ENG_focus_talks_with_free_states
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = FSA
+			expire = 0
+		}
+
+		}
+	}
+	focus = {
+		id = ENG_focus_upstarts_in_south
+		icon = GFX_goal_unknown
+		x = 17
+		y = 18
+		cost = 10
+		prerequisite = {
+			focus = ENG_focus_ambassador_bridge_incident
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = NOV
+			expire = 0
+		}
+
+		}
+	}
+	focus = {
+		id = ENG_focus_ultimatum_to_new_england
+		icon = GFX_goal_unknown
+		x = 17
+		y = 19
+		cost = 10
+		prerequisite = {
+			focus = ENG_focus_upstarts_in_south
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_focus_washington_facade
+		icon = GFX_goal_unknown
+		x = 17
+		y = 20
+		cost = 10
+		prerequisite = {
+			focus = ENG_focus_ultimatum_to_new_england
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = VIR
+			expire = 0
+		}
+
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	# Conservative branch
+	focus = {
+		id = ENG_focus_winstons_cabinet
+		icon = GFX_goal_unknown
+		x = 12
+		y = 7
+		cost = 1
+		prerequisite = {
+			focus = ENG_focus_conservatives_win
+		}
+				allow_branch = { has_completed_focus = ENG_focus_sorry_state_of_affairs }
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_focus_begin_budget_cuts
+		icon = GFX_goal_unknown
+		x = 12
+		y = 8
+		cost = 1
+		prerequisite = {
+			focus = ENG_focus_winstons_cabinet
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {		}
+	}
+	focus = {
+		id = ENG_focus_raf_cuts
+		icon = GFX_goal_unknown
+		x = 10
+		y = 9
+		cost = 1
+		prerequisite = {
+			focus = ENG_focus_begin_budget_cuts
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		add_ideas = ENG_raf_cuts
+		}
+	}
+	focus = {
+		id = ENG_focus_army_cuts
+		icon = GFX_goal_unknown
+		x = 12
+		y = 9
+		cost = 1
+		prerequisite = {
+			focus = ENG_focus_begin_budget_cuts
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		add_ideas = ENG_army_cuts
+		}
+	}
+}
