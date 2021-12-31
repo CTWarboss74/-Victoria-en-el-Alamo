@@ -1,0 +1,21 @@
+state={
+	id=946
+	name="STATE_946"
+	provinces={
+		4950 12799 
+	}
+	history={
+		owner = INC
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			12799 1
+		}
+		add_core_of = INC
+	}
+	manpower=968100
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

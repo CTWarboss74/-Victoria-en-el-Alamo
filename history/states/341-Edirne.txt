@@ -2,15 +2,15 @@
 state= {
 	id=341
 	name="STATE_341"
-	manpower = 363947
+	manpower = 387947
 	resources={
-
+		steel = 1
 	}
 	
-	state_category = town
+	state_category = rural
 
 	history= {
-		owner = TUR
+		owner = GRE
 		victory_points = {
 			11842 5
 		}
@@ -19,21 +19,11 @@ state= {
 			industrial_complex = 1
 			849 = {
 				naval_base = 3
-				coastal_bunker = 2
+				coastal_bunker = 1
 			}
 		}
 		add_core_of = TUR
-
-		1936.1.1.1 = { 
-			if = {
-				limit = { has_dlc = "Battle for the Bosporus" }
-				set_demilitarized_zone = yes
-			}
-		}
-
-		1936.11.9.1 = {
-			set_demilitarized_zone = no
-		}
+		add_core_of = GRE
 	}
 	provinces=
 	{

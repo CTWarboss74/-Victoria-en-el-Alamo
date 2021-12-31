@@ -5,7 +5,7 @@ state={
 		12777 
 	}
 	history={
-		owner = MUG
+		owner = I02
 		victory_points = {
 			12777 1 
 		}
@@ -13,7 +13,7 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = MUG
+		add_core_of = I02
 	}
 	manpower=817450
 	state_category = pastoral

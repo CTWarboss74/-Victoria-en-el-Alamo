@@ -1139,11 +1139,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			set_politics = {
-			ruling_party = socialism
-			last_election = "1935.11.14"
-			election_frequency = 48
-			elections_allowed = yes
-}
+				ruling_party = communism
+				last_election = "1935.11.14"
+				election_frequency = 48
+				elections_allowed = yes
+			}
 		}
 	}
 	
@@ -1181,7 +1181,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_ideas = ENG_strengthening_old_ties
+			#add_ideas = ENG_strengthening_old_ties
 		}
 	}
 	focus = {
@@ -1199,7 +1199,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			AUS = { country_event = uk.1 }
+			#AUS = { country_event = uk.1 }
 
 		}
 	}
@@ -1218,7 +1218,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			POR = { country_event = uk.2}
+			#POR = { country_event = uk.2}
 
 		}
 	}
@@ -1259,7 +1259,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			FRA = { country_event = uk.3}
+			#FRA = { country_event = uk.3}
 		}
 	}
 	focus = {
@@ -1277,7 +1277,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			ITA = { country_event = uk.3}
+			#ITA = { country_event = uk.3}
 		}
 	}
 	focus = {
@@ -1562,7 +1562,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-		add_ideas = ENG_raf_cuts
+		#add_ideas = ENG_raf_cuts
 		}
 	}
 	focus = {
@@ -1580,7 +1580,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-		add_ideas = ENG_army_cuts
+		#add_ideas = ENG_army_cuts
 		}
 	}
 }

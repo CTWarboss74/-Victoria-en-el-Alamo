@@ -1,0 +1,27 @@
+state={
+	id=936
+	name="STATE_936"
+	provinces={
+		7310 10152 12779 
+	}
+	history={
+		owner = NLL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			10152 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			10152 3
+		}
+		add_core_of = NLL
+	}
+	manpower=2057100
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

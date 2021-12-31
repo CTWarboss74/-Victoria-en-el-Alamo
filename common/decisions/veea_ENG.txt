@@ -5,16 +5,18 @@ ENG_category_commonwealth_development_plan = {
 		available = {
 			has_completed_focus = ENG_focus_pass_commonwealth_development_plan
 			542 = {
-				is_owned_or_subject_trigger = yes
+				is_owned_or_subject_trigger = yes 
 			}
 		}
 		modifier = {
 			consumer_goods_factor = 0.01
 		}
+		fire_only_once = yes
 		days_remove = 75
 		remove_effect = {
 			542 = {
 				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_extra_state_shared_building_slots = 1
 				add_resource = {
 					type = chromium
 					amount = 20
@@ -28,6 +30,129 @@ ENG_category_commonwealth_development_plan = {
 			}		
 		}
     }
+	ENG_cdp_oil_fields_abu_dhabi = {
+		cost = 10
+		available = {
+			has_completed_focus = ENG_focus_pass_commonwealth_development_plan
+			658 = {
+				is_owned_or_subject_trigger = yes 
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+		fire_only_once = yes
+		days_remove = 45
+		remove_effect = {
+			658 = {
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}		
+		}
+    }
+	ENG_cdp_kenyan_farmland = {
+		cost = 10
+		available = {
+			has_completed_focus = ENG_focus_pass_commonwealth_development_plan
+			547 = {
+				is_owned_or_subject_trigger = yes 
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			547 = {
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_extra_state_shared_building_slots = 1
+			}		
+		}
+    }
+	ENG_cdp_gambian_groundnut_farms = {
+		cost = 10
+		available = {
+			has_completed_focus = ENG_focus_pass_commonwealth_development_plan
+			701 = {
+				is_owned_or_subject_trigger = yes 
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			547 = {
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_extra_state_shared_building_slots = 1
+			}		
+		}
+    }
+	ENG_cdp_sudan_infrastructure = {
+		cost = 10
+		available = {
+			has_completed_focus = ENG_focus_pass_commonwealth_development_plan
+			551 = {
+				is_owned_or_subject_trigger = yes 
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			551 = {
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+				add_extra_state_shared_building_slots = 1
+			}		
+		}
+    }
+	ENG_cdp_armament_facility_nigeria = {
+		cost = 10
+		available = {
+			has_completed_focus = ENG_focus_produce_war_armaments
+			558 = {
+				is_owned_or_subject_trigger = yes 
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			558 = {
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+				add_extra_state_shared_building_slots = 1
+			}		
+		}
+    }
+	ENG_cdp_armament_facility_singapore = {
+		cost = 10
+		available = {
+			has_completed_focus = ENG_focus_produce_war_armaments
+			336 = {
+				is_owned_or_subject_trigger = yes 
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			336 = {
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+				add_extra_state_shared_building_slots = 1
+			}		
+		}
+    }
 	ENG_cdp_radio_station_kuwait = {
 		cost = 10
 		available = {
@@ -37,6 +162,7 @@ ENG_category_commonwealth_development_plan = {
 				is_owned_or_subject_trigger = yes
 			}
 		}
+		fire_only_once = yes
 		modifier = {
 			consumer_goods_factor = 0.01
 		}
@@ -56,6 +182,7 @@ ENG_category_commonwealth_development_plan = {
 				is_owned_or_subject_trigger = yes
 			}
 		}
+		fire_only_once = yes
 		modifier = {
 			consumer_goods_factor = 0.01
 		}
@@ -63,6 +190,105 @@ ENG_category_commonwealth_development_plan = {
 		remove_effect = {
 			558 = {
 				add_building_construction = { type = radar_station level = 1 instant_build = yes }
+			}		
+		}
+    }
+	ENG_cdp_import_consumer_goods_egypt = {
+		cost = 10
+		available = {
+			has_completed_focus = ENG_focus_consumer_goods_from_colonies
+		}
+		modifier = {
+			consumer_goods_factor = -0.03
+			political_power_cost = 0.03
+		}
+		days_remove = 180
+		days_re_enable = 30
+    }
+	ENG_cdp_import_consumer_goods_malaya = {
+		cost = 10
+		available = {
+			has_completed_focus = ENG_focus_consumer_goods_from_colonies
+		}
+		modifier = {
+			consumer_goods_factor = -0.03
+			political_power_cost = 0.03
+		}
+		days_remove = 180
+		days_re_enable = 30
+    }
+	ENG_cdp_cape_town_lilongwe_railway = {
+		cost = 25
+		available = {
+			has_completed_focus = ENG_focus_african_railways
+			681 = {
+				is_owned_or_subject_trigger = yes
+			}
+			719 = {
+				is_owned_or_subject_trigger = yes
+			}
+			275 = {
+				is_owned_or_subject_trigger = yes
+			}
+			542 = {
+				is_owned_or_subject_trigger = yes
+			}
+			545 = {
+				is_owned_or_subject_trigger = yes
+			}
+			771 = {
+				is_owned_or_subject_trigger = yes
+			}
+			770 = {
+				is_owned_or_subject_trigger = yes
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.01
+			political_power_cost = 0.01
+			production_speed_rail_way_factor = -0.1
+		}
+		days_remove = 180
+		fire_only_once = yes
+		remove_effect = {
+			build_railway = {
+				path = { 12589 12547 4696 4822 10697 5231 12648 10400 5217 8214 12963 1874 7872 5199 12504 5221 12986 }
+			}		
+		}
+    }
+	ENG_cdp_nile_railway = {
+		cost = 25
+		available = {
+			has_completed_focus = ENG_focus_african_railways
+			456 = {
+				OR = {
+					is_owned_or_subject_trigger = yes
+					is_owned_and_controlled_by = EGY
+				}
+			}
+			551 = {
+				is_owned_or_subject_trigger = yes
+			}
+			549 = {
+				is_owned_or_subject_trigger = yes
+			}
+			548 = {
+				is_owned_or_subject_trigger = yes
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.01
+			political_power_cost = 0.01
+			production_speed_rail_way_factor = -0.1
+		}
+		days_remove = 120
+		fire_only_once = yes
+		remove_effect = {
+			build_railway = {
+				path = { 11999 10844 8105 }
+			}
+			build_railway = {
+				path = { 12806 1914 12887 12800 10877 2096 8223 12929 12989 }
 			}		
 		}
     }

@@ -1,0 +1,23 @@
+state={
+	id=943
+	name="STATE_943"
+	provinces={
+		8076 12080 
+	}
+	history={
+		owner = INC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			12080 10
+		}
+		add_core_of = INC
+	}
+	manpower=2182000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

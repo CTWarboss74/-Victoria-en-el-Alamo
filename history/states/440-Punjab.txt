@@ -5,21 +5,22 @@ state={
 
 	history={
 		victory_points = {
-			10887 5 
+			12005 10 
 		}
 		owner = PAK
 		buildings = {
 			infrastructure = 3
-
+			industrial_complex = 1
+			arms_factory = 1
 		}
 		add_core_of = PAK
-
+		add_core_of = I01
 	}
 
 	provinces={
-		4979 8007 8022 8106 9084 10066 10139 10173 10843 10887 10898 12005 12792 
+		9084 10887 12005 
 	}
-	manpower=13665000
+	manpower=3265000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

@@ -5,15 +5,14 @@ state={
 		9951 
 	}
 	history={
-		owner = I03
+		owner = I02
 		victory_points = {
 			9951 1
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
 		}
-		add_core_of = I03
+		add_core_of = I02
 	}
 	manpower=715900
 	state_category = pastoral

@@ -1,0 +1,82 @@
+#	Example:
+# 
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#       attacker_modifier = no  # if yes this modifier will also be read in combat for 
+#                               # people engaging in the combat even if not in the state
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+OTT_gre_treaty_manisa_izmir = { # Applied to Izmir (339)
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	local_building_slots_factor = -0.3
+	state_resources_factor = -0.7
+	local_factories = -0.5
+}
+OTT_gre_treaty_manisa_bursa = { # Applied to Bursa (340)
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	local_building_slots_factor = -0.3
+	state_resources_factor = -0.50
+	local_factories = -0.25
+}
+OTT_ita_trading_ports = { # Applied to Antalya (342)
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	local_building_slots_factor = -0.1
+	state_resources_factor = -0.3
+	local_factories = -0.1
+}
+OTT_eng_local_economic_monopoly = { # Applied to Damascus (554), Lebanon (553), and Deir-az-zur (680)
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	local_building_slots_factor = -0.5
+	state_resources_factor = -0.75
+	local_factories = -0.5
+}
+OTT_eng_mosul_oil_company = { # Applied to Mosul (676)
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.8
+	local_factories = -0.5
+}
+
+MEX_peasant_revolt = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.5
+	local_factories = -0.25
+}

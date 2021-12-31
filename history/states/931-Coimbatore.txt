@@ -1,0 +1,24 @@
+state={
+	id=931
+	name="STATE_931"
+	provinces={
+		10130 10274 
+	}
+	history={
+		owner = UTK
+		add_extra_state_shared_building_slots = -1
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+		}
+		victory_points = {
+			10274 5
+		}
+		add_core_of = UTK
+	}
+	manpower=2451000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

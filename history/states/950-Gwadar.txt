@@ -1,0 +1,27 @@
+state={
+	id=950
+	name="STATE_950"
+	provinces={
+		1179 5043 7917 8066 12774 
+	}
+	history={
+		victory_points = {
+			8066 1 
+		}
+		victory_points = {
+			12774 1 
+		}
+		owner = I03
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = PAK
+		add_core_of = I03
+
+	}
+	manpower=215900
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

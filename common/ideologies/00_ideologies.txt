@@ -297,7 +297,7 @@ ideologies = {
 			theocracy  = {
 			}
 			
-			constitutional_monarchsim = {
+			constitutional_monarchism = {
 			}
 		}
 

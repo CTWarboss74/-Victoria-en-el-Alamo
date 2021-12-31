@@ -1,0 +1,22 @@
+state={
+	id=941
+	name="STATE_941"
+	provinces={
+		4315 4344 12146 
+	}
+	history={
+		owner = BNG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			4344 2
+		}
+		add_core_of = BNG
+	}
+	manpower=1728900
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

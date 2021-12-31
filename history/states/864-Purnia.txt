@@ -5,7 +5,7 @@ state={
 		1656 7475 7565 
 	}
 	history={
-		owner = I02
+		owner = SRI
 		victory_points = {
 			7475 1
 		}
@@ -13,9 +13,9 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = I02
+		add_core_of = SRI
 	}
-	manpower=1626400
+	manpower=1426400
 	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

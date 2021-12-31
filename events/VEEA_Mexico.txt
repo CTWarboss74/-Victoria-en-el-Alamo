@@ -35,7 +35,7 @@ country_event = {
 		name = mexico.1000.a
 	}
 }
-# First in Event Chain - Fascist terrorist attack in Honduras
+# First in Event Chain - 2nd LSMC Effects in Mexico
 country_event = {
 	id = mexico.1001
 	title = mexico.1001.t
@@ -48,18 +48,70 @@ country_event = {
 
 	#immediate = {
 	#	country_event = {
-	#		id = mexico.1001 days = 5
+	#		id = mexico.1002 days = 6
 	#	}
 	#}
 
 	option = {
 		name = mexico.1001.a
-		312 = {
-			damage_building = {
-				type = infrastructure
-				damage = 1.0
+		add_political_power = -25
+		if = {
+			limit = {
+				has_idea = mex_economic_stagnation
 			}
-			add_manpower = -137
+			remove_ideas = mex_economic_stagnation
+		}
+		add_ideas = mex_second_lsmc
+	}
+}
+# Second in Event Chain - The Peasantry Revolt
+country_event = {
+	id = mexico.1002
+	title = mexico.1002.t
+	desc = mexico.1002.d
+
+	picture = GFX_report_event_generic_train
+	
+	fire_only_once = yes 
+	is_triggered_only = yes
+
+	#immediate = {
+	#	country_event = {
+	#		id = mexico.1002 days = 6
+	#	}
+	#}
+
+	option = {
+		name = mexico.1002.a
+		478 = {
+			add_dynamic_modifier = {
+				modifier = MEX_peasant_revolt
+			}
+		}
+		852 = {
+			add_dynamic_modifier = {
+				modifier = MEX_peasant_revolt
+			}
+		}
+		485 = {
+			add_dynamic_modifier = {
+				modifier = MEX_peasant_revolt
+			}
+		}
+		851 = {
+			add_dynamic_modifier = {
+				modifier = MEX_peasant_revolt
+			}
+		}
+		853 = {
+			add_dynamic_modifier = {
+				modifier = MEX_peasant_revolt
+			}
+		}
+		847 = {
+			add_dynamic_modifier = {
+				modifier = MEX_peasant_revolt
+			}
 		}
 	}
 }

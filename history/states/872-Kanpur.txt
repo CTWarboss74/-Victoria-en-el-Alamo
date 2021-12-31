@@ -5,7 +5,7 @@ state={
 		5055 12137 
 	}
 	history={
-		owner = MUG
+		owner = I02
 		victory_points = {
 			12137 5 
 		}
@@ -14,7 +14,7 @@ state={
 			industrial_complex = 2
 		}
 		add_extra_state_shared_building_slots = 1
-		add_core_of = MUG
+		add_core_of = I02
 	}
 	manpower=2462671
 	state_category = rural

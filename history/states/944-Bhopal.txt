@@ -1,0 +1,22 @@
+state={
+	id=944
+	name="STATE_944"
+	provinces={
+		2092 2105 4106 10816 
+	}
+	history={
+		owner = INC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			2105 5
+		}
+		add_core_of = INC
+	}
+	manpower=2381500
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

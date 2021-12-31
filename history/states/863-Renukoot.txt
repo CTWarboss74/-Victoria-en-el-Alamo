@@ -5,14 +5,14 @@ state={
 		10332 
 	}
 	history={
-		owner = RAJ
+		owner = I11
 		victory_points = {
 			10332 1
 		}
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = RAJ
+		add_core_of = I11
 	}
 	manpower=472900
 	state_category = pastoral

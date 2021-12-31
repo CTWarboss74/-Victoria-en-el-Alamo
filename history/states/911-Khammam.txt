@@ -1,25 +1,26 @@
+
 state={
 	id=911
 	name="STATE_911"
-	provinces={
-		1275 4280 4472 11950 12114 
-	}
+
 	history={
-		owner = HYD
+		owner = RAJ
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+
 		}
 		victory_points = {
-			4280 2
+			4280 2 
 		}
-		victory_points = {
-			11950 1
-		}
-		add_core_of = HYD
+		add_core_of = RAJ
+
 	}
-	manpower=3681020
-	state_category = town
+	provinces={
+		4280 7428 
+	}
+	manpower=1638100
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }

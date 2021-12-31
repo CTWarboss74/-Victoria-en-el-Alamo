@@ -1,0 +1,25 @@
+state={
+	id=924
+	name="STATE_924"
+	provinces={
+		1381 4416 
+	}
+	history={
+		owner = SRL
+		buildings = {
+			infrastructure = 2
+			4416 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			4416 2
+		}
+		add_core_of = SRL
+		#add_core_of = UTK
+	}
+	manpower=1654300
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

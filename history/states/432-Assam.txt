@@ -6,18 +6,18 @@ state={
 	}
 
 	history={
-		owner = RAJ
+		owner = I05
 		buildings = {
 			infrastructure = 2
-
+			industrial_complex = 1
 		}
-
+		add_core_of = I05
 	}
 
 	provinces={
 		997 1075 1497 1525 1553 1581 7455 7634 10090 10349 10514 12366 12395 
 	}
-	manpower=8977100
+	manpower=6977100
 	buildings_max_level_factor=1.000
 	state_category=town
 

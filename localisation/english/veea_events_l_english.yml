@@ -2,8 +2,8 @@
  mexico.1000.t:0 "Placeholder"
  mexico.1000.d:0 "if you see this, mod is broken :("
  mexico.1000.a:0 "Placeholder"
- mexico.1001.t:0 "Terrorist Attack in Honduras!"
- mexico.1001.d:0 "We have horrifiying news coming in from Tegucigalpa:\ there has been a terrorist attack in the city. \n\n\By reports, it had been a normal morning; people were walking to school and work, the market stalls in the main square were packed with shoppers, and the 8 o'clock train was pulling into the station. Suddenly, at 8:19 AM, a bomb exploded in the 8 o'clock train, causing a huge explosion. Survivor's rushed out of the now burning building, while sirens screamed in the nearby firehouse. By 9, the fire had been quelled, and the devastation was now on full display. The station was ruined; burned and caved in by the explosion, which will cause major delay in the coming days. While the true death toll isn't known quite yet, firemen and paramedics have identified 137 bodies, of both young and old."
+ mexico.1001.t:0 "The 2nd London Stock Market Crash in Mexico"
+ mexico.1001.d:0 "Placeholder"
  mexico.1001.a:0 "¡Maldita sea!"
  mexico_flavour.1.t:0 "Californian-Mexican Trade Deal"
  mexico_flavour.1.d:0 "Politicans and economic advisors alike are rejoycing after the Californians accepted our offer to expand the trade deal we have together. We now see a wide variety of different goods being shipped between our two nations. Already, many citizens, businessmen, and companies are experiencing the affects from this new agreement."
@@ -18,4 +18,7 @@
  mexico.1104.t:0 "Our plea came back fruitless!"
  mexico.1104.d:0 "After a decision that was left up to the British Parliament, they have announced that they will not be sending any assistance to our nation!"
  mexico.1104.a:0 "Those damn British!"
+ mexico.1002.t:0 "The Peasants Revolt!"
+ mexico.1002.d:0 "Placeholder"
+ mexico.1002.a:0 "Dispatch the Military!"
  

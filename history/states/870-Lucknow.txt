@@ -5,20 +5,19 @@ state={
 		1377 
 	}
 	history={
-		owner = MUG
+		owner = I02
 		victory_points = {
 			1377 10 
 		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2 
-			arms_factory = 2
+			arms_factory = 1
 		}
-		add_core_of = MUG
-		add_extra_state_shared_building_slots = 1
+		add_core_of = I02
 	}
 	state_category = town
-	manpower=1175980
+	manpower=1475980
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

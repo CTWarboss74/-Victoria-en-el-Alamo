@@ -1,0 +1,23 @@
+state={
+	id=951
+	name="STATE_951"
+	provinces={
+		8007 10066 10843 10898 12792 
+	}
+	history={
+		victory_points = {
+			8007 2 
+		}
+		owner = I01
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = PAK
+		add_core_of = I01
+	}
+	manpower=2491000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

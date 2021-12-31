@@ -10,37 +10,73 @@ MUG = {
 	color_ui = rgb { 76 153 0 }
 }
 IND = {
-	color = rgb { 39 43 207 }
-	color_ui = rgb { 39 43 207 }
+	color = rgb { 0 51 102 }
+	color_ui = rgb { 0 51 102 }
 }
 HYD = {
 	color = rgb { 184 109 18 }
 	color_ui = rgb { 184 109 18 }
 }
 # Warlords
-I01 = { # Daltonganj
-	color = rgb { 128 110 61 }
-	color_ui = rgb { 128 110 61 }
+I01 = { # Khalistan
+	color = rgb { 224 224 224 }
+	color_ui = rgb { 224 224 224 }
 }
-I02 = { # Purnia
-	color = rgb { 184 29 29 }
-	color_ui = rgb { 184 29 29 }
+I02 = { # HNS
+	color = rgb { 58 58 60 }
+	color_ui = rgb { 58 58 60 }
 }
-I03 = { # Bareilly
-	color = rgb { 82 40 40 }
-	color_ui = rgb { 82 40 40 }
+I03 = { # Sind / Karachi
+	color = rgb { 0 85 169 }
+	color_ui = rgb { 0 85 169 }
 }
 I04 = { # Ahmadabad
 	color = rgb { 115 15 15 }
 	color_ui = rgb { 115 15 15 }
 }
-I05 = { # Dhule / Tapi
-	color = rgb { 184 109 18 }
-	color_ui = rgb { 184 109 18 }
+I05 = { # Assam
+	color = rgb { 144 140 151 }
+	color_ui = rgb { 144 140 151 }
 }
 I06 = { # Kolhapur
-	color = rgb { 184 109 18 }
-	color_ui = rgb { 184 109 18 }
+	color = rgb { 102 178 255 }
+	color_ui = rgb { 102 178 255 }
+}
+I07 = { # Jagdalpur
+	color = rgb { 70 138 59 }
+	color_ui = rgb { 70 138 59 }
+}
+I08 = { # Nagpur
+	color = rgb { 236 249 59 }
+	color_ui = rgb { 236 249 59 }
+}
+I09 = { # Raichur
+	color = rgb { 64 64 64 }
+	color_ui = rgb { 64 64 64 }
+}
+I10 = { # Vijayapura
+	color = rgb { 59 138 135 }
+	color_ui = rgb { 59 138 135 }
+}
+I11 = { # Jabalpur
+	color = rgb { 102 0 51 }
+	color_ui = rgb { 102 0 51 }
+}
+UTK = {
+	color = rgb { 95 43 43 }
+	color_ui = rgb { 95 43 43 }
+}
+NLL = {
+	color = rgb { 213 34 34 }
+	color_ui = rgb { 213 34 34 }
+}
+BNG = {
+	color = rgb { 166 121 121 }
+	color_ui = rgb { 166 121 121 }
+}
+INC = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 128 128 128 }
 }
 # Bangladesh States
 RBD = {
@@ -51,7 +87,22 @@ BSU = {
 	color = rgb { 207 39 39 }
 	color_ui = rgb { 207 39 39 }
 }
+# Other Indian Nation States
+MDR = {
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 201 56 93 }
+}
 
+
+### TAGS ADDED IN VeeA ###
+CON = {
+	color = rgb { 108 0 162 }
+	color_ui = rgb { 108 0 162 }
+}
+GRA = {
+	color = rgb { 242 205 94 }
+	color_ui = rgb { 242 205 94 }
+}
 
 
 GER = {
@@ -128,8 +179,8 @@ SWI = {
 	color_ui = rgb { 193 81 81 }
 }
 TUR = {
-	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 110 8 1 }
+	color_ui = rgb { 110 8 1 }
 }
 GRE = {
 	color = rgb { 93 181 227 }

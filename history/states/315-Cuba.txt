@@ -10,11 +10,11 @@ state= {
 	state_category = town
 
 	history= {
-		owner = CUB
+		owner = GRA
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 3
+			industrial_complex = 1
+			dockyard = 1
 			air_base = 1
 			7622 = {
 				naval_base = 3
@@ -24,6 +24,7 @@ state= {
 			}
 		}
 		add_core_of = CUB
+		add_core_of = GRA
 		victory_points = {
 			7622 5 
 		}

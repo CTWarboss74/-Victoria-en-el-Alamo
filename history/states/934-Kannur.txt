@@ -1,0 +1,25 @@
+state={
+	id=934
+	name="STATE_934"
+	provinces={
+		7391 12275 
+	}
+	history={
+		owner = UTK
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			7391 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			7391 2
+		}
+		add_core_of = UTK
+	}
+	manpower=1621900
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

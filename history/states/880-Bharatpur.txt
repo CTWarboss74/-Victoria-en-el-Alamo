@@ -5,14 +5,14 @@ state={
 		4915 
 	}
 	history={
-		owner = MUG
+		owner = I02
 		victory_points = {
 			4915 1 
 		}
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = MUG
+		add_core_of = I02
 	}
 	manpower=875238
 	state_category = pastoral

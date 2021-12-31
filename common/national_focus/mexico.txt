@@ -32,10 +32,10 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_start_second_new_plan
 		icon = GFX_goal_generic_construction
-		x = 10
+		x = 9
 		y = 0
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 20
@@ -257,12 +257,11 @@ focus_tree = {
 			add_political_power = 25
 		}
 	}
-	## Automobile Investment
 	focus = {
-		id = MEX_focus_future_of_the_automobile
-		icon = GFX_goal_generic_automobile_investment
-		x = 8
-		y = 2
+		id = MEX_focus_expand_mexican_roads
+		icon = GFX_goal_generic_build_railway1
+		x = 9
+		y = 1
 
 		cost = 5
 
@@ -279,50 +278,29 @@ focus_tree = {
 		}
 
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}					
-				}
-			}
+			
 		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
 		completion_reward = {
-			add_political_power = 10
-			random_owned_controlled_state = {
-				prioritize = { 277 478 477 }
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
+			add_political_power = 25
 		}
 	}
 	focus = {
 		id = MEX_focus_central_highways
 		icon = GFX_goal_generic_highway
 		x = 8
-		y = 3
+		y = 2
 
 		cost = 5
 
 		prerequisite = {
-			focus = MEX_focus_future_of_the_automobile
+			focus = MEX_focus_expand_mexican_roads
+		}
+
+		mutually_exclusive = {
+			focus = MEX_focus_rural_connections
 		}
 
 		ai_will_do = {
@@ -425,12 +403,16 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_rural_connections
 		icon = GFX_goal_generic_highway
-		x = 8
-		y = 4
+		x = 10
+		y = 2
 
 		cost = 5
 
 		prerequisite = {
+			focus = MEX_focus_expand_mexican_roads
+		}
+
+		mutually_exclusive = {
 			focus = MEX_focus_central_highways
 		}
 
@@ -473,540 +455,6 @@ focus_tree = {
 			}
 		}
 	}
-	# Assembly Plants
-	focus = {
-		id = MEX_focus_tegucigalpa_assembly_plant
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 6
-		y = 3
-
-		cost = 5
-
-		prerequisite = {
-			focus = MEX_focus_develop_car
-		}
-		prerequisite = {
-			focus = MEX_focus_future_of_the_automobile
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				312 = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}					
-				}
-			}
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
-		completion_reward = {
-			312 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = MEX_focus_motorization_factories
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 6
-		y = 4
-
-		cost = 5
-
-		prerequisite = {
-			focus = MEX_focus_tegucigalpa_assembly_plant
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}					
-				}
-			}
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 277 478 477 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_ideas = MEX_motorization_factories_idea
-		}
-	}
-	## Industrial Might
-	focus = {
-		id = MEX_focus_industrial_might
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 10
-		y = 1
-
-		cost = 5
-
-		prerequisite = {
-			focus = MEX_focus_start_second_new_plan
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}					
-				}
-			}
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 277 478 477 }
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = MEX_focus_southern_industrial_capabilities
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 10
-		y = 2
-
-		cost = 5
-
-		prerequisite = {
-			focus = MEX_focus_industrial_might
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-			OR = {
-				312 = {
-					is_owned_or_subject_trigger = yes
-				}
-				313 = {
-					is_owned_or_subject_trigger = yes
-				}
-				314 = {
-					is_owned_or_subject_trigger = yes
-				}
-			}
-		}
-
-		bypass = {
-			OR = {
-				NOT = {
-					312 = {
-						is_owned_or_subject_trigger = yes
-					}
-					313 = {
-						is_owned_or_subject_trigger = yes
-					}
-					314 = {
-						is_owned_or_subject_trigger = yes
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = construction_effort_tt
-					312 = {
-						free_building_slots = {
-							building = industrial_complex
-							size < 1
-							include_locked = yes
-						}					
-					}
-					313 = {
-						free_building_slots = {
-							building = industrial_complex
-							size < 1
-							include_locked = yes
-						}					
-					}
-					314 = {
-						free_building_slots = {
-							building = industrial_complex
-							size < 1
-							include_locked = yes
-						}					
-					}
-				}
-			}
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
-		completion_reward = {
-			if = {
-				limit = {
-					313 = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
-				}
-				313 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					312 = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
-				}
-				312 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					314 = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
-				}
-				314 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = MEX_focus_expand_oil_industry
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 10
-		y = 3
-
-		cost = 7
-
-		prerequisite = {
-			focus = MEX_focus_southern_industrial_capabilities
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}		
-				}
-			}
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					has_resources_amount = {
-						resource = oil
-						amount > 0
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_resource = {
-					type = oil
-					amount = 5
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					has_resources_amount = {
-						resource = oil
-						amount > 0
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_resource = {
-					type = oil
-					amount = 5
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					has_resources_amount = {
-						resource = oil
-						amount > 0
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_resource = {
-					type = oil
-					amount = 5
-				}
-			}
-		}
-	}
-	focus = {
-		id = MEX_focus_central_industry
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 10
-		y = 4
-
-		cost = 5
-
-		prerequisite = {
-			focus = MEX_focus_expand_oil_industry
-		}
-		prerequisite = {
-			focus = MEX_focus_central_highways
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-			OR = {
-				277 = {
-					is_owned_or_subject_trigger = yes
-				}
-				477 = {
-					is_owned_or_subject_trigger = yes
-				}
-				478 = {
-					is_owned_or_subject_trigger = yes
-				}
-			}
-		}
-
-		bypass = {
-			OR = {
-				NOT = {
-					277 = {
-						is_owned_or_subject_trigger = yes
-					}
-					477 = {
-						is_owned_or_subject_trigger = yes
-					}
-					478 = {
-						is_owned_or_subject_trigger = yes
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = construction_effort_tt
-					277 = {
-						free_building_slots = {
-							building = industrial_complex
-							size < 1
-							include_locked = yes
-						}					
-					}
-					477 = {
-						free_building_slots = {
-							building = industrial_complex
-							size < 1
-							include_locked = yes
-						}					
-					}
-					478 = {
-						free_building_slots = {
-							building = industrial_complex
-							size < 1
-							include_locked = yes
-						}					
-					}
-				}
-			}
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
-		completion_reward = {
-			if = {
-				limit = {
-					277 = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
-				}
-				277 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					477 = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
-				}
-				477 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					478 = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
-				}
-				478 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
 	# Complete the Second New Plan
 	focus = {
 		id = MEX_focus_complete_second_new_plan
@@ -1024,13 +472,7 @@ focus_tree = {
 			focus = MEX_focus_triumphs_of_mexican_railways
 		}
 		prerequisite = {
-			focus = MEX_focus_motorization_factories
-		}
-		prerequisite = {
 			focus = MEX_focus_rural_connections
-		}
-		prerequisite = {
-			focus = MEX_focus_central_industry
 		}
 
 		available = {
@@ -1057,171 +499,6 @@ focus_tree = {
 					has_idea = mex_economic_stagnation
 				}
 				remove_ideas = mex_economic_stagnation
-			}
-		}
-	}
-
-	### SOCIALIST ADVISOR SUBTREE ###
-	focus = {
-		id = MEX_focus_seek_advice_socialist_advisors
-		icon = GFX_focus_generic_soviet_politics
-		x = 10
-		y = 10
-
-		cost = 2
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-			#has_completed_focus = 
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			add_political_power = 25
-			#add_ideas = 
-			custom_effect_tooltip = mex_seek_advice_socialist_tt
-		}
-	}
-	focus = {
-		id = MEX_focus_socialist_education
-		icon = GFX_focus_generic_socialist_science
-		x = 8
-		y = 11
-
-		cost = 3
-
-		prerequisite = {
-			focus = MEX_focus_seek_advice_socialist_advisors
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-			#has_completed_focus = 
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			add_political_power = 25
-			add_ideas = mex_socialist_education_idea_one
-		}
-	}
-	focus = {
-		id = MEX_focus_increase_education_budget
-		icon = GFX_focus_generic_socialist_science
-		x = 8
-		y = 12
-
-		cost = 4
-
-		prerequisite = {
-			focus = MEX_focus_socialist_education
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			add_timed_idea = {
-				idea = MEX_socialist_education_funding_idea
-				days = 180
-			}
-		}
-	}
-	focus = {
-		id = MEX_focus_socialist_military_academies
-		icon = GFX_focus_generic_socialist_science
-		x = 6
-		y = 13
-
-		cost = 4
-
-		prerequisite = {
-			focus = MEX_focus_increase_education_budget
-		}
-
-		mutually_exclusive = {
-			focus = MEX_focus_great_minds_mexico
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_MANPOWER }
-		completion_reward = {
-			add_ideas = MEX_socialist_military_academies_idea
-		}
-	}
-	focus = {
-		id = MEX_focus_great_minds_mexico
-		icon = GFX_focus_generic_socialist_science
-		x = 8
-		y = 13
-
-		cost = 4
-
-		mutually_exclusive = {
-			focus = MEX_focus_socialist_military_academies
-		}
-
-		prerequisite = {
-			focus = MEX_focus_increase_education_budget
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_MANPOWER }
-		completion_reward = {
-			add_to_variable = {
-				var = mex_socialist_education_research_speed
-				value = 0.05
 			}
 		}
 	}

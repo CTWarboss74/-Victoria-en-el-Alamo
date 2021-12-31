@@ -1,0 +1,23 @@
+state={
+	id=925
+	name="STATE_925"
+	provinces={
+		4327 7265 
+	}
+	history={
+		owner = UTK
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			4327 3
+		}
+		add_core_of = UTK
+		#add_core_of = I12
+	}
+	manpower=2419012
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

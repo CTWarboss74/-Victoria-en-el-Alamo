@@ -1,0 +1,87 @@
+ideas = {
+
+	country = {
+		TUR_unfair_treaties_1 = {
+			
+			allowed = {
+				original_tag = TUR
+				always = no
+			}
+
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {		
+				min_export = 0.25
+				consumer_goods_factor = 0.10
+				political_power_cost = 0.25		
+			}
+			
+			targeted_modifier = {
+				tag = ENG
+				cic_to_target_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = GRE
+				cic_to_target_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = ITA
+				cic_to_target_factor = 0.02
+			}
+			targeted_modifier = {
+				tag = BUL
+				cic_to_target_factor = 0.01
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		TUR_ottoman_debt_1 = {
+			
+			allowed = {
+				original_tag = TUR
+				always = no
+			}
+
+			picture = chi_hyper_inflation
+			
+			modifier = {
+				stability_factor = -0.03
+				consumer_goods_factor = 0.05
+				political_power_cost = 0.05
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+	}
+
+	industrial_concern = {
+		
+		tur_allied_economic_council_1 = { # Allied Economic Council
+			
+			picture = tur_etatism
+
+			allowed = {
+				original_tag = TUR
+				
+			}
+			
+			available = {
+				always = yes
+			}
+
+			research_bonus = {
+				industry = 0.1
+			}
+
+			cost = 75
+			
+			traits = { allied_economic_council }
+		}
+
+	}
+}

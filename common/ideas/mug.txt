@@ -1,0 +1,83 @@
+ideas = {	
+
+	country = {
+		the_founding_fathers_fsa = {
+			picture = the_founding_fathers_fsa
+			
+			allowed = {
+			tag = FSA
+			}
+			
+			available = {
+			
+			}
+			
+			cancel = {
+			
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.3
+				war_support_factor = 0.25
+				surrender_limit = 0.25
+			}
+		}
+		land_of_the_free_home_of_the_brave = {
+			picture = the_founding_fathers_fsa
+			
+			allowed = {
+			tag = FSA
+			}
+			
+			available = {
+			
+			}
+			
+			cancel = {
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.3
+				fascism_acceptance = -50
+				communism_acceptance = -50
+			}
+		}
+		battlefield_america = {
+			picture = the_founding_fathers_fsa
+			
+			allowed = {
+			tag = FSA
+			}
+			
+			available = {
+			
+			}
+			
+			cancel = {
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+		}
+	}
+}

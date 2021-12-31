@@ -4,6 +4,11 @@ UK_COLONY = {
     color_ui = rgb { 201 56 93 }
 }
 
+OTTOMAN_EMPIRE = {
+	color = rgb { 135 13 1 }
+    color_ui = rgb { 135 13 1 }
+}
+
 MAL_UK = {
     color = rgb { 201 56 93 }
     color_ui = rgb { 255 73 121 }

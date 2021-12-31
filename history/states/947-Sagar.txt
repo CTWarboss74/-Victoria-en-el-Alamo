@@ -1,0 +1,22 @@
+state={
+	id=947
+	name="STATE_947"
+	provinces={
+		4953 5096 
+	}
+	history={
+		owner = INC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			4953 2
+		}
+		add_core_of = INC
+	}
+	manpower=1582000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

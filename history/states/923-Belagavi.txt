@@ -1,0 +1,23 @@
+state={
+	id=923
+	name="STATE_923"
+	provinces={
+		4291 4395 
+	}
+	history={
+		owner = I09
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			4291 3
+		}
+		add_core_of = I09
+
+	}
+	manpower=2092300
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

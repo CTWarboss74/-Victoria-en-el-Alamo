@@ -328,7 +328,7 @@ units = {
 		start_equipment_factor = 0.6
 	}
 	division = {
-		location = 10171 # Aguascalientes
+		location = 10172 # Aguascalientes
 		division_template = "Brigada Agrarista"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7

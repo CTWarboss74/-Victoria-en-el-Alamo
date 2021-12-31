@@ -1,0 +1,29 @@
+state={
+	id=926
+	name="STATE_926"
+	provinces={
+		7436 10278 
+	}
+	history={
+		owner = MDR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 2
+			10278 = {
+				naval_base = 4
+
+			}
+
+		}
+		victory_points = {
+			10278 20 
+		}
+		add_core_of = MDR
+	}
+	manpower=3728100
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
