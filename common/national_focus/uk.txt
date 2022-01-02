@@ -1139,11 +1139,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			set_politics = {
-				ruling_party = communism
-				last_election = "1935.11.14"
-				election_frequency = 48
-				elections_allowed = yes
-			}
+			ruling_party = socialism
+			last_election = "1935.11.14"
+			election_frequency = 48
+			elections_allowed = yes
+}
 		}
 	}
 	
@@ -1181,7 +1181,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			#add_ideas = ENG_strengthening_old_ties
+			add_ideas = ENG_strengthening_old_ties
 		}
 	}
 	focus = {
@@ -1199,8 +1199,26 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			#AUS = { country_event = uk.1 }
+			AUS = { country_event = uk.1 }
 
+		}
+	}
+	focus = {
+		id = ENG_focus_prepare_for_second_great_war
+		icon = GFX_goal_unknown
+		x = 4
+		y = 15
+		cost = 5
+		prerequisite = {
+			focus = ENG_focus_our_allies_on_the_danube
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		add_ideas = ENG_rearmament
 		}
 	}
 	focus = {
@@ -1218,10 +1236,50 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			#POR = { country_event = uk.2}
+			POR = { country_event = uk.4}
 
 		}
 	}
+	focus = {
+		id = ENG_focus_our_dutch_friends
+		icon = GFX_goal_unknown
+		x = 6
+		y = 15
+		cost = 5
+		prerequisite = {
+			focus = ENG_focus_our_iberian_brothers
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			HOL = { country_event = uk.16}		
+		}
+	}
+	focus = {
+		id = ENG_focus_new_grand_alliance
+		icon = GFX_goal_unknown
+		x = 5
+		y = 16
+		cost = 5
+		prerequisite = {
+			focus = ENG_focus_our_dutch_friends
+		}
+		prerequisite = {
+			focus = ENG_focus_prepare_for_second_great_war
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		set_faction_name = "Grand Alliance"
+		}
+	}
+	# New Friends path
 	focus = {
 		id = ENG_focus_our_new_friends
 		icon = GFX_goal_unknown
@@ -1259,7 +1317,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			#FRA = { country_event = uk.3}
+			FRA = { country_event = uk.7}
 		}
 	}
 	focus = {
@@ -1277,9 +1335,64 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			#ITA = { country_event = uk.3}
+			ITA = { country_event = uk.11}
 		}
 	}
+	focus = {
+		id = ENG_focus_formalise_the_alliance
+		icon = GFX_goal_unknown
+		x = 26
+		y = 15
+		cost = 5
+		prerequisite = {
+			focus = ENG_focus_proposal_to_italians
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			ITA = { country_event = uk.13}
+		}
+	}
+	focus = {
+		id = ENG_focus_friends_on_the_volga
+		icon = GFX_goal_unknown
+		x = 24
+		y = 16
+		cost = 5
+		prerequisite = {
+			focus = ENG_focus_proposition_to_the_low_countries
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			SOV = { country_event = uk.22}
+		}
+	}
+	focus = {
+		id = ENG_focus_proposition_to_the_low_countries
+		icon = GFX_goal_unknown
+		x = 24
+		y = 15
+		cost = 5
+		prerequisite = {
+			focus = ENG_focus_deal_with_french_devil
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			HOL = { country_event = uk.16}
+		}
+	}
+	# Empire focuses
 	focus = {
 		id = ENG_focus_state_of_our_empire
 		icon = GFX_goal_unknown
@@ -1339,6 +1452,7 @@ focus_tree = {
 
 		}
 	}
+	# The American plan
 	focus = {
 		id = ENG_focus_the_american_plan
 		icon = GFX_goal_unknown
@@ -1354,8 +1468,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-		add_political_power = 50
-
+			ENG = { country_event = uk.12}		
 		}
 	}
 	focus = {
@@ -1377,32 +1490,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 		add_political_power = 50
-
-		}
-	}
-	focus = {
-		id = ENG_focus_ambassador_bridge_incident
-		icon = GFX_goal_unknown
-		x = 17
-		y = 17
-		cost = 10
-		prerequisite = {
-			focus = ENG_focus_the_american_plan
-		}
-		mutually_exclusive = {
-			focus = ENG_focus_talks_with_free_states
-		}
-		ai_will_do = {
-			factor = 1
-		}
-
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-		create_wargoal = {
-			type = annex_everything
-			target = FSA
-			expire = 0
-		}
 
 		}
 	}
@@ -1470,6 +1557,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+		MAS = { country_event = uk.10 }
 		}
 	}
 	focus = {
@@ -1495,7 +1583,101 @@ focus_tree = {
 
 		}
 	}
-	
+	focus = {
+		id = ENG_focus_invest_in_detroit
+		icon = GFX_goal_unknown
+		x = 15
+		y = 18
+		cost = 10
+		prerequisite = {
+			focus = ENG_focus_talks_with_free_states
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+393	= {	
+		add_building_construction = {
+		type = arms_factory
+		level = 3
+		instant_build = yes
+		}
+		add_building_construction = {
+		type = industrial_complex
+		level = 2
+		instant_build = yes
+			}
+		}
+	}
+}
+	focus = {
+		id = ENG_focus_lafayette_conference
+		icon = GFX_goal_unknown
+		x = 15
+		y = 19
+		cost = 10
+		prerequisite = {
+			focus = ENG_focus_invest_in_detroit
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		FSA = { country_event = uk.19 }		
+		}
+	}
+	focus = {
+		id = ENG_focus_eliminate_communard_threat
+		icon = GFX_goal_unknown
+		x = 15
+		y = 20
+		cost = 10
+		prerequisite = {
+			focus = ENG_focus_lafayette_conference
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+	FSA = {
+		create_wargoal = {
+			type = puppet
+			target = NOV
+			expire = 0
+		}
+		}
+	}
+	}
+	focus = {
+		id = ENG_focus_support_virginian_republicans
+		icon = GFX_goal_unknown
+		x = 15
+		y = 21
+		cost = 10
+		prerequisite = {
+			focus = ENG_focus_eliminate_communard_threat
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+	FSA = {
+		create_wargoal = {
+			type = puppet
+			target = VIR
+			expire = 0
+		}
+		}
+	}
+	}
 	
 	
 	
@@ -1562,7 +1744,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-		#add_ideas = ENG_raf_cuts
+		add_ideas = ENG_raf_cuts
 		}
 	}
 	focus = {
@@ -1580,7 +1762,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-		#add_ideas = ENG_army_cuts
+		add_ideas = ENG_army_cuts
 		}
 	}
 }
