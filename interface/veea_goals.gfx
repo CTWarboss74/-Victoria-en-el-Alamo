@@ -16,6 +16,18 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_generic_highway"
 		texturefile = "gfx/interface/goals/goal_generic_highway.dds"			
-	}				
+	}		
+	SpriteType = {
+		name = "GFX_goal_mex_montes_project"
+		texturefile = "gfx/interface/goals/goal_mex_montes_project.dds"			
+	}	
+	SpriteType = {
+		name = "GFX_goal_mex_second_lsmc"
+		texturefile = "gfx/interface/goals/goal_mex_second_lsmc.dds"			
+	}	
+	SpriteType = {
+		name = "GFX_goal_generic_budget_cuts"
+		texturefile = "gfx/interface/goals/goal_generic_budget_cuts.dds"			
+	}	
 
 }

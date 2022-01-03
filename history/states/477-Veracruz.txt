@@ -12,7 +12,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			dockyard = 2
-			industrial_complex = 3 
+			industrial_complex = 2
 			12810 = {
 				naval_base = 3
 
@@ -30,7 +30,9 @@ state={
 		victory_points = {
 			10889 1 
 		}
-
+		victory_points = {
+			2021 3 
+		}
 	}
 
 	provinces={

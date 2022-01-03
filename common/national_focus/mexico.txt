@@ -25,20 +25,19 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 70 y = 1100 }
-	
 
-	### INDUSTRIAL / SECOND NEW PLAN TREE ###
-	# Starting focus
+
+	### Industrial Tree ###
 	focus = {
-		id = MEX_focus_start_second_new_plan
-		icon = GFX_goal_generic_construction
-		x = 9
+		id = MEX_focus_need_for_a_modern_industry
+		icon = GFX_goal_unknown
+		x = 17
 		y = 0
 
-		cost = 3
+		cost = 2
 
 		ai_will_do = {
-			factor = 20
+			factor = 25
 		}
 
 		available = {
@@ -50,69 +49,21 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			add_political_power = 50
-			if = {
-				limit = {
-					NOT = {
-						has_idea = mex_second_new_plan
-					}
-				}
-				add_ideas = mex_second_new_plan
-			}
-		}
-	}
-	
-	## CMIF BRANCH ##
-	focus = {
-		id = MEX_focus_establish_cmif
-		icon = GFX_goal_generic_construction
-		x = 4
-		y = 1
-
-		cost = 5
-		
-
-		prerequisite = {
-			focus = MEX_focus_start_second_new_plan
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
 			
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
-		completion_reward = {
-			add_political_power = 25
-			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = MEX_mrc
-			custom_effect_tooltip = mex_establish_cmif_invest_tt
 		}
 	}
 	focus = {
-		id = MEX_focus_develop_cmr # Develop the Central Mexican Railways
-		icon = GFX_goal_generic_build_railway1
-		x = 2
+		id = MEX_focus_start_second_new_plan
+		icon = GFX_goal_unknown
+		x = 17
 		y = 2
 
 		cost = 3
 
-		prerequisite = {
-			focus = MEX_focus_establish_cmif
-		}
-
 		ai_will_do = {
-			factor = 20
+			factor = 25
 		}
 
 		available = {
@@ -122,48 +73,33 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		available_if_capitulated = yes
+		prerequisite = {
+			focus = MEX_focus_need_for_a_modern_industry
+		}
+		prerequisite = {
+			focus = MEX_form_crisis_relief_association
+		}
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
 		completion_reward = {
-			add_political_power = 25
-			build_railway = {
-				path = { 12810 10889 2021 12867 1900 }
-			}
-			build_railway = {
-				path = { 8032 5066 10730 12712 8236 }
-			}
-			build_railway = {
-				path = { 12745 12827 13214 10765 10848 2069 12833 13215 12461 1892 }
-			}
-			484 = {
-				add_building_construction = {
-					type = supply_node
-					level = 1
-					province = 12461
-					instant_build = yes
-				}
-			}
+			add_ideas = mex_second_new_plan
 		}
 	}
+
+	### 2nd LSMC Tree ###
 	focus = {
-		id = MEX_focus_develop_trr # Develop the Texan Regional Railways
-		icon = GFX_goal_generic_build_railway1
-		x = 4
-		y = 2
+		id = MEX_focus_second_lsmc
+		icon = GFX_goal_mex_second_lsmc
+		x = 12
+		y = 0
 
-		cost = 4
-
-		prerequisite = {
-			focus = MEX_focus_establish_cmif
-		}
+		cost = 1
 
 		ai_will_do = {
-			factor = 20
+			factor = 25
 		}
 
 		available = {
-			
+			always = no
 		}
 
 		bypass = {
@@ -171,106 +107,22 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_political_power = 25
-			build_railway = {
-				path = { 10337 12341 1927 12782 }
-			}
-			build_railway = {
-				path = { 6785 6987 }
-			}
-			build_railway = {
-				path = { 3960 10861 10504 10337 }
-			}
-			build_railway = {
-				path = { 4975 8070 12720 1998 12301 1915 7981 3960 }
-			}
+			custom_effect_tooltip = focus_locked_autocomplete_event_tt
 		}
 	}
+	#
 	focus = {
-		id = MEX_focus_develop_car # Develop the Central American Railways
-		icon = GFX_goal_generic_build_railway1
-		x = 6
-		y = 2
-
-		cost = 4
-
-		prerequisite = {
-			focus = MEX_focus_establish_cmif
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
-		completion_reward = {
-			add_political_power = 25
-			build_railway = {
-				path = { 12865 13093 12823 10886 13085 4991 2077 4965 }
-			}
-		}
-	}
-	focus = {
-		id = MEX_focus_triumphs_of_mexican_railways
-		icon = GFX_goal_generic_build_railway1
-		x = 4
-		y = 3
-
-		cost = 4
-
-		prerequisite = {
-			focus = MEX_focus_develop_cmr
-		}
-		prerequisite = {
-			focus = MEX_focus_develop_trr
-		}
-		prerequisite = {
-			focus = MEX_focus_develop_car
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
-		completion_reward = {
-			add_political_power = 25
-		}
-	}
-	focus = {
-		id = MEX_focus_expand_mexican_roads
-		icon = GFX_goal_generic_build_railway1
-		x = 9
+		id = MEX_focus_emergency_budget_cuts
+		icon = GFX_goal_generic_budget_cuts
+		x = 11
 		y = 1
 
-		cost = 5
-
-		prerequisite = {
-			focus = MEX_focus_start_second_new_plan
-		}
+		cost = 2
 
 		ai_will_do = {
-			factor = 20
+			factor = 30
 		}
 
 		available = {
@@ -280,144 +132,29 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
-		completion_reward = {
-			add_political_power = 25
-		}
-	}
-	focus = {
-		id = MEX_focus_central_highways
-		icon = GFX_goal_generic_highway
-		x = 8
-		y = 2
-
-		cost = 5
-
 		prerequisite = {
-			focus = MEX_focus_expand_mexican_roads
-		}
-
-		mutually_exclusive = {
-			focus = MEX_focus_rural_connections
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-			OR = {
-				has_full_control_of_state = 277
-				has_full_control_of_state = 477
-				has_full_control_of_state = 478
-			}
-		}
-
-		bypass = {
-			OR = {
-				custom_trigger_tooltip = {
-					tooltip = infrastructure_effort_tt
-					277 = {			
-						free_building_slots = {
-							building = infrastructure
-							size < 1
-						}
-					}
-					477 = {			
-						free_building_slots = {
-							building = infrastructure
-							size < 1
-						}
-					}
-					478 = {			
-						free_building_slots = {
-							building = infrastructure
-							size < 1
-						}
-					}
-				}
-				NOT = {
-					has_full_control_of_state = 277
-					has_full_control_of_state = 477
-					has_full_control_of_state = 478
-				}
-			}	
+			focus = MEX_focus_second_lsmc
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			277 = {
-				if = {
-					limit = { 
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			477 = {
-				if = {
-					limit = { 
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-						}
-					}
-
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			478 = {
-				if = {
-					limit = { 
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
+			add_timed_idea = {
+				idea = mex_emergency_budget_cuts_idea
+				days = 365
 			}
 		}
 	}
 	focus = {
-		id = MEX_focus_rural_connections
-		icon = GFX_goal_generic_highway
-		x = 10
-		y = 2
+		id = MEX_form_crisis_relief_association
+		icon = GFX_goal_unknown
+		x = 13
+		y = 1
 
-		cost = 5
-
-		prerequisite = {
-			focus = MEX_focus_expand_mexican_roads
-		}
-
-		mutually_exclusive = {
-			focus = MEX_focus_central_highways
-		}
+		cost = 2
 
 		ai_will_do = {
-			factor = 20
+			factor = 30
 		}
 
 		available = {
@@ -425,65 +162,304 @@ focus_tree = {
 		}
 
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
-					free_building_slots = {
-						building = infrastructure
-						size < 3
-					}
-				}
-			}	
+			
+		}
+		prerequisite = {
+			focus = MEX_focus_second_lsmc
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			every_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 2
-					}
-					
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
+			swap_ideas = {
+				remove_idea = mex_second_lsmc_initial
+				add_idea = mex_second_lsmc_1
 			}
 		}
 	}
-	# Complete the Second New Plan
 	focus = {
-		id = MEX_focus_complete_second_new_plan
-		icon = GFX_goal_generic_construction
+		id = MEX_focus_the_associations_four_year_relief_act
+		icon = GFX_goal_unknown
+		x = 13
+		y = 4
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+		prerequisite = {
+			focus = MEX_form_crisis_relief_association
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = mex_second_lsmc_1
+				add_idea = mex_second_lsmc_2
+			}
+		}
+	}
+	focus = {
+		id = MEX_focus_public_works_act
+		icon = GFX_goal_unknown
 		x = 10
 		y = 5
 
-		cost = 5
+		cost = 2
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+		prerequisite = {
+			focus = MEX_focus_the_associations_four_year_relief_act
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			add_ideas = mex_public_works_act_idea
+		}
+	}
+	focus = {
+		id = MEX_focus_prefer_factory_construction
+		icon = GFX_goal_unknown
+		x = 9
+		y = 6
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 20
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_prefer_infra_construction
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+		prerequisite = {
+			focus = MEX_focus_public_works_act
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			add_political_power = 10
+			if = {
+				limit = {
+					has_idea = mex_public_works_act_idea
+				}
+				swap_ideas = {
+					remove_idea = mex_public_works_act_idea
+					add_idea = mex_public_works_act_factories_idea
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_focus_prefer_infra_construction
+		icon = GFX_goal_unknown
+		x = 11
+		y = 6
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 20
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_prefer_factory_construction
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+		prerequisite = {
+			focus = MEX_focus_public_works_act
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			add_political_power = 10
+			if = {
+				limit = {
+					has_idea = mex_public_works_act_idea
+				}
+				swap_ideas = {
+					remove_idea = mex_public_works_act_idea
+					add_idea = mex_public_works_act_infra_idea
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_focus_reform_the_national_bank
+		icon = GFX_goal_unknown
+		x = 13
+		y = 5
+
+		cost = 2
 
 		ai_will_do = {
 			factor = 20
 		}
 
-		prerequisite = {
-			focus = MEX_focus_triumphs_of_mexican_railways
+		available = {
+			
+		}
+
+		bypass = {
+			
 		}
 		prerequisite = {
-			focus = MEX_focus_rural_connections
+			focus = MEX_focus_the_associations_four_year_relief_act
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			add_ideas = mex_national_bank_reformed_1
+		}
+	}
+	focus = {
+		id = MEX_focus_create_new_employment_opportunities
+		icon = GFX_goal_unknown
+		x = 15
+		y = 5
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 20
 		}
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = mex_csnp_infra_rating_tt
-				check_variable = {
-					var = mex_infrastructure_rating
-					value = 60
-					compare = greater_than_or_equals
+			
+		}
+
+		bypass = {
+			
+		}
+		prerequisite = {
+			focus = MEX_focus_the_associations_four_year_relief_act
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			add_ideas = mex_new_jobs_1
+		}
+	}
+	focus = {
+		id = MEX_focus_emergency_housing_act
+		icon = GFX_goal_unknown
+		x = 11
+		y = 2
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+		prerequisite = {
+			focus = MEX_form_crisis_relief_association
+		}
+		prerequisite = {
+			focus = MEX_focus_emergency_budget_cuts
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = MEX_focus_the_montes_proposition
+		icon = GFX_goal_mex_montes_project
+		x = 11
+		y = 3
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+		prerequisite = {
+			focus = MEX_focus_emergency_housing_act
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_ideas = mex_montes_project
+			hidden_effect = {
+				random_list = {
+					50 = {
+
+					}
 				}
 			}
+		}
+	}
+	#
+	focus = {
+		id = MEX_focus_meet_with_the_strikers
+		icon = GFX_goal_unknown
+		x = 8
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 25
+		}
+		prerequisite = {
+			focus = MEX_focus_second_lsmc
+		}
+
+		available = {
+			always = no
 		}
 
 		bypass = {
@@ -491,19 +467,156 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SECOND_NEW_PLAN}
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_political_power = 50
-			if = {
+			custom_effect_tooltip = focus_locked_autocomplete_event_tt
+		}
+	}
+	focus = {
+		id = MEX_focus_strikers_agree_to_demands
+		icon = GFX_goal_unknown
+		x = 7
+		y = 2
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 25
+		}
+		prerequisite = {
+			focus = MEX_focus_meet_with_the_strikers
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_strikers_refuse_demands
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_timed_idea = {
+				idea = mex_strikers_demands_met_idea
+				days = 730
+			}
+			every_owned_state = {
 				limit = {
-					has_idea = mex_economic_stagnation
+					has_dynamic_modifier = {
+						modifier = MEX_factory_strikes
+					}
 				}
-				remove_ideas = mex_economic_stagnation
+				remove_dynamic_modifier = {
+					modifier = MEX_factory_strikes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_focus_strikers_refuse_demands
+		icon = GFX_goal_unknown
+		x = 9
+		y = 2
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 25
+		}
+		prerequisite = {
+			focus = MEX_focus_meet_with_the_strikers
+		}
+		mutually_exclusive = {
+			focus = MEX_focus_strikers_agree_to_demands
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = MEX_civil_discontent
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = MEX_civil_discontent
+				}
+				add_dynamic_modifier = {
+					modifier = MEX_factory_strikes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = MEX_civil_discontent
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = MEX_civil_discontent
+				}
+				add_dynamic_modifier = {
+					modifier = MEX_factory_strikes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_focus_strikers_crack_down
+		icon = GFX_goal_unknown
+		x = 9
+		y = 3
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 25
+		}
+		prerequisite = {
+			focus = MEX_focus_strikers_refuse_demands
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = -25
+			every_owned_state = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = MEX_factory_strikes
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = MEX_factory_strikes
+				}
+				add_dynamic_modifier = {
+					modifier = MEX_civil_discontent
+				}
 			}
 		}
 	}
 
-	# New Focus Tree
 	### POLITICAL TREE ###
 	focus = {
 		id = MEX_focus_lurking_danger
@@ -539,14 +652,14 @@ focus_tree = {
 		x = 40
 		y = 1
 
-		cost = 5
+		cost = 1
 		mutually_exclusive = {
 			focus = MEX_focus_strengthen_monarchy
 			focus = MEX_focus_radicalism_rise
 		}
 
 		ai_will_do = {
-			factor = 25
+			factor = 1
 		}
 
 		prerequisite = {
@@ -554,7 +667,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			always = no
 		}
 
 		bypass = {
@@ -564,10 +677,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.03
-			}
+			custom_effect_tooltip = focus_locked_autocomplete_event_tt
 		}
 	}
 	# Create Congress
@@ -664,9 +774,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = MEX_focus_sep_church_and_state
-		}
-		prerequisite = {
-			focus = MEX_focus_disband_eumdm
 		}
 
 		available = {
@@ -992,103 +1099,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_EUMDM}
 		completion_reward = {
-			if = {
-				limit = {
-					has_country_leader = {
-						name = "María Josepha"
-						ruling_only = yes
-					}
-				}
-				country_event = mexico.1100
-			}
 			add_stability = 0.1	
 		}
 	}
-
-	## DISBAND EUMFDM ##
-	focus = {
-		id = MEX_focus_limit_eumdm
-		icon = GFX_focus_generic_military_mission
-		x = 44
-		y = 2
-
-		cost = 6
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		prerequisite = {
-			focus = MEX_focus_fed_power_now
-			focus = MEX_focus_strengthen_monarchy
-		}
-
-		available = {
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_EUMDM}
-		completion_reward = {
-			if = {
-				limit = {
-					has_idea = mex_eumdm
-				}
-				remove_ideas = mex_eumdm
-				add_ideas = mex_eumdm_limit
-			}	
-		}
-	}
-	focus = {
-		id = MEX_focus_disband_eumdm
-		icon = GFX_focus_mex_caudillo_private_armies
-		x = 44
-		y = 3
-
-		cost = 8
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		prerequisite = {
-			focus = MEX_focus_limit_eumdm
-		}
-
-		available = {
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_EUMDM}
-		completion_reward = {
-			remove_ideas = mex_eumdm_limit
-			delete_unit_template_and_units = {
-				division_template = "Milicia popular"
-			}
-			delete_unit_template_and_units = {
-				division_template = "Milicia popular montada"
-			}
-			delete_unit_template_and_units = {
-				division_template = "Fuerza Paramilitar Liberal"
-			}
-		}
-	}
-
 	## MONARCHIST ROUTE ##
 	focus = {
 		id = MEX_focus_strengthen_monarchy
@@ -1096,7 +1109,7 @@ focus_tree = {
 		x = 48
 		y = 1
 
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 25
@@ -1111,7 +1124,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			always = no
 		}
 
 		bypass = {
@@ -1121,111 +1134,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_political_power = 35
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.03
-			}
-		}
-	}
-	# Kill Salvador Abascal
-	focus = {
-		id = MEX_focus_execute_salvador_abascal
-		icon = GFX_goal_generic_political_pressure
-		x = 46
-		y = 2
-
-		cost = 4
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		prerequisite = {
-			focus = MEX_focus_strengthen_monarchy
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			add_political_power = 10
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.05
-			}
-		}
-	}
-	focus = {
-		id = MEX_focus_exile_fascist_leaders
-		icon = GFX_focus_generic_anti_fascist_diplomacy
-		x = 46
-		y = 3
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		prerequisite = {
-			focus = MEX_focus_execute_salvador_abascal
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.05
-			}
-		}
-	}
-	# Return Stability to Mexico
-	focus = {
-		id = MEX_focus_return_stability_to_mexico
-		icon = GFX_goal_generic_neutrality_focus
-		x = 48
-		y = 2
-
-		cost = 6
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		prerequisite = {
-			focus = MEX_focus_strengthen_monarchy
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			add_stability = 0.05
-			add_ideas = MEX_stability_returns_idea
+			custom_effect_tooltip = focus_locked_autocomplete_event_tt
 		}
 	}
 
@@ -1236,7 +1145,7 @@ focus_tree = {
 		x = 56
 		y = 1
 
-		cost = 3
+		cost = 1
 		mutually_exclusive = {
 			focus = MEX_focus_strengthen_monarchy
 			focus = MEX_focus_fed_power_now
@@ -1251,7 +1160,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			always = no
 		}
 
 		bypass = {
@@ -1261,154 +1170,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_political_power = 25
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
+			custom_effect_tooltip = focus_locked_autocomplete_event_tt
 		}
 	}
-	# Strengthen the Synarchists Path
-	focus = {
-		id = MEX_focus_synarchist_grand_council
-		icon = GFX_goal_support_fascism
-		x = 54
-		y = 2
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		prerequisite = {
-			focus = MEX_focus_radicalism_rise
-		}
-
-		mutually_exclusive = {
-			focus = MEX_focus_counter_revolution
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-		}
-	}
-	# The Counter-Revolution
-    focus = {
-		id = MEX_focus_counter_revolution
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
-		x = 58
-		y = 2
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		prerequisite = {
-			focus = MEX_focus_radicalism_rise
-		}
-		mutually_exclusive = {
-			focus = MEX_focus_synarchist_grand_council
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-		}
-	}
-	focus = {
-		id = MEX_focus_red_mexico
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
-		x = 58
-		y = 3
-
-		cost = 2
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		prerequisite = {
-			focus = MEX_focus_counter_revolution
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.02
-			}
-		}
-	}
-	focus = {
-		id = MEX_focus_arm_the_workers
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
-		x = 58
-		y = 5
-
-		cost = 3
-		#allow_branch = {
-		#	has_political_power > 100
-		#}
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			has_completed_focus = MEX_focus_red_mexico
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-			}
-		}
-	}
-
-	
 	
 }

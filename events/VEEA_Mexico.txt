@@ -27,7 +27,56 @@ country_event = {
 
 	immediate = {
 		country_event = {
-			id = mexico.1001 days = 5
+			id = mexico.1001 days = 18
+		}
+		random_owned_controlled_state = {
+			limit = {
+				NOT = {
+					state = 850
+					state = 477
+					state = 478
+				}
+			}
+			set_state_flag = mex_easy_civil_discontent_one_flag
+		}
+		random_owned_controlled_state = {
+			limit = {
+				NOT = {
+					state = 850
+					state = 477
+					state = 478
+				}
+			}
+			set_state_flag = mex_easy_civil_discontent_one_flag
+		}
+		random_owned_controlled_state = {
+			limit = {
+				NOT = {
+					state = 850
+					state = 477
+					state = 478
+				}
+			}
+			set_state_flag = mex_easy_civil_discontent_one_flag
+		}
+		random_owned_controlled_state = {
+			limit = {
+				NOT = {
+					state = 850
+					state = 477
+					state = 478
+				}
+			}
+			set_state_flag = mex_easy_civil_discontent_one_flag
+		}
+		850 = {
+			set_state_flag = mex_easy_civil_discontent_one_flag
+		}
+		477 = {
+			set_state_flag = mex_easy_civil_discontent_one_flag
+		}
+		478 = {
+			set_state_flag = mex_easy_civil_discontent_one_flag
 		}
 	}
 
@@ -41,36 +90,162 @@ country_event = {
 	title = mexico.1001.t
 	desc = mexico.1001.d
 
-	picture = GFX_report_event_generic_train
+	picture = GFX_report_event_gathering_protest
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
 
-	#immediate = {
-	#	country_event = {
-	#		id = mexico.1002 days = 6
-	#	}
-	#}
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = mexico.1004 days = 10
+			}
+			if = {
+				limit = {
+					NOT = {
+						852 = {
+							has_state_flag = mex_easy_civil_discontent_one_flag
+						}
+					}
+				}
+				852 = {
+					set_state_flag = mex_easy_civil_discontent_two_flag
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						485 = {
+							has_state_flag = mex_easy_civil_discontent_one_flag
+						}
+					}
+				}
+				485 = {
+					set_state_flag = mex_easy_civil_discontent_two_flag
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						851 = {
+							has_state_flag = mex_easy_civil_discontent_one_flag
+						}
+					}
+				}
+				851 = {
+					set_state_flag = mex_easy_civil_discontent_two_flag
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						853 = {
+							has_state_flag = mex_easy_civil_discontent_one_flag
+						}
+					}
+				}
+				853 = {
+					set_state_flag = mex_easy_civil_discontent_two_flag
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						847 = {
+							has_state_flag = mex_easy_civil_discontent_one_flag
+						}
+					}
+				}
+				847 = {
+					set_state_flag = mex_easy_civil_discontent_two_flag
+				}
+			}
+		}
+	}
 
 	option = {
 		name = mexico.1001.a
 		add_political_power = -25
+		every_owned_state = {
+			limit = {
+				has_state_flag = mex_easy_civil_discontent_one_flag
+			}
+			add_dynamic_modifier = {
+				modifier = MEX_civil_discontent
+			}
+		}
 		if = {
 			limit = {
 				has_idea = mex_economic_stagnation
 			}
 			remove_ideas = mex_economic_stagnation
 		}
-		add_ideas = mex_second_lsmc
+		add_ideas = mex_second_lsmc_initial
+		complete_national_focus = MEX_focus_second_lsmc
 	}
 }
-# Second in Event Chain - The Peasantry Revolt
+# Second Event in Chain - Factory Strikes
+country_event = {
+	id = mexico.1004
+	title = mexico.1004.t
+	desc = mexico.1004.d
+
+	picture = GFX_report_event_worker_protests
+	
+	fire_only_once = yes 
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = mexico.1002 days = 8
+			}
+		}
+	}
+
+	option = {
+		name = mexico.1004.a
+		478 = {
+			add_dynamic_modifier = {
+				modifier = MEX_factory_strikes
+			}
+		}
+		850 = {
+			remove_dynamic_modifier = {
+				modifier = MEX_civil_discontent
+			}
+			add_dynamic_modifier = {
+				modifier = MEX_factory_strikes
+			}
+		}
+		477 = {
+			remove_dynamic_modifier = {
+				modifier = MEX_civil_discontent
+			}
+			add_dynamic_modifier = {
+				modifier = MEX_factory_strikes
+			}
+		}
+
+		every_owned_state = {
+			limit = {
+				has_state_flag = mex_easy_civil_discontent_two_flag
+			}
+			add_dynamic_modifier = {
+				modifier = MEX_civil_discontent
+			}
+		}
+	}
+}
+
+
+# Third in Event Chain - The Peasantry Revolt
 country_event = {
 	id = mexico.1002
 	title = mexico.1002.t
 	desc = mexico.1002.d
 
-	picture = GFX_report_event_generic_train
+	picture = GFX_report_event_gre_rural_rebels
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -84,34 +259,77 @@ country_event = {
 	option = {
 		name = mexico.1002.a
 		478 = {
+			remove_dynamic_modifier = {
+				modifier = MEX_civil_discontent
+			}
 			add_dynamic_modifier = {
 				modifier = MEX_peasant_revolt
 			}
 		}
 		852 = {
+			remove_dynamic_modifier = {
+				modifier = MEX_civil_discontent
+			}
 			add_dynamic_modifier = {
 				modifier = MEX_peasant_revolt
 			}
 		}
 		485 = {
+			remove_dynamic_modifier = {
+				modifier = MEX_civil_discontent
+			}
 			add_dynamic_modifier = {
 				modifier = MEX_peasant_revolt
 			}
 		}
 		851 = {
+			remove_dynamic_modifier = {
+				modifier = MEX_civil_discontent
+			}
 			add_dynamic_modifier = {
 				modifier = MEX_peasant_revolt
 			}
 		}
 		853 = {
+			remove_dynamic_modifier = {
+				modifier = MEX_civil_discontent
+			}
 			add_dynamic_modifier = {
 				modifier = MEX_peasant_revolt
 			}
 		}
 		847 = {
+			remove_dynamic_modifier = {
+				modifier = MEX_civil_discontent
+			}
 			add_dynamic_modifier = {
 				modifier = MEX_peasant_revolt
 			}
+		}
+	}
+}
+# Offshoot Event - Food Shortages
+country_event = {
+	id = mexico.1003
+	title = mexico.1003.t
+	desc = mexico.1003.d
+
+	picture = GFX_report_event_worker_protests
+	
+	fire_only_once = yes 
+	is_triggered_only = yes
+
+	#immediate = {
+	#	country_event = {
+	#		id = mexico.1002 days = 6
+	#	}
+	#}
+
+	option = {
+		name = mexico.1003.a
+		add_timed_idea = {
+			idea = mex_food_shortages
+			days = 180
 		}
 	}
 }
@@ -209,6 +427,46 @@ country_event = {
 		add_opinion_modifier = {
 			target = ENG
 			modifier = medium_decrease
+		}
+	}
+}
+
+### MONTES PROJECT ###
+# Monte Project finishes underbudget
+country_event = {
+	id = mexico.1200
+	title = mexico.1200.t
+	desc = mexico.1200.d
+
+	picture = GFX_report_event_military_planning
+	
+	fire_only_once = yes 
+	is_triggered_only = yes
+
+	option = {
+		name = mexico.1200.a
+		add_timed_idea = {
+			idea = mex_montes_project_rewards
+			days = 90
+		}
+	}
+}
+# Monte Project goes overbudget
+country_event = {
+	id = mexico.1201
+	title = mexico.1201.t
+	desc = mexico.1201.d
+
+	picture = GFX_report_event_military_planning
+	
+	fire_only_once = yes 
+	is_triggered_only = yes
+
+	option = {
+		name = mexico.1201.a
+		add_timed_idea = {
+			idea = mex_montes_project_debuffs
+			days = 90
 		}
 	}
 }

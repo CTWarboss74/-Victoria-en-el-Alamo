@@ -2,7 +2,7 @@
 state={
 	id=475
 	name="STATE_475"
-	manpower = 805874
+	manpower = 795874
 	
 	state_category = rural
 
@@ -14,7 +14,7 @@ state={
 		add_core_of = MEX
 
 		victory_points = {
-			1900 3
+			1900 2
 		}
 	}
 

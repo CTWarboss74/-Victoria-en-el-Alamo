@@ -1,4 +1,7 @@
 ﻿l_english:
+ # General TT
+ focus_locked_autocomplete_event_tt:0 "§GThis Focus will Autocomplete via an event!§!"
+
  # Mexico
  # MEX Focus TT
  mex_csnp_infra_rating_tt:0 "Has an §YInfrastructure Rating§! of at least §C60§!. Current Rating -> [?mex_infrastructure_rating|Y0]"
@@ -34,7 +37,20 @@
  MEX_focus_write_the_new_constitution_desc:0 "We shall write a new constitution."
  MEX_focus_first_elections:0 "First Elections"
  MEX_focus_execute_salvador_abascal:0 "§RExecute Salvador Abascal§!"
-
+ MEX_focus_second_lsmc:0 "§YThe Second London Stock Market Crash§!"
+ MEX_form_crisis_relief_association:0 "Form the §YCrisis Relief Association§!"
+ MEX_form_crisis_relief_association_desc:0 "In order to successfully recover from the economic crash, we must form an association to assist those who are suffering the hardest due to the sudden freefall in the market."
+ MEX_focus_emergency_budget_cuts:0 "Emergency Budget Cuts"
+ MEX_focus_emergency_housing_act:0 "Propose the Emergency Housing Act"
+ MEX_focus_the_montes_proposition:0 "§YThe Montes Proposition§!"
+ MEX_focus_need_for_a_modern_industry:0 "The Need For A Modern Industry"
+ MEX_focus_the_associations_four_year_relief_act:0 "The Associations's §YFour-Year Relief Act§!"
+ MEX_focus_public_works_act:0 "Draft up the Public Works Act"
+ MEX_focus_reform_the_national_bank:0 "Reform The National Bank"
+ MEX_focus_create_new_employment_opportunities:0 "Create New Job Opportunities"
+ MEX_focus_prefer_factory_construction:0 "Prefer Factory Construction"
+ MEX_focus_prefer_infra_construction:0 "Prefer Infrastructure Construction"
+ 
  # United Kingdom
  # TT
  ENG_pass_cdp_tt:0 "§YUnlocks decisions to invest in your colonies, allowing you to construct Radio Stations, Infrastructure, Civs, and Dockyards in certain colonies!§!"

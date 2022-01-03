@@ -13,7 +13,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				democratic_drift = 0.1
-				political_power_gain = -0.2
+				political_power_gain = -0.1
 			}
 	
 			ai_will_do = {
@@ -78,7 +78,7 @@ ideas = {
 				factor = 0
 			}
 		}
-		mex_second_lsmc = {
+		mex_second_lsmc_initial = {
 			
 			allowed = {
 				original_tag = MEX
@@ -88,10 +88,70 @@ ideas = {
 			picture = generic_production_bonus
 			
 			modifier = {
-				industrial_capacity_factory = -0.15
-				production_speed_buildings_factor = -0.2
-				consumer_goods_factor = 0.05
-				political_power_factor = -0.1
+				industrial_capacity_factory = -0.50
+				production_speed_buildings_factor = -0.50
+				consumer_goods_factor = 0.15
+				political_power_factor = -0.3
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_second_lsmc_1 = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				industrial_capacity_factory = -0.4
+				production_speed_buildings_factor = -0.4
+				consumer_goods_factor = 0.15
+				political_power_factor = -0.3
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_second_lsmc_2 = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				industrial_capacity_factory = -0.3
+				production_speed_buildings_factor = -0.3
+				consumer_goods_factor = 0.15
+				political_power_factor = -0.25
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_second_lsmc_3 = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.25
+				consumer_goods_factor = 0.12
+				political_power_factor = -0.20
 			}
 	
 			ai_will_do = {
@@ -120,6 +180,24 @@ ideas = {
 				factor = 0
 			}
 		}
+		mex_new_jobs_1 = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_economic_increase
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
 		mex_texan_resistance = {
 			
 			allowed = {
@@ -138,21 +216,148 @@ ideas = {
 				factor = 0
 			}
 		}
-		mex_socialist_education_idea_one = {
+		mex_montes_project = {
 			
 			allowed = {
 				original_tag = MEX
 				always = no
 			}
 
-			picture = generic_research_bonus
+			picture = generic_production_bonus
 			
 			modifier = {
-				political_power_gain = 0.05
-				research_speed_factor = 0.05
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				political_power_cost = 0.03
 			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_public_works_act_idea = {
 			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
 
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				political_power_cost = 0.01
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_public_works_act_factories_idea = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+				production_speed_industrial_complex_factor = 0.15
+				political_power_cost = 0.01
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_public_works_act_infra_idea = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				political_power_cost = 0.01
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_national_bank_reformed_1 = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_montes_project_rewards = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.02
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.05
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_montes_project_debuffs = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+				production_speed_buildings_factor = -0.07
+				political_power_cost = 0.05
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mex_food_shortages = {
+			
+			allowed = {
+				original_tag = MEX
+				always = no
+			}
+
+			picture = raj_risk_of_famine
+			
+			modifier = {
+				monthly_population = -0.1
+			}
+	
 			ai_will_do = {
 				factor = 0
 			}
@@ -195,40 +400,18 @@ ideas = {
 				factor = 0
 			}
 		}
-		MEX_motorization_factories_idea = {
+		mex_strikers_demands_met_idea = {
 			
 			allowed = {
 				original_tag = MEX
 				always = no
 			}
 
-			picture = FRA_motorized_focus
+			picture = generic_production_bonus
 			
 			modifier = {
-				
-			}
-
-			equipment_bonus = {
-				motorized_equipment = {
-					build_cost_ic = -0.15 instant = yes
-				}
-			}
-	
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		MEX_socialist_education_funding_idea = {
-			
-			allowed = {
-				original_tag = MEX
-				always = no
-			}
-
-			picture = generic_foreign_capital
-			
-			modifier = {
-				communism_drift = 0.05
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.03
 				political_power_cost = 0.1
 			}
 	
@@ -236,18 +419,18 @@ ideas = {
 				factor = 0
 			}
 		}
-		MEX_socialist_military_academies_idea = {
+		mex_emergency_budget_cuts_idea = {
 			
 			allowed = {
 				original_tag = MEX
 				always = no
 			}
 
-			picture = generic_army_war_college
+			picture = generic_production_bonus
 			
 			modifier = {
-				army_attack_factor = 0.05
-				conscription = 0.01
+				consumer_goods_factor = -0.05
+				political_power_cost = 0.05
 			}
 	
 			ai_will_do = {

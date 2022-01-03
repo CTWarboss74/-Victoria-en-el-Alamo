@@ -2,7 +2,7 @@ state=
 {
 	id=311
 	name="STATE_311"
-	manpower = 51000
+	manpower = 50100
 	
 	state_category = pastoral
 	history= {
@@ -14,7 +14,6 @@ state=
 		}
 		buildings = {
 			infrastructure = 2
-			dockyard = 1
 			2077 = {
 				naval_base = 1
 			}

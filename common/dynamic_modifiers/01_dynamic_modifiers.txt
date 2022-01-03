@@ -72,6 +72,19 @@ OTT_eng_mosul_oil_company = { # Applied to Mosul (676)
 	local_factories = -0.5
 }
 
+MEX_factory_strikes = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.15
+	local_factories = -0.35
+}
+MEX_civil_discontent = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+}
 MEX_peasant_revolt = {
 	enable = { always = yes }
 
@@ -79,4 +92,14 @@ MEX_peasant_revolt = {
 	
 	state_resources_factor = -0.5
 	local_factories = -0.25
+}
+MEX_occupied_by_synarchists = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.5
+	state_production_speed_buildings_factor = -0.75
+	local_factories = -0.75
+	local_manpower = -0.3
 }
