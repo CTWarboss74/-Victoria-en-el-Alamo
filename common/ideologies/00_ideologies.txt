@@ -1,10 +1,124 @@
 ideologies = {
 
-	social_conservatism = {
+
+	utopian_socialism = {
 	
 		types = {
 			
-			radical_democracy = {
+			utopian_socialism_type = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		
+		color = { 130 5 5 }
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_guarantee_other_ideologies = no
+		}
+		
+		can_host_government_in_exile = no
+		
+		war_impact_on_world_tension = 0.55		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.25
+		
+		modifiers = {
+			generate_wargoal_tension = -0.3
+			puppet_cost_factor = -0.3
+		}
+		ai_communist = yes # uses the democratic AI behaviour
+	}
+	centralized_socialism = {
+	
+		types = {
+			
+			state_socialism = {
+			}
+			authoritarian_socialism = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		
+		color = { 84 14 14 }
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_guarantee_other_ideologies = no
+		}
+		
+		can_host_government_in_exile = no
+		
+		war_impact_on_world_tension = 0.45		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.15
+		
+		modifiers = {
+			generate_wargoal_tension = -0.3
+			puppet_cost_factor = -0.3
+		}
+		ai_communist = yes # uses the democratic AI behaviour
+	}
+	revolutionary_socialism = {
+	
+		types = {
+			
+			anarchism_type = {
+			}
+			council_communism = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		
+		color = { 110 12 5 }
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_guarantee_other_ideologies = no
+		}
+		
+		can_host_government_in_exile = no
+		
+		war_impact_on_world_tension = 0.35		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			generate_wargoal_tension = -0.3
+			puppet_cost_factor = -0.3
+		}
+		ai_communist = yes # uses the democratic AI behaviour
+	}
+
+	liberal_democracy = {
+	
+		types = {
+			
+			liberalism_type = {
 			}
 		}
 		
@@ -17,7 +131,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 		
-		color = { 0 20 206 }
+		color = { 231 235 19 }
 		
 		rules = {
 			can_create_collaboration_government = no
@@ -36,8 +150,8 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 		
 		modifiers = {
-			generate_wargoal_tension = 1.00
-			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.80
+			join_faction_tension = 0.60
 			lend_lease_tension = 0.50
 			send_volunteers_tension = 0.50
 			guarantee_tension = 0.25
@@ -49,7 +163,60 @@ ideologies = {
 		}
 		
 		faction_modifiers = {
-			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+			faction_trade_opinion_factor = 0.45 #plus 45% trade opinion
+		}
+		ai_democratic = yes # uses the democratic AI behaviour
+	}
+	social_democracy = {
+	
+		types = {
+			
+			social_dem_type = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		
+		color = { 156 6 71 }
+		
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = no
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.3		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			generate_wargoal_tension = 0.75
+			join_faction_tension = 0.60
+			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.50
+			guarantee_tension = 0.25
+			annex_cost_factor = 0.5
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.4 #plus 40% trade opinion
 		}
 		ai_democratic = yes # uses the democratic AI behaviour
 	}
