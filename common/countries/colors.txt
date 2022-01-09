@@ -103,6 +103,10 @@ GRA = {
 	color = rgb { 242 205 94 }
 	color_ui = rgb { 242 205 94 }
 }
+IRM = { # Iraqi Revolutionary Movement
+	color = rgb { 178 114 99 }
+	color_ui = rgb { 178 114 99 }
+}
 
 
 GER = {

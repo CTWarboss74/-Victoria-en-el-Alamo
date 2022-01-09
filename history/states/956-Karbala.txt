@@ -1,0 +1,33 @@
+state={
+	id=956
+	name="STATE_956"
+	provinces={
+		3795 7994 10876 12046 12839 
+	}
+	resources={
+		oil=11.000
+	}
+	history={
+		owner = IRM
+		victory_points = {
+			7994 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = IRQ
+		add_core_of = IRM
+		1935.1.1 = {		
+			IRQ = {
+				set_province_controller = 12839
+				set_province_controller = 10876
+			} 			
+		}
+	}
+	manpower=531000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

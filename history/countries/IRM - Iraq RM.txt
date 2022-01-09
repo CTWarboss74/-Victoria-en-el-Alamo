@@ -1,0 +1,33 @@
+﻿capital = 955
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+declare_war_on = {
+	target = IRQ
+	type = annex_everything
+}
+set_cosmetic_tag = IRAQI_REVOLUTION_TAG
+
+set_politics = {
+	ruling_party = centralized_socialism
+	last_election = "1934.11.2"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	centralized_socialism = 100
+}
+
+create_country_leader = {
+	name = "Iraqi Revolutionary Council"
+	desc = ""
+	picture = "gfx/leaders/IRM/portrait_irm_revolutionary_council.dds"
+	ideology = authoritarian_socialism
+	traits = {
+		#
+	}
+}

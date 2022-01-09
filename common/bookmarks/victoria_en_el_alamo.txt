@@ -2,23 +2,22 @@ bookmarks = {
 	bookmark = {
 		name = "Victoria en el Alamo"
 		desc = "VEEA_BOOKMARK_DESC"
-		date = 1933.1.1.1
+		date = 1936.1.1.1
 		picture = "GFX_select_date_1936"
 		default_country = "ENG"
 		default = yes
 		
 		"ENG"={
 			history = "ENG_VEEA_BOOKMARK_DESC"
-			ideology = democratic
+			ideology = social_democracy
 			ideas = {
 				ENG_london_stock_market_crash_5
 				ENG_crippled_royal_navy_4
 				ENG_professional_army
 			}
 			focuses = {
-				ENG_imperial_federation
-				ENG_the_kings_party
-				ENG_organize_the_blackshirts
+				ENG_focus_the_commonwealth_on_the_world_stage
+				ENG_focus_pass_commonwealth_development_plan
 			}
 		}
 		"MEX"={

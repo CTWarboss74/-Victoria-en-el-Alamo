@@ -198,18 +198,6 @@ if = {
 		freedom_level = 0.2
 	}
 	set_autonomy = {
-		target = SUD
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = UGA
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = KEN
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
 		target = PAL
 		autonomous_state = autonomy_colony
 	}
@@ -218,65 +206,21 @@ if = {
 		autonomous_state = autonomy_colony
 	}
 	set_autonomy = {
-		target = IRQ
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = SRL
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
 		target = MDR
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = MLW
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = ZAM
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = ZIM
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = BOT
 		autonomous_state = autonomy_colony
 	}
 	else = {
 		puppet = MAL
 		puppet = RAJ
 		puppet = CAL
-		puppet = SUD
-		puppet = UGA
-		puppet = KEN
-		puppet = SRL
 		puppet = MDR
 		puppet = PAL
 		puppet = JOR
 		puppet = IRQ
-		puppet = MLW
-		puppet = ZAM
-		puppet = ZIM
-		puppet = BOT
 	}
 }
 # Setting Puppet Colors
-SUD = {
-	set_cosmetic_tag = UK_COLONY
-}
-UGA = {
-	set_cosmetic_tag = UK_COLONY
-}
-KEN = {
-	set_cosmetic_tag = UK_COLONY
-}
 MDR = {
-	set_cosmetic_tag = UK_COLONY
-}
-SRL = {
 	set_cosmetic_tag = UK_COLONY
 }
 PAL = {
@@ -286,19 +230,7 @@ JOR = {
 	set_cosmetic_tag = UK_COLONY
 }
 IRQ = {
-	set_cosmetic_tag = UK_COLONY
-}
-MLW = {
-	set_cosmetic_tag = UK_COLONY
-}
-ZAM = {
-	set_cosmetic_tag = UK_COLONY
-}
-ZIM = {
-	set_cosmetic_tag = UK_COLONY
-}
-BOT = {
-	set_cosmetic_tag = UK_COLONY
+	set_cosmetic_tag = UK_COLONY_IRQ
 }
 # Set Up "6 Keys" tags
 CAN = {
@@ -517,15 +449,14 @@ if = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = social_democracy
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	social_democracy = 33
-	liberal_democracy = 21
-	revolutionary_socialism = 10
+	social_democracy = 45
+	liberal_democracy = 19
 	centralized_socialism = 20
 	utopian_socialism = 16
 }

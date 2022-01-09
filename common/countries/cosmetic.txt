@@ -3,6 +3,10 @@ UK_COLONY = {
     color = rgb { 201 56 93 }
     color_ui = rgb { 201 56 93 }
 }
+UK_COLONY_IRQ = {
+    color = rgb { 201 56 93 }
+    color_ui = rgb { 201 56 93 }
+}
 
 OTTOMAN_EMPIRE = {
 	color = rgb { 135 13 1 }

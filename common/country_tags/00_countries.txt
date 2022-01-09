@@ -1,5 +1,6 @@
 CON	= "countries/Constantinople.txt"
 GRA	= "countries/New Granada.txt"
+IRM	= "countries/Iraq RM.txt"
 
 GER	= "countries/Germany.txt"
 ENG = "countries/United Kingdom.txt"

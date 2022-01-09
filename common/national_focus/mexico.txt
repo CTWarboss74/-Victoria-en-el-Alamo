@@ -1141,7 +1141,7 @@ focus_tree = {
 	## FASCIST/COMMUNIST ROUTE (Splits into 2 seperate paths the next focus) ##
 	focus = {
 		id = MEX_focus_radicalism_rise
-		icon = GFX_focus_generic_support_the_left_right
+		icon = GFX_focus_unknown
 		x = 56
 		y = 1
 
@@ -1157,6 +1157,103 @@ focus_tree = {
 
 		prerequisite = {
 			focus = MEX_focus_lurking_danger
+		}
+
+		available = {
+			always = no
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			custom_effect_tooltip = focus_locked_autocomplete_event_tt
+		}
+	}
+	focus = {
+		id = MEX_focus_mexican_civil_war
+		icon = GFX_focus_unknown
+		x = 56
+		y = 2
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		prerequisite = {
+			focus = MEX_focus_radicalism_rise
+		}
+
+		available = {
+			always = no
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			custom_effect_tooltip = focus_locked_autocomplete_event_tt
+		}
+	}
+	focus = {
+		id = MEX_focus_synarchist_consolidate_control
+		icon = GFX_focus_unknown
+		x = 54
+		y = 3
+
+		cost = 1
+
+		mutually_exclusive = {
+			focus = MEX_focus_rally_the_peasants
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		prerequisite = {
+			focus = MEX_focus_mexican_civil_war
+		}
+
+		available = {
+			always = no
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			custom_effect_tooltip = focus_locked_autocomplete_event_tt
+		}
+	}
+	focus = {
+		id = MEX_focus_rally_the_peasants
+		icon = GFX_focus_unknown
+		x = 58
+		y = 3
+
+		cost = 1
+		mutually_exclusive = {
+			focus = MEX_focus_synarchist_consolidate_control
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		prerequisite = {
+			focus = MEX_focus_mexican_civil_war
 		}
 
 		available = {

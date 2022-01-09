@@ -29,6 +29,9 @@
  GRA:0 "New Granada"
  GRA_DEF:0 "New Granada"
  GRA_ADJ:0 "Granadian"
+ IRM:0 "Iraq"
+ IRM_DEF:0 "Iraq"
+ IRM_ADJ:0 "Iraqi"
 
 
  GER_fascism:0 "German Reich"
@@ -58,8 +61,8 @@
  ENG_democratic_ADJ:0 "British"
  ENG_neutrality_ADJ:0 "British"
  ENG_communism_ADJ:0 "British"
- ENG:0 "Britain"
- ENG_DEF:0 "Britain"
+ ENG:0 "United Kingdom"
+ ENG_DEF:0 "the United Kingdom"
  ENG_ADJ:0 "British"
  SOV_fascism:0 "Russian Empire"
  SOV_fascism_DEF:0 "the Russian Empire"

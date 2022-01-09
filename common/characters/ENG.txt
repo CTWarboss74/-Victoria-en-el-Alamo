@@ -64,8 +64,8 @@ characters={
 		}
 		
 		country_leader={
-			ideology=socialism
-			traits={ champion_of_peace_1 economic_reformer }
+			ideology=social_dem_type
+			traits={ economic_reformer }
 			expire="1965.1.1.1"
 			id=-1
 		}

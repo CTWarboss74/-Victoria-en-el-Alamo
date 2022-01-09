@@ -1,16 +1,4 @@
 ﻿l_english:
- # British Colonies
- SUD_ENG_subject:0 "Anglo-Egyptian Sudan"
- SUD_ENG_subject_DEF:0 "Anglo-Egyptian Sudan"
- UGA_ENG_subject:0 "Colony of Uganda"
- UGA_ENG_subject_DEF:0 "the Colony of Uganda"
- KEN_ENG_subject:0 "Colony of Kenya"
- KEN_ENG_subject_DEF:0 "the Colony of Kenya"
- # Stuff for UK Sri Lanka
- SRL_ENG_subject:0 "Protectorate of Ceylon"
- SRL_ENG_subject_DEF:0 "the Protectorate of Ceylon"
- SRI_UK_SOUTH_INDIA:0 "Protectorate of Ceylon and South India"
- SRI_UK_SOUTH_INDIA_DEF:0 "the Protectorate of Ceylon and South India"
  ###
  MDR_ENG_subject:0 "Protectorate of Madras"
  MDR_ENG_subject_DEF:0 "the Protectorate of Madras"
@@ -20,14 +8,6 @@
  JOR_ENG_subject_DEF:0 "the Protectorate of Transjordan"
  IRQ_ENG_subject:0 "Protectorate of Mesopotamia"
  IRQ_ENG_subject_DEF:0 "the Protectorate of Mesopotamia"
- MLW_ENG_subject:0 "Nyassaland Colony"
- MLW_ENG_subject_DEF:0 "the Nyassaland Colony"
- ZAM_ENG_subject:0 "Protectorate of Northern Rhodesia"
- ZAM_ENG_subject_DEF:0 "the Protectorate of Northern Rhodesia"
- ZIM_ENG_subject:0 "Colony of Southern Rhodesia"
- ZIM_ENG_subject_DEF:0 "the Colony of Southern Rhodesia"
- BOT_ENG_subject:0 "Bechuanaland Protectorate"
- BOT_ENG_subject_DEF:0 "the Bechuanaland Protectorate"
  
  CON_FREE_CITY_neutrality:0 "Free City of Constantinople"
  CON_FREE_CITY_neutrality_DEF:0 "Free City of Constantinople"
@@ -37,6 +17,11 @@
  OTTOMAN_EMPIRE_monarchism:0 "Ottoman Empire"
  OTTOMAN_EMPIRE_monarchism_DEF:0 "the Ottoman Empire"
  OTTOMAN_EMPIRE_monarchism_ADJ:0 "Ottoman"
+
+ IRAQI_REVOLUTION_TAG:0 "Iraqi Revolutionary Movement"
+ IRAQI_REVOLUTION_TAG_DEF:0 "the Iraqi Revolutionary Movement"
+ UK_COLONY_IRQ:0 "Protectorate of Mesopotamia"
+ UK_COLONY_IRQ_DEF:0 "the Protectorate of Mesopotamia"
 
  INS_HOL_democratic:0 "Dutch East Indies"
  INS_HOL_democratic_DEF:0 "the Dutch East Indies"
