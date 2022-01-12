@@ -1,0 +1,16 @@
+characters={
+	FRA_le_corbusier={ 
+		name=FRA_le_corbusier
+		portraits={
+			civilian={
+				large="GFX_portrait_france_le_corbusier"
+			}
+		}
+		country_leader={
+			ideology=reactionary_modernism
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}
