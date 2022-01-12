@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+			name = "GFX_ideology_reaction_modernism_group"
+			texturefile = "gfx/interface/ideologies/reaction_modernism_group.dds"
+		}
+}
