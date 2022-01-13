@@ -1,0 +1,15 @@
+characters={
+	GER_erich_ludendorff={
+		name=GER_erich_ludendorff
+		portraits={
+			civilian={
+				large="germany_portrait_erich_ludendorff"
+			}
+		}
+		country_leader={
+			ideology=nazism
+			traits={ dictator }
+			id=-1
+		}
+	}
+}
