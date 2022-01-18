@@ -1,0 +1,34 @@
+state={
+	id=959
+	name="STATE_959"
+	provinces={
+		521 11516 11642 
+	}
+	history={
+		owner = GER
+		victory_points = {
+			11516 5 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 6
+			521 = {
+				bunker = 2
+			}
+			11642 = {
+				bunker = 2
+			}
+			11516 = {
+				bunker = 2
+			}
+
+		}
+		add_core_of = FRA
+		add_core_of = GER
+	}
+	manpower=782490
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

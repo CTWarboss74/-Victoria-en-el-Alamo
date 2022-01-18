@@ -7,16 +7,17 @@ state = {
 	state_category = city
 
 	history = {
-		owner = SOV
+		owner = UKR
 		victory_points = {
 			11670 10 
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
+			dockyard = 2
 			air_base = 6
 			11670 ={
-				naval_base = 3
+				naval_base = 4
 				coastal_bunker = 1
 			}
 		}
