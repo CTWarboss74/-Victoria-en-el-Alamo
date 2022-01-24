@@ -30,6 +30,24 @@ set_autonomy = {
 	target = CZE
 	autonomous_state =  autonomy_puppet
 }
+CRO = {
+	set_cosmetic_tag = AUS_PUPPET
+}
+CZE = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1935.5.19"
+		election_frequency = 60
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		democratic = 20
+		neutrality = 65
+		fascism = 5
+		communism = 10
+	}
+}
 recruit_character = AUS_ernst_starhemberg
 recruit_character = AUS_kurt_schuschnigg
 recruit_character = AUS_karl_renner

@@ -75,7 +75,7 @@ ideologies = {
 		}
 		ai_communist = yes # uses the democratic AI behaviour
 	}
-	revolutionary_socialism = {
+	revolutionary_socialism = { 
 	
 		types = {
 			
@@ -583,4 +583,5 @@ ideologies = {
 			airforce_intel_to_others = 10.0
 			hidden_modifier = { join_faction_tension = -0.1 }
 		}
+	}
 }

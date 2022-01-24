@@ -1,0 +1,27 @@
+state={
+	id=962
+	name="STATE_962"
+	provinces={
+		9801 9864 11740 11900 
+	}
+	history={
+		owner = MAS
+		victory_points = {
+			9864 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			9864 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = MAS
+
+	}
+	manpower=947100
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000 
+}

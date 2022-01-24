@@ -2,9 +2,6 @@
 state={
 	id=359
 	name="STATE_359"
-	manpower = 4041332
-	
-	state_category = large_city
 
 	history={
 		owner = MAS
@@ -13,17 +10,20 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 4
+			industrial_complex = 2
 			dockyard = 1
 			air_base = 4
 
 		}
 		add_core_of = MAS
+
 	}
 
-	local_supplies=0.0 
 	provinces={
-		3693 3863 6882 9801 9864 11740 11782 11900 
+		3693 3863 6882 11782 
 	}
-	
+	manpower=2941332
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
 }

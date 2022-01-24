@@ -1,0 +1,36 @@
+﻿capital = 360
+
+#oob = "FSA_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	motorised_infantry = 1
+}
+
+set_convoys = 5
+
+add_ideas = {
+	civilian_economy
+	limited_conscription
+}
+set_politics = {
+	ruling_party = utopian_socialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	utopian_socialism = 100
+}
+
+create_country_leader = {
+	name = "Paul Robeson"
+	desc = "paul_robeson_desc"
+	picture = "gfx/leaders/American Warlords/PEN_portrait_paul_robeson.dds"
+	ideology = utopian_socialism_type
+	traits = {
+		#
+	}
+}

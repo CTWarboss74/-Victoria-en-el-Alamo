@@ -107,6 +107,10 @@ IRM = { # Iraqi Revolutionary Movement
 	color = rgb { 178 114 99 }
 	color_ui = rgb { 178 114 99 }
 }
+PEN = { # Pennsylvania
+    color = rgb { 176 9 9 }
+    color_ui = rgb { 176 9 9 }
+}
 
 
 GER = {
@@ -146,8 +150,8 @@ CZE = {
 	color_ui = rgb { 70 217 203 }
 }
 POL = {
-	color = rgb { 197 92 106 }
-	color_ui = rgb { 255 120 138 }
+	color = rgb { 130 127 127 }
+	color_ui = rgb { 130 127 127 }
 }
 AUS = {
 	color = rgb { 194 198 215 }

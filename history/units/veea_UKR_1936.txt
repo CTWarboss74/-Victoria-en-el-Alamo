@@ -1,0 +1,111 @@
+﻿division_template = {
+	name = "Kommando-Brigade"
+
+	division_names_group = GER_Inf_01
+	priority = 0
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Ukrainische Infanteriedivision"
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+}
+
+units = {
+	##### Ukrainian Army #####
+	### Kommando-Brigade ###
+	division= {	
+		name = "Kommandogruppe Dnipropetrowsk"
+		location = 11437 # Dnipropetrovsk
+		division_template = "Kommando-Brigade"
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "Kiewer Kommandogruppe"
+		location = 525 # Kiev
+		division_template = "Kommando-Brigade"
+		start_equipment_factor = 0.9
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "Schytomyr-Kommandogruppe"
+		location = 6593 # Zhytomyr
+		division_template = "Kommando-Brigade"
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Kommandogruppe Winnyzja"
+		location = 476 # Vinnytsia
+		division_template = "Kommando-Brigade"
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Krivoi Rih Kommandogruppe"
+		location = 11561 # Krivoi Rih
+		division_template = "Kommando-Brigade"
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Kommandogruppe Tscherkassy"
+		location = 488 # Cherkasy
+		division_template = "Kommando-Brigade"
+		start_equipment_factor = 0.85
+	}
+	### Ukrainische Infanteriedivision ###
+	division= {	
+		name = "1. Infanteriedivision"
+		location = 11437 # Dnipropetrovsk
+		division_template = "Ukrainische Infanteriedivision"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "3. Infanteriedivision"
+		location = 525 # Kiev
+		division_template = "Ukrainische Infanteriedivision"
+		start_experience_factor = 0.25
+	}
+	division= {	
+		name = "2. Infanteriedivision"
+		location = 11670 # Odessa
+		division_template = "Ukrainische Infanteriedivision"
+		start_experience_factor = 0.2
+	}
+}
+
+air_wings = {
+	202 = {
+		fighter_equipment_0 =  {
+			owner = "UKR"
+			amount = 24
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "UKR"
+		}
+		requested_factories = 1
+		progress = 0.20
+		efficiency = 50
+	}
+}
