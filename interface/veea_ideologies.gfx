@@ -1,6 +1,50 @@
 spriteTypes = {
 	spriteType = {
-			name = "GFX_ideology_reaction_modernism_group"
-			texturefile = "gfx/interface/ideologies/reaction_modernism_group.dds"
+			name = "GFX_ideology_fascism_group"
+			texturefile = "gfx/interface/ideologies/fascism_group.dds"
 		}
+	spriteType = {
+			name = "GFX_ideology_rad_theosophy_group"
+			texturefile = "gfx/interface/ideologies/rad_theosophy_group.dds"
+		}
+	spriteType = {
+			name = "GFX_ideology_neutrality_group"
+			texturefile = "gfx/interface/ideologies/neutrality_group.dds"
+		}
+	spriteType = {
+			name = "GFX_ideology_monarchism_group"
+			texturefile = "gfx/interface/ideologies/monarchism_group.dds"
+		}
+	spriteType = {
+			name = "GFX_ideology_auth_democratic_group"
+			texturefile = "gfx/interface/ideologies/auth_democratic_group.dds"
+		}
+	spriteType = {
+			name = "GFX_ideology_liberal_democracy_group"
+			texturefile = "gfx/interface/ideologies/liberal_democracy_group.dds"
+		}
+	spriteType = {
+			name = "GFX_ideology_auth_democratic_group"
+			texturefile = "gfx/interface/ideologies/auth_democratic_group.dds"
+		}
+	spriteType = {
+			name = "GFX_ideology_ultranationalism_group"
+			texturefile = "gfx/interface/ideologies/ultranationalism_group.dds"
+		}
+	spriteType = {
+			name = "GFX_ideology_democracy_group"
+			texturefile = "gfx/interface/ideologies/democracy_group.dds"
+		}	
+	spriteType = {
+			name = "GFX_ideology_social_democracy_group"
+			texturefile = "gfx/interface/ideologies/social_democracy_group.dds"
+		}
+	spriteType = {
+			name = "GFX_ideology_traditionalism_group"
+			texturefile = "gfx/interface/ideologies/traditionalism_group.dds"
+		}
+	spriteType = {
+			name = "GFX_ideology_communism_group"
+			texturefile = "gfx/interface/ideologies/communism_group.dds"
+		}		
 }
