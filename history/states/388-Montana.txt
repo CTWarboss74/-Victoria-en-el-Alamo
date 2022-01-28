@@ -8,12 +8,12 @@ state={
 	local_supplies=0.0
 
 	history={
-		owner = DAK
+		owner = CAS
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		add_core_of = DAK
+		add_core_of = CAS
 		victory_points = {
 			4860 1 
 		}
@@ -21,7 +21,7 @@ state={
 	}
 
 	provinces={
-		1767 1851 1857 4741 4857 4860 4863 7760 7880 7883 10587 10593 10624 10706 11712 12572 12585 
+		 1851 1857 4741 4857 4860 4863  7880 7883  10593 10624 10706 11712 12572 12585 
 	}
 	manpower=537605
 	buildings_max_level_factor=1.000

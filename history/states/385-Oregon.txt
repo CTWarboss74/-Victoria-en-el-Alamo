@@ -8,7 +8,7 @@ state={
 	local_supplies=0.0
 
 	history={
-		owner = CAL
+		owner = CAS
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
@@ -18,7 +18,7 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = CAL
+		add_core_of = CAS
 		victory_points = {
 			3513 3 
 		}

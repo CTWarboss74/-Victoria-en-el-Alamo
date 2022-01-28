@@ -11,23 +11,24 @@ state={
 	local_supplies=0.0
 
 	history={
-		owner = DAK
+		owner = MIS
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 2
 		}
-		add_core_of = DAK
-		victory_points = {
-			4740 3
-		}
+		add_core_of = MIS
+		
 		victory_points = {
 			7834 1
+		}
+		victory_points = {
+			1806 3 
 		}
 	}
 
 	provinces={
-		1352 1753 4586 4740 4757 4811 4814 4871 7834 7892 9802 10340 10532 12024 12513 
+		1352 1753 4757 4811 4814 4871 7834 7892 9802  10532 12024 12513 1806 2043
 	}
 	
 }

@@ -7,15 +7,15 @@ state={
 	local_supplies=0.0
 	
 	history={
-		owner = DAK
+		owner = MIS
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = DAK
+		add_core_of = MIS
 	}
 
 	provinces={
-		1815 4610 4723 4794 4820 7688 7814 7888 10640 10711 12561 12633 12651 
+		  4723  10640     
 	}
 	
 }

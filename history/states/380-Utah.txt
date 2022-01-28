@@ -8,13 +8,13 @@ state={
 	local_supplies=0.0
 
 	history={
-		owner = CAL
+		owner = SLC
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 
 		}
-		add_core_of = CAL
+		add_core_of = SLC
 		victory_points = {
 			4865 1 
 		}
@@ -22,7 +22,7 @@ state={
 	}
 
 	provinces={
-		1663 4865 10582 10651 12573 12699 13153 
+		1663 4865 10582 10651 12573 10662  4742 4668 10591 7756 12535 9695 7888 #13153
 	}
 	manpower=507846
 	buildings_max_level_factor=1.000

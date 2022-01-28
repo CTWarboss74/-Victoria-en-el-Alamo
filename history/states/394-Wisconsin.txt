@@ -11,19 +11,17 @@ state={
 	}
 
 	history={
-		owner = FSA
+		owner = WIS
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3
 		}
-		add_core_of = FSA
-		victory_points = {
-			12357 5 
-		}
+		add_core_of = WIS
+		
 
 	}
 
 	provinces={
-		703 926 1560 1760 1849 3699 4029 4166 4738 4834 7776 7829 9657 9678 10341 10526 12357 12456 
+		  1560 1760 1849 3699 4029    7776 7829  9678 10341 10526   1719 12550 6827 1734 6767 7896 12588
 	}
 }
