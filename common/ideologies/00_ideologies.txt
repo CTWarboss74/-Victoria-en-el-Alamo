@@ -431,19 +431,19 @@ ideologies = {
 	
 		types = {
 		
-			nazism = {
+			national_corporatism = {
 			}
 
-			gen_nazism = {
+			national_socialism = {
 			}
 			
-			fascism_ideology = {
+			monarcho_fascism = {
 			}
 			
 			falangism = {
 			}
 			
-			rexism = {
+			clerical_fascism = {
 			}
 		}
 		
