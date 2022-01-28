@@ -844,3 +844,63 @@ DAK = {
 	color = rgb { 217 44 19  }
 	color_ui = rgb { 217 44 19  }
 }
+NA1 = {
+	color = rgb { 122 179 97 }
+	color_ui = rgb { 159 233 126 }
+}
+NA2 = {
+	color = rgb { 194 140 86 }
+	color_ui = rgb { 252 182 112 }
+}
+NA3 = {
+	color = rgb { 210 106 47 }
+	color_ui = rgb { 255 138 61 }
+}
+NA4 = {
+	color = rgb { 194 140 86 }
+	color_ui = rgb { 252 182 112 }
+}
+NA5 = {
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
+}
+NA6 = {
+	color = rgb { 215 162 70 }
+	color_ui = rgb { 221 203 135 }
+}
+NA7 = {
+	color = rgb { 215 102 10 }
+	color_ui = rgb { 221 203 135 }
+}
+KKY = {
+	color = rgb { 124 140 162 }
+	color_ui = rgb { 161 182 211 }
+}
+WIS = {
+	color = rgb { 115 162 100 }
+	color_ui = rgb { 161 182 211 }
+}
+IWA = {
+	color = rgb { 105 132 111 }
+	color_ui = rgb { 161 182 211 }
+}
+NOL = {
+	color = rgb { 5 32 111 }
+	color_ui = rgb { 161 182 211 }
+}
+FLR = {
+	color = rgb { 223 213 0 }
+	color_ui = rgb { 161 182 211 }
+}
+SLC = {
+	color = rgb { 23 121 187 }
+	color_ui = rgb { 161 182 211 }
+}
+MIS = {
+	color = rgb { 223 201 190 }
+	color_ui = rgb { 161 182 211 }
+}
+CAS = {
+	color = rgb { 150 59 50 }
+	color_ui = rgb { 161 182 211 }
+}

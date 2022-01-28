@@ -25,3 +25,21 @@ RBD	= "countries/Republic of Bangladesh.txt"
 BSU	= "countries/Bengal Sydicalist Union.txt"
 # Other Nations
 MDR	= "countries/Madras.txt"
+#American tags
+NOL = "countries/El Salvador.txt" ##new orleans
+KKY = "countries/USA.txt" ##KENTUCKY-TENNESE
+CAS = "countries/Canada.txt"
+IWA = "countries/USA.txt" ##IOWA 
+MIS = "countries/USA.txt" ##MISSOURI EMPIRE
+WIS = "countries/USA.txt" ##WISCONSIN
+NA1 = "countries/Sioux Confederacy.txt" ##Cree
+NA2 = "countries/Sioux Confederacy.txt" ##tsimshian 
+NA3 = "countries/Sioux Confederacy.txt" ##crow
+NA4 = "countries/Sioux Confederacy.txt" ##cheyenne
+NA5 = "countries/Sioux Confederacy.txt" ##Navaho
+NA6 = "countries/Sioux Confederacy.txt" ##pownee
+NA7 = "countries/Sioux Confederacy.txt" ##Shoshini
+SLC = "countries/USA.txt" ##SALT LAKE CITY aka mormons
+FLR = "countries/USA.txt" ##FLORIDA
+
+
