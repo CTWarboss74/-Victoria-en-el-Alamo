@@ -1,0 +1,27 @@
+
+state={
+	id=994
+	name="STATE_994"
+	manpower = 31057
+	
+	state_category = pastoral
+	local_supplies=0.0
+	
+	resources={
+		steel=70 # was: 136
+		tungsten=32 # was: 62
+		aluminium=25 # was: 44
+	}
+
+	history={
+		owner = CAS
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = CAS
+	}
+
+	provinces={
+		10422 4736 7827 1862 12134
+	}
+}

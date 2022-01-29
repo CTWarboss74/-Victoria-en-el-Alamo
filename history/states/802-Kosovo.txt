@@ -1,17 +1,20 @@
-
 state={
 	id=802
 	name="STATE_802"
 
-	history={
+	history = {
+	
 		victory_points = {
-			6940 3 
+			9874 3
 		}
+		
 		owner = YUG
+		controller = YUG
+		
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 2
 		}
+		
 		add_core_of = YUG
 		add_core_of = KOS
 		add_core_of = SER
@@ -19,11 +22,10 @@ state={
 	}
 
 	provinces={
-		6940 9849 9874 9890 
+		6940 9849 9874 9890 6953
 	}
-	manpower=616000
+	
+	manpower=636126
 	buildings_max_level_factor=1.000
-	state_category=pastoral
-
-	local_supplies=0.0 
+	state_category=town
 }
