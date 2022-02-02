@@ -1,4 +1,3 @@
-
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8642;13157;sea;4345;1696;1676;1614;1622;MONTREAL_CANAL;Montreal
 13159;13155;sea;12582;1496;1654;1475;1676;BRISTOL_CANAL;NEW BRISTOL
@@ -180,8 +179,4 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4391;1703;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
-
-13256;11901;sea;5812;-1;-1;-1;-1;;Pag-Dalmacija
-11564;13258;sea;5786;-1;-1;-1;-1;;Krk-Gorski Kotar
-13241;13257;sea;5812;-1;-1;-1;-1;;Zadar-Pašman
 -1;-1;;-1;-1;-1;-1;-1;-1
