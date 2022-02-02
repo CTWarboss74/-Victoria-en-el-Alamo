@@ -1,20 +1,5 @@
 ﻿l_english:
  ###
- ##no more silly basic localization we have "dynamic" localization now baby!!
- COUNTRY_ENG_autonomy_puppet:0 "Protectorate of $NONIDEOLOGY$" 
- COUNTRY_ENG_autonomy_puppet_DEF:0 "Protectorate of $NONIDEOLOGYDEF$"
- COUNTRY_ENG_autonomy_puppet_ADJ:0 "Protectorate of $NONIDEOLOGYADJ$"
- COUNTRY_ENG_autonomy_colony:0 "Colony of $NONIDEOLOGY$" 
- COUNTRY_ENG_autonomy_colony_DEF:0 "Colony of $NONIDEOLOGYDEF$"
- COUNTRY_ENG_autonomy_colony_ADJ:0 "Colony of $NONIDEOLOGYADJ$"
- COUNTRY_ENG_autonomy_dominion:0 "Dominion of $NONIDEOLOGY$" 
- COUNTRY_ENG_autonomy_dominion_DEF:0 "Dominion of $NONIDEOLOGYDEF$"
- COUNTRY_ENG_autonomy_dominion_ADJ:0 "Dominion of $NONIDEOLOGYADJ$"
- COUNTRY_autonomy_integrated_puppett:0 "$OVERLORDADJ$ $NONIDEOLOGY$" 
- COUNTRY_autonomy_integrated_puppet_DEF:0 "$OVERLORDADJ$ $NONIDEOLOGYDEF$"
- COUNTRY_autonomy_integrated_puppet_ADJ:0 "$OVERLORDADJ$ $NONIDEOLOGYADJ$"
- 
- 
  MDR_ENG_subject:0 "Protectorate of Madras"
  MDR_ENG_subject_DEF:0 "the Protectorate of Madras"
  PAL_ENG_subject:0 "Protectorate of Palestine"
