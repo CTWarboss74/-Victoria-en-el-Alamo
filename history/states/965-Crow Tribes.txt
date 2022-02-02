@@ -1,0 +1,20 @@
+state={
+	id=965
+	name="STATE_965"
+	provinces={
+		 7760 1767 10587
+	}
+	history={
+		owner = NA3
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1			
+		}
+		add_core_of = NA3
+
+	}
+	manpower=455421
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000 
+}
