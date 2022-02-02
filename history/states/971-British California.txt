@@ -1,0 +1,37 @@
+
+state={
+	id=971
+	name="STATE_971"
+	manpower = 3391057
+	
+	state_category = large_city
+	local_supplies=0.0
+	
+	resources={
+		steel=70 # was: 136
+		tungsten=32 # was: 62
+		aluminium=25 # was: 44
+	}
+
+	history={
+		owner = CAS
+		buildings = {
+			infrastructure = 3
+			9713 = {
+				naval_base = 1
+			}
+			610 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = CAS
+		add_core_of = CAL
+		victory_points = {
+			9713 1 
+		}
+	}
+
+	provinces={
+		710 9713 11658 677 6681 6757 6745 9697 766 11698 10159 4331 6665 3588 768 6772 9730 781 610 6482 3644
+	}
+}
