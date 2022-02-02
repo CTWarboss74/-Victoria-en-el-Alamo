@@ -1,0 +1,21 @@
+state={
+	id=963
+	name="STATE_963"
+	provinces={
+		 7787 515 10684 6726 11440 9669 4739
+	}
+	history={
+		owner = NA1
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1			
+		}
+		add_core_of = CAN
+		add_core_of = NA1
+
+	}
+	manpower=174710
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000 
+}
