@@ -5,35 +5,30 @@ state={
 	state_category = city
 
 	history={
-		owner = AUS
-		controller = AUS
-		
 		victory_points = {
-			11735 3 
+			6626 1 
 		}
-		
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		
-			11735 = {
-				naval_base = 3
-			}
-		}
-			
+		owner = AUS
 		add_core_of = AUS
-		add_claim_by = SLV
-		add_core_of = CRO
+		add_core_of = SLV
+		buildings = {
+			infrastructure = 3
+			6626 = {
+				naval_base = 5
+
+			}
+			industrial_complex = 1
+			dockyard = 2
+
+		}
+
 	}
 
-	provinces = {
-		11735 
+	provinces={
+		599 6626 11595 11735 
 	}
-	
-	resources = {
-		steel = 2
-	}
-	
-	manpower=586237
+	manpower=1063159
 	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
 }

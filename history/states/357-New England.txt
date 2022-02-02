@@ -10,9 +10,30 @@ state={
 		owner = MAS
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 4
+			6732 = {
+				naval_base = 8
+
+			}
+			9832 = {
+				naval_base = 3
+
+			}
+
 		}
 		add_core_of = MAS
+		victory_points = {
+			6732 20 
+		}
+		victory_points = {
+			12459 1 
+		}
+		victory_points = {
+			9832 1 
+		}
+
 	}
 
 	provinces={

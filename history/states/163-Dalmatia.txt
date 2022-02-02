@@ -2,26 +2,23 @@ state=
 {
 	id=163
 	name="STATE_163"
-	manpower = 28894
+	manpower = 18000
 	
-	state_category = city
+	state_category = pastoral
 	
-	history = {
+	history={
 		owner = CRO
-		controller = CRO
-		
-		victory_points = {
-			13241 5
-		}
 		buildings = {
-			infrastructure = 3
-			13241 = {
-				naval_base = 2
+			infrastructure = 3 #was: 5
+			3943 = {
+				naval_base = 1
 			}
 		}
 		add_core_of = CRO
-	}
+	} 
 	provinces={	
-		13241
+		3943 
 	}
+
+	local_supplies=0.0 
 }

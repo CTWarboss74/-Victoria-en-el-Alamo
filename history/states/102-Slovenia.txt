@@ -13,14 +13,13 @@ state=
 			infrastructure = 3
 		}
 		victory_points = {
-			9627 5
+			9627 3 
 		}
 		add_core_of = AUS
 		add_core_of = SLV
 	}
 	provinces={
-		3631 6650 9627 13260
-	}
+		596 665 3631 3654 6650 6672 9596 9627 }
 	
 	local_supplies=5.0 
 }

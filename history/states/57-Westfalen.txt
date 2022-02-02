@@ -7,13 +7,8 @@ state={
 
 	history={
 		owner = GER
-		
 		victory_points = {
-			6535 5
-		}
-		
-		victory_points = {
-			11388 2
+			495 5 
 		}
 		#victory_points = {
 		#	9509 1
@@ -37,7 +32,7 @@ state={
 	}
 
 	provinces={
-		405 495 3355 3398 6535 9443 9509 11233 11346 11388 11431 13263
+		405 495 3355 3398 6535 6622 9443 9509 11346 11431 
 	}
 
 	local_supplies=0.0 
