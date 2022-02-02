@@ -178,7 +178,7 @@ if = {
 		freedom_level = 0.4
 	}
 	set_autonomy = {
-		target = CAL
+		target = CAS
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.3
 	}
@@ -212,7 +212,7 @@ if = {
 	else = {
 		puppet = MAL
 		puppet = RAJ
-		puppet = CAL
+		puppet = CAS
 		puppet = MDR
 		puppet = PAL
 		puppet = JOR
