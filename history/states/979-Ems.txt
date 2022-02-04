@@ -1,0 +1,27 @@
+state={
+	id=979
+	name="STATE_979"
+	history = {
+		owner = GER
+		controller = GER
+		
+		victory_points = {
+			241 5 
+		}
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+		}
+		add_core_of = GER
+	}
+	provinces={
+		9281 11264 11360 13262
+	}
+	manpower=318578
+	buildings_max_level_factor=1.000
+	state_category = large_town
+	
+	local_supplies=0.0 
+}

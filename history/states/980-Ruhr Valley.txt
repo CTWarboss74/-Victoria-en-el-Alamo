@@ -1,0 +1,32 @@
+
+state={
+	id=980
+	name="STATE_980"
+	manpower = 2133278
+	state_category = metropolis
+
+	history={
+		victory_points = {
+			13264 5
+		}
+		victory_points = {
+			6469 5
+		}
+		victory_points = {
+			6622 10 
+		}
+		owner = GER
+		controller = GER
+		
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+
+	provinces={
+		6622 6469 13264
+	}
+
+	local_supplies=0.0 
+}
