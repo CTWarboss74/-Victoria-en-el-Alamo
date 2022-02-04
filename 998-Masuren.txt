@@ -1,0 +1,28 @@
+
+state={
+	id=998
+	name="STATE_998"
+	manpower = 323847
+
+	state_category = large_town
+
+	history={
+		owner = GER
+		
+		victory_points = {
+			6375 3
+		}
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = GER
+	}
+
+	provinces={
+		6375 9327 9346 9372 11386
+	}
+
+	local_supplies=12.0 
+}

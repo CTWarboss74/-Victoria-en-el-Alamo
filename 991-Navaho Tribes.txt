@@ -1,0 +1,20 @@
+state={
+	id=991
+	name="STATE_991"
+	provinces={
+		 12633 12561 10711
+	}
+	history={
+		owner = NA5
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1			
+		}
+		add_core_of = NA5
+
+	}
+	manpower=53414
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000 
+}

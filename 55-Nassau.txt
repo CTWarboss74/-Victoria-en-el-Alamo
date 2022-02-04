@@ -1,0 +1,29 @@
+
+state={
+	id=55
+	name="STATE_55"
+	manpower = 2613642
+
+	state_category = large_city
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+		victory_points = {
+			6488 20.0 
+		}
+		victory_points = {
+			564 3
+		}
+		add_core_of = GER
+	}
+
+	provinces={
+		564 3397 3524 6444 6488 6549 9486 9524 9547 11445 11533 
+	}
+
+	local_supplies=15.0 
+}
