@@ -1,0 +1,23 @@
+
+state={
+	id=1000
+	name="STATE_1000"
+	manpower = 93834
+
+	state_category = rural
+
+	history={
+		owner = MAS
+		buildings = {
+			infrastructure = 2
+		}
+		
+		add_core_of = MAS
+	}
+
+	provinces={
+		862 894 3697
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=1022
+	name="STATE_1022"
+	manpower = 832854
+
+	state_category = rural
+
+	history={
+		owner = NOV
+		
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			11975 = {
+				naval_base = 1
+			}
+			1572 = {
+				naval_base = 2
+			}
+		}
+		
+		add_core_of = NOV
+	}
+
+	provinces={
+		1433 1480 7612 10437 10465 11975 12325 12470 12498 13291 13292 13293 13294
+	}
+
+	local_supplies=0.0 
+}

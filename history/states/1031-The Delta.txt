@@ -1,0 +1,25 @@
+
+state={
+	id=1031
+	name="STATE_1031"
+	manpower = 465235
+
+	state_category = rural
+
+	history={
+		owner = NOV
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		
+		add_core_of = NOV
+	}
+
+	provinces={
+		4510 7464 10410 12328
+	}
+
+	local_supplies=0.0 
+}

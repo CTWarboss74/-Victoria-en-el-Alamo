@@ -1,0 +1,26 @@
+state={
+	id=961
+	name="STATE_961"
+	resources={
+		steel=13 # was: 24.000
+	}
+	
+	state_category = large_town
+
+	history={
+		owner = MAS
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 6
+		}
+		add_core_of = MAS
+	}
+
+	provinces={
+		9673 9693 3806 706 9774 6911 3894
+	}
+	local_supplies=0.0 
+	manpower=1865345
+	buildings_max_level_factor=1.000
+}

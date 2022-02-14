@@ -1,0 +1,24 @@
+
+state={
+	id=1013
+	name="STATE_1013"
+	manpower = 86283
+
+	state_category = rural
+
+	history={
+		owner = KKY
+		
+		buildings = {
+			infrastructure = 2
+		}
+		
+		add_core_of = KKY
+	}
+
+	provinces={
+		10586
+	}
+
+	local_supplies=0.0 
+}

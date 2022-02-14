@@ -2,23 +2,17 @@ state={
 	id=841
 	name="STATE_841"
 	provinces={
-		4627 6971 7558 9779 
+		7558 9779 13277
 	}
-	manpower=678903
+	manpower=122544
 	state_category = town
 	buildings_max_level_factor=1.000
 	history={
 		owner = KKY
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
-			air_base = 4
+			infrastructure = 2
 		}
 		add_core_of = KKY
-		victory_points = {
-			6696 1 
-		}
-
 	}
 	local_supplies=0.0 
 }

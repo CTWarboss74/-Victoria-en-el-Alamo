@@ -2,29 +2,22 @@
 state={
 	id=364
 	name="STATE_364"
-	manpower = 1738764
+	manpower = 483675
 	
-	state_category = large_town
+	state_category = town
 
 	history={
 		owner = NOV
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
-			7202 = {
-				naval_base = 2
-
-			}
+			industrial_complex = 1
 		}
+		
 		add_core_of = NOV
-		victory_points = {
-			7202 1 
-		}
-
 	}
 	local_supplies=0.0 
 
 	provinces={
-		1485 1547 3994 4491 4653 7012 7134 7202 7527 10029 10047 11927 
+		1485 3994 4491 4653 7527 13289
 	}
 }

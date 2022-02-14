@@ -2,7 +2,7 @@
 state={
 	id=369
 	name="STATE_369"
-	manpower = 2614588
+	manpower = 1014588
 	
 	state_category = large_town
 	local_supplies=0.0
@@ -12,7 +12,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
-			air_base = 4
+			air_base = 3
 		}
 		add_core_of = KKY
 		victory_points = {
@@ -22,6 +22,6 @@ state={
 	}
 
 	provinces={
-		1445 1582 4402 4452 4988 6696 6974 7547 9727 10586 10727 12568 12637 12709 
+		4402 4988 6696 6974 10727 12568 12709 
 	}
 }

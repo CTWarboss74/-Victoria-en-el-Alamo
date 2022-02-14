@@ -2,7 +2,7 @@
 state={
 	id=396
 	name="STATE_396"
-	manpower = 3238501
+	manpower = 1238501
 	state_category = city
 	local_supplies=0.0
 
@@ -10,7 +10,7 @@ state={
 		owner = FSA
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
+			industrial_complex = 2
 			arms_factory = 1
 		}
 		add_core_of = FSA
@@ -21,6 +21,6 @@ state={
 	}
 
 	provinces={
-		870 1595 1881 4437 4527 4531 6713 7551 9653 9654 9796 9810 10448 11621 11635 11637 12437 
+		1595 4531 7551 9796 9810 13320
 	}
 }

@@ -1,0 +1,24 @@
+
+state={
+	id=1008
+	name="STATE_1008"
+	manpower = 52724
+
+	state_category = town
+
+	history={
+		owner = MAS
+		
+		buildings = {
+			infrastructure = 2
+		}
+		
+		add_core_of = MAS
+	}
+
+	provinces={
+		6719 7462 12202 13274 13275
+	}
+
+	local_supplies=0.0 
+}

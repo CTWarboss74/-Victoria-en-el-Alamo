@@ -1,0 +1,30 @@
+
+state={
+	id=1033
+	name="STATE_1033"
+	manpower = 1132654
+
+	state_category = city
+
+	history={
+		owner = FSA
+		
+		victory_points = {
+			6890 10 
+		}
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		
+		add_core_of = FSA
+	}
+
+	provinces={
+		882 4442 6874 6890 9825
+	}
+
+	local_supplies=0.0 
+}

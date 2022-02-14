@@ -5,21 +5,16 @@ state={
 	history={
 		owner = MAS
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 2
 
 		}
 		add_core_of = MAS
-		victory_points = {
-			6696 1 
-		}
-
 	}
 
 	provinces={
-		862 891 894 3697 3897 9820 11799 11817 
+		891 3897 11799
 	}
-	manpower=505833
+	manpower=165345
 	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.0 
