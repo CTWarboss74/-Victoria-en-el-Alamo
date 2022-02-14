@@ -1,0 +1,24 @@
+
+state={
+	id=1036
+	name="STATE_1036"
+	manpower = 354653
+
+	state_category = rural
+
+	history={
+		owner = FSA
+		
+		buildings = {
+			infrastructure = 2
+		}
+		
+		add_core_of = FSA
+	}
+
+	provinces={
+		954 1604 7626 7831 12305
+	}
+
+	local_supplies=0.0 
+}

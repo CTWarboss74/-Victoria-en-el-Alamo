@@ -1,0 +1,25 @@
+
+state={
+	id=1016
+	name="STATE_1016"
+	manpower = 823635
+
+	state_category = large_town
+
+	history={
+		owner = KKY
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		
+		add_core_of = KKY
+	}
+
+	provinces={
+		1987 7615 7797 10615
+	}
+
+	local_supplies=0.0 
+}

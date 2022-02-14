@@ -2,9 +2,9 @@ state={
 	id=837
 	name="STATE_837"
 	provinces={
-		1282 1338 1619 3732 4287 6719 7462 10247 10318 12202 12221 12459 
+		3732 13273 13276
 	}
-	manpower=1209790
+	manpower=365434
 	state_category = large_town
 	buildings_max_level_factor=1.000
 	local_supplies=0.0 
@@ -12,13 +12,12 @@ state={
 		owner = MAS
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
 			industrial_complex = 1
 			dockyard = 1
 		}
 		add_core_of = MAS
 		victory_points = {
-			12459 1 
+			13276 5
 		}
 	}
 }

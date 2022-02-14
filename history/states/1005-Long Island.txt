@@ -1,0 +1,34 @@
+
+state={
+	id=1005
+	name="STATE_1005"
+	manpower = 4325646
+
+	state_category = metropolis
+
+	history={
+		owner = MAS
+		
+		victory_points = {
+			3878 25
+		}
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 3
+			3878 = {
+				naval_base = 6
+			}
+		}
+		
+		add_core_of = MAS
+	}
+
+	provinces={
+		859 3878
+	}
+
+	local_supplies=0.0 
+}

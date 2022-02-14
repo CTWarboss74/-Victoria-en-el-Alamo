@@ -1,0 +1,24 @@
+
+state={
+	id=1010
+	name="STATE_1010"
+	manpower = 103655
+
+	state_category = town
+
+	history={
+		owner = VIR
+		
+		buildings = {
+			infrastructure = 3
+		}
+		
+		add_core_of = VIR
+	}
+
+	provinces={
+		9931 10412 10439 13278
+	}
+
+	local_supplies=0.0 
+}

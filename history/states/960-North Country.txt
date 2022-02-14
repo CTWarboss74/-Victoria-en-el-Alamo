@@ -1,11 +1,11 @@
 state={
 	id=960
-	name="UpState New York"
+	name="STATE_960"
 	resources={
 		
 	}
 	
-	state_category = large_city
+	state_category = rural
 
 	history={
 		owner = MAS
@@ -32,6 +32,6 @@ state={
 		11665 11722 9721 6916 9754 6778 10381 3602 11662 598
 	}
 	local_supplies=0.0 
-	manpower=4588061
+	manpower=262735
 	buildings_max_level_factor=1.000
 }

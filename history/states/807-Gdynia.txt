@@ -8,9 +8,6 @@ state={
 	history={
 		owner = GER
 		victory_points = {
-			9263 5
-		}
-		victory_points = {
 			3295 5
 		}
 		victory_points = {
@@ -20,16 +17,13 @@ state={
 			infrastructure = 3 #was: 6
 			industrial_complex = 1
 			air_base = 2
-			9263 = {
-				naval_base = 1
-			}
 		}
 		add_core_of = GER
 		add_core_of = KSH
 	}
 
 	provinces={
-		243 279 334 389 3295 3324 6347 9263
+		243 279 389 3295 3324 6347
 	}
 
 	local_supplies=0.0 

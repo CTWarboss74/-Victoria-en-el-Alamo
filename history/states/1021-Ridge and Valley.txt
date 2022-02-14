@@ -1,0 +1,24 @@
+
+state={
+	id=1021
+	name="STATE_1021"
+	manpower = 347632
+
+	state_category = town
+
+	history={
+		owner = NOV
+		
+		buildings = {
+			infrastructure = 2
+		}
+		
+		add_core_of = NOV
+	}
+
+	provinces={
+		968 5090 9949 13296 13297
+	}
+
+	local_supplies=0.0 
+}

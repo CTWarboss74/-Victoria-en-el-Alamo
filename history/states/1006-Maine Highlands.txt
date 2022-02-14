@@ -1,0 +1,28 @@
+
+state={
+	id=1006
+	name="STATE_1006"
+	manpower = 81534
+
+	state_category = pastoral
+
+	history={
+		owner = MAS
+		
+		victory_points = {
+			12459 1
+		}
+		
+		buildings = {
+			infrastructure = 2
+		}
+		
+		add_core_of = MAS
+	}
+
+	provinces={
+		1282 4287 10247 10318 12221 12459
+	}
+
+	local_supplies=0.0 
+}

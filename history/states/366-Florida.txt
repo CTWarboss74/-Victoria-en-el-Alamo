@@ -2,37 +2,31 @@
 state={
 	id=366
 	name="STATE_366"
-	manpower = 1468210
+	manpower = 528235
 	
 	state_category = large_town
 	local_supplies=0.0 
 
 	history={
 		owner = FLR
+		
+		victory_points = {
+			7388 5
+		}
+		
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
-			dockyard = 2
-			air_base = 6
-			
-			1843 = {
-				naval_base = 5
-			}
+			industrial_complex = 1
+			dockyard = 1
 			7388 = {
 				naval_base = 3
 			}
-			
 		}
 		add_core_of = FLR
-		victory_points = {
-			1843 5 
-		}
-		add_extra_state_shared_building_slots = 1
-
 	}
 
 	provinces={
-		866   1584 1843 1913 7388 9834    10489   12439 12752 
+		1584 1913 7388 12439 12752 13302 13303 13304 13305
 	}
 	
 }

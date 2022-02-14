@@ -1,0 +1,28 @@
+
+state={
+	id=1026
+	name="STATE_1026"
+	manpower = 312872
+
+	state_category = city
+
+	history={
+		owner = FLR
+		
+		victory_points = {
+			1843 5
+		}
+		
+		buildings = {
+			infrastructure = 4
+		}
+		
+		add_core_of = FLR
+	}
+
+	provinces={
+		866 1843 9834 10489 13306
+	}
+
+	local_supplies=0.0 
+}

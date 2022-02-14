@@ -1,0 +1,24 @@
+
+state={
+	id=1012
+	name="STATE_1012"
+	manpower = 27438
+
+	state_category = rural
+
+	history={
+		owner = VIR
+		
+		buildings = {
+			infrastructure = 2
+		}
+		
+		add_core_of = VIR
+	}
+
+	provinces={
+		6958 11888 13279
+	}
+
+	local_supplies=0.0 
+}

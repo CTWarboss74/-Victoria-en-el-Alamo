@@ -1,27 +1,30 @@
 state={
 	id=358
-	name="WestState New York"
+	name="STATE_358"
 	resources={
 		
 	}
 	
-	state_category = megalopolis
+	state_category = large_town
 
 	history={
 		owner = MAS
+		
+		victory_points = {
+			3702 3
+		}
+		
 		buildings = {
 			infrastructure = 2
-		
 		}
-		add_core_of = MAS
 		
-
+		add_core_of = MAS
 	}
 
 	provinces={
-		  734  1436  3702 3733 3747    6707 6717  6795   9664   9708     11650 11654    11680  
+		3702 3747 6795 11650 13269
 	}
 	local_supplies=0.0 
-	manpower=2588061
+	manpower=565634
 	buildings_max_level_factor=1.000
 }

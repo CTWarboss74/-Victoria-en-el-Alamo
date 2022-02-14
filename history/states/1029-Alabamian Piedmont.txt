@@ -1,0 +1,30 @@
+
+state={
+	id=1029
+	name="STATE_1029"
+	manpower = 825432
+
+	state_category = city
+
+	history={
+		owner = NOV
+		
+		victory_points = {
+			13310 3
+		}
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		
+		add_core_of = NOV
+	}
+
+	provinces={
+		4594 11509 12803 13310
+	}
+
+	local_supplies=0.0 
+}

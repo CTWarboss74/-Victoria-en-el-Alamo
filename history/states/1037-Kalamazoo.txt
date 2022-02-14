@@ -1,0 +1,25 @@
+
+state={
+	id=1037
+	name="STATE_1037"
+	manpower = 962653
+
+	state_category = town
+
+	history={
+		owner = FSA
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		
+		add_core_of = FSA
+	}
+
+	provinces={
+		695 6769 6782 9684 11641 11685 11714 13322 13323
+	}
+
+	local_supplies=0.0 
+}
