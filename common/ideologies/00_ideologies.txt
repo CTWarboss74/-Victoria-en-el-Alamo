@@ -200,12 +200,114 @@ ideologies = {
 		}
 		ai_communist = yes # uses the democratic AI behaviour
 	}
+	market_liberalism = {
+	
+		types = {
+			
+			market_liberalism_type = {
+			}
+			
+		}
+	}
+	social_conservatism = {
+	
+		types = {
+			
+			social_conservatism_type = {
+			}
+			
+		}
+	}
+		social_liberalism = {
+	
+		types = {
+			
+			social_liberalism_type = {
+			}
+			
+		}
+	}
+
+	    liberal_conservatism = {
+	
+		types = {
+			
+			liberal_conservatism_type = {
+			}
+			
+		}
+	}
+
+	fiscal_conservatism = {
+	
+		types = {
+			
+			fiscal_conservatism_type = {
+			}
+			
+		}
+	}
+	national_conservatism = {
+	
+		types = {
+			
+			national_conservatism_type = {
+			}
+		
+		}
+	}
+	rightwing_populism = {
+	
+		types = {
+			
+			rightwing_populism_type = {
+			}
+			
+		}
+	}
+	national_liberalism = {
+	
+		types = {
+			
+			national_liberalism_type = {
+			}
+			
+		}
+	}
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		
+		color = { 84 14 14 }
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_guarantee_other_ideologies = no
+		}
+		
+		can_host_government_in_exile = no
+		
+		war_impact_on_world_tension = 0.45		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.15
+		
+		modifiers = {
+			generate_wargoal_tension = -0.3
+			puppet_cost_factor = -0.3
+		}
+		ai_communist = yes # uses the democratic AI behaviour
+	}
 
 	liberal_democracy = {
 	
 		types = {
 			
-			liberalism_type = {
+			 = {
 			}
 		}
 		
