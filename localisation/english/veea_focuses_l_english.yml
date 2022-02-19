@@ -131,3 +131,10 @@
  ENG_focus_deal_with_french_devil_desc:0 "Whilst many woudl see it as crazy, the government sees in necessary to propose an alliance between the United Kingdom and French state, even if it goes against our morals to restore the French Republic."
  ENG_focus_proposal_to_italians:0 "A proposal to the Italians"
  ENG_focus_proposal_to_italians_desc:0 "The Italians are in a prefect position to strike into the Balkans and Austria to attack Germany. We should ensure their sovereignty."
+ 
+ # New England Focuses
+ MAS_status_quo:0 "Status Quo"
+ MAS_emergency_subsidies:0 "Emergency Subsidies"
+ MAS_german_question:0 "The German Question"
+ MAS_out_with_old:0 "Out with the Old"
+ MAS_cox_administration:0 "The Cox Administration"

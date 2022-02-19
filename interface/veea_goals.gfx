@@ -1,33 +1,60 @@
 spriteTypes = {	
 
-	#### VeeA Goal Icons
+	### VeeA Generic Goal Icons ###
 	SpriteType = {
 		name = "GFX_goal_generic_build_railway1"
-		texturefile = "gfx/interface/goals/focus_generic_build_railway1.dds"			
+		texturefile = "gfx/interface/goals/generic/focus_generic_build_railway1.dds"			
 	}
 	SpriteType = {
 		name = "GFX_goal_generic_automobile_investment"
-		texturefile = "gfx/interface/goals/goal_generic_automobile_investment.dds"			
+		texturefile = "gfx/interface/goals/generic/goal_generic_automobile_investment.dds"			
 	}
 	SpriteType = {
-		name = "GFX_goal_mex_form_mexican_congress"
-		texturefile = "gfx/interface/goals/goal_mex_form_mexican_congress.dds"			
+		name = "GFX_goal_generic_budget_cuts"
+		texturefile = "gfx/interface/goals/generic/goal_generic_budget_cuts.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_generic_highway"
-		texturefile = "gfx/interface/goals/goal_generic_highway.dds"			
-	}		
+		texturefile = "gfx/interface/goals/generic/goal_generic_highway.dds"
+	}
+	
+	### VeeA Mexico Goal Icons ###
+	SpriteType = {
+		name = "GFX_goal_mex_form_mexican_congress"
+		texturefile = "gfx/interface/goals/MEX/goal_mex_form_mexican_congress.dds"			
+	}
 	SpriteType = {
 		name = "GFX_goal_mex_montes_project"
-		texturefile = "gfx/interface/goals/goal_mex_montes_project.dds"			
+		texturefile = "gfx/interface/goals/MEX/goal_mex_montes_project.dds"			
 	}	
 	SpriteType = {
 		name = "GFX_goal_mex_second_lsmc"
-		texturefile = "gfx/interface/goals/goal_mex_second_lsmc.dds"			
-	}	
+		texturefile = "gfx/interface/goals/MEX/goal_mex_second_lsmc.dds"			
+	}
+	
+	### VeeA New England Goal Icons ###
 	SpriteType = {
-		name = "GFX_goal_generic_budget_cuts"
-		texturefile = "gfx/interface/goals/goal_generic_budget_cuts.dds"			
-	}	
-
+		name = "GFX_goal_MAS_status_quo"
+		texturefile = "gfx/interface/goals/MAS/MAS_status_quo.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_MAS_emergency_subsidies"
+		texturefile = "gfx/interface/goals/MAS/MAS_emergency_subsidies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_MAS_german_question"
+		texturefile = "gfx/interface/goals/MAS/MAS_german_question.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_MAS_out_with_old"
+		texturefile = "gfx/interface/goals/MAS/MAS_out_with_old.dds" 
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_MAS_cox_administration"
+		texturefile = "gfx/interface/goals/MAS/MAS_cox_administration.dds"
+	}
 }

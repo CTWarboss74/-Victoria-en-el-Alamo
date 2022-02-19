@@ -1,0 +1,204 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = new_england_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = MAS
+		}
+	}
+	default = no
+	
+	
+	focus = {
+		id = MAS_status_quo
+		icon = GFX_goal_MAS_status_quo
+		x = 10
+		y = 0
+		#relative_position_id = MAS_status_quo
+		
+		available = {
+			
+		}
+		
+		#prerequisite = { }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MAS_emergency_subsidies
+		icon = GFX_goal_MAS_emergency_subsidies
+		x = 0
+		y = 1
+		relative_position_id = MAS_status_quo
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_status_quo }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MAS_german_question
+		icon = GFX_goal_MAS_german_question
+		x = 0
+		y = 2
+		relative_position_id = MAS_status_quo
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_emergency_subsidies }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MAS_out_with_old
+		icon = GFX_goal_MAS_out_with_old
+		x = -2
+		y = 1
+		relative_position_id = MAS_german_question
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_german_question }
+		mutually_exclusive = { focus = MAS_cox_administration }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MAS_cox_administration
+		icon = GFX_goal_MAS_cox_administration
+		x = 2
+		y = 1
+		relative_position_id = MAS_german_question
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_german_question }
+		mutually_exclusive = { focus = MAS_out_with_old }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
