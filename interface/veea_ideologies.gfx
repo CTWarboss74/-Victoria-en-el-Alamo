@@ -47,4 +47,39 @@ spriteTypes = {
 			name = "GFX_ideology_communism_group"
 			texturefile = "gfx/interface/ideologies/communism_group.dds"
 		}		
+
+
+
+spriteType = {
+			name = "GFX_ideology_market_liberalism_group"
+			texturefile = "gfx/interface/ideologies/market_liberalism_group.dds"
+		}
+		spriteType = {
+			name = "GFX_ideology_social_liberalism_group"
+			texturefile = "gfx/interface/ideologies/social_liberalism_group.dds"
+		}
+        spriteType = {
+			name = "GFX_ideology_liberal_conservatism_group"
+			texturefile = "gfx/interface/ideologies/liberal_conservatism_group.dds"
+		}
+        spriteType = {
+			name = "GFX_ideology_fiscal_conservatism_group"
+			texturefile = "gfx/interface/ideologies/fiscal_conservatism_group.dds"
+		}
+        spriteType = {
+			name = "GFX_ideology_national_conservatism_group"
+			texturefile = "gfx/interface/ideologies/national_conservatism_group.dds"
+		}
+         spriteType = {
+			name = "GFX_ideology_rightwing_populism_group"
+			texturefile = "gfx/interface/ideologies/rightwing_populism_group.dds"
+		}
+		spriteType = {
+			name = "GFX_ideology_national_liberalism_group"
+			texturefile = "gfx/interface/ideologies/national_liberalism_group.dds"
+		} 
+		spriteType = {
+			name = "GFX_ideology_social_conservatism_group"
+			texturefile = "gfx/interface/ideologies/social_conservatism_group.dds"
+		} 
 }
