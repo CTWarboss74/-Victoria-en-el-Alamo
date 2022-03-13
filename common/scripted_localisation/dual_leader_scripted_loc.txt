@@ -17,6 +17,13 @@ defined_text = {
 		localization_key = ENG_PRIME_MINISTER_TITLE
 	}
 	text = {
+		trigger = {
+			original_tag = GER
+			has_government = neutrality
+		}
+		localization_key = GER_SUPREME_LEADER_TITLE
+	}
+	text = {
 		localization_key = DEFAULT_FIRST_TITLE
 	}
 }
@@ -37,6 +44,13 @@ defined_text = {
 		}
 		localization_key = ENG_KING_TITLE
 	}
+	text = {
+		trigger = {
+			original_tag = GER
+			has_government = neutrality
+		}
+		localization_key = GER_KAISER_TITLE
+	}
 }
 
 defined_text = {
@@ -56,6 +70,13 @@ defined_text = {
 			}
 		}
 		localization_key = ENG_GEORGE_V
+	}
+	text = {
+		trigger = {
+			original_tag = GER
+			has_government = neutrality
+		}
+		localization_key = GER_WILHELM_II
 	}
 	text = {
 		localization_key = DEFAULT_TITLE
@@ -81,8 +102,16 @@ defined_text = {
         localization_key = "GFX_ENG_George_V"
 	}
 	text = {
+		trigger = {
+			original_tag = GER
+			has_government = neutrality
+		}
+		localization_key = "GFX_Wilhelm_II"
+	}
+	text = {
 		localization_key = "GFX_portrait_bg_blank"
 	}
+	
 }
 
 defined_text = {
@@ -96,6 +125,13 @@ defined_text = {
 			}
         }
         localization_key = "DESCRIPTION_TEST"
+	}
+	text = {
+		trigger = {
+			original_tag = GER
+			has_government = neutrality
+		}
+		localization_key = "Wilhelm_II_description"
 	}
 }
 

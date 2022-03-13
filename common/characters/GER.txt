@@ -12,4 +12,17 @@ characters={
 			id=-1
 		}
 	}
+	GER_Ernst_Rohm={
+		name=GER_Ernst_Rohm
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/GER_Ernst_Rohm.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			id=-1
+		}
+	}
 }

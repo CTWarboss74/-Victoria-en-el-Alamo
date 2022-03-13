@@ -389,6 +389,7 @@ add_ideas = GER_mefo_bills_1
 
 activate_mission = GER_mefo_bills_mission
 
+recruit_character = GER_Ernst_Rohm
 recruit_character = GER_erich_ludendorff
 recruit_character = GER_wilhelm_pieck
 recruit_character = GER_konrad_adenauer

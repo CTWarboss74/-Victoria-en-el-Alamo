@@ -12,9 +12,12 @@
  dual_leader_desc_tt:0 "§g[From.GetDualLeaderDesc]§!"
  first_leader_desc_tt:0 "§g[From.GetFirstLeaderDesc]§!"
     # Nation Specific Localisation
+ GER_SUPREME_LEADER_TITLE:0 "Supreme Leader"
+ GER_KAISER_TITLE:0 "Kaiser"
  ENG_PRIME_MINISTER_TITLE:0 "Prime Minister"
  ENG_KING_TITLE:0 "Monarch"
  ENG_GEORGE_V:0 "George V"
+ GER_WILHELM_II:0 "Wilhem II"
  ROM_PRIME_MINISTER_TITLE:0 "Prime Minister"
  ROM_MONARCH_TITLE:0 "Monarch"
  ROM_CAROL_II:0 "Carol II"
