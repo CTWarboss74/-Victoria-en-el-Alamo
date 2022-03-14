@@ -1,0 +1,16 @@
+characters = {
+	MAS_channing_cox = {
+		name = "Channing H. Cox"
+		portraits={
+			civilian={
+				large = "GFX_portrait_MAS_channing_cox"
+			}
+		}
+		country_leader={
+			ideology = market_liberalism_type
+			#traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

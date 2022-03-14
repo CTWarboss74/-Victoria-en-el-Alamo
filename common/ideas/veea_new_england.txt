@@ -1,0 +1,23 @@
+ideas = {
+
+	country = {
+		MAS_colonial_nostalgia = {
+			
+			allowed = {
+				original_tag = MAS
+				always = no
+			}
+
+			picture = MAS_colonial_nostalgia
+			
+			modifier = {		
+				stability_factor = -0.05
+				political_power_gain = -0.15
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}
