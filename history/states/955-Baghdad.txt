@@ -5,7 +5,7 @@ state={
 		2097 12855 
 	}
 	history={
-		owner = TUR
+		owner = IRM
 		victory_points = {
 			2097 10 
 		}
@@ -16,8 +16,8 @@ state={
 			air_base = 2
 
 		}
-		add_core_of = TUR
 		add_core_of = IRQ
+		add_core_of = IRM
 
 	}
 	manpower=712067
