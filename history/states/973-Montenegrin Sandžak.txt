@@ -2,13 +2,12 @@ state={
 	id=973
 	name="STATE_973"
 	history = {
-		owner = AUS
-		controller = AUS
+		owner = YUG
+		controller = YUG
 		
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = AUS
 		add_core_of = YUG
 		add_core_of = MNT
 	}

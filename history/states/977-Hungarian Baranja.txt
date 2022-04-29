@@ -2,8 +2,8 @@ state={
 	id=977
 	name="STATE_977"
 	history = {
-		owner = AUS
-		controller = AUS
+		owner = HUN
+		controller = HUN
 		
 		victory_points = {
 			9643 5 
@@ -17,7 +17,6 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		add_core_of = AUS
 		add_core_of = HUN
 	}
 	provinces = {

@@ -150,24 +150,24 @@ CZE = {
 	color_ui = rgb { 70 217 203 }
 }
 POL = {
-	color = rgb { 249 109 172 }
-	color_ui = rgb { 249 109 172 }
+	color = rgb { 130 127 127 }
+	color_ui = rgb { 130 127 127 }
 }
 AUS = {
 	color = rgb { 194 198 215 }
 	color_ui = rgb { 255 255 255 }
 }
 LIT = {
-	color = rgb { 219 170 0 }
-	color_ui = rgb { 219 170 0 }
+	color = rgb { 219 219 119 }
+	color_ui = rgb { 255 255 155 }
 }
 EST = {
-	color = rgb { 0 27 170 }
-	color_ui = rgb { 0 27 170 }
+	color = rgb { 50 135 175 }
+	color_ui = rgb { 99 204 254 }
 }
 LAT = {
-	color = rgb { 128 0 0 }
-	color_ui = rgb { 128 0 0 }
+	color = rgb { 75 77 186 }
+	color_ui = rgb { 124 125 184 }
 }
 SPR = {
 	color = rgb { 242 205 94 }
@@ -485,8 +485,8 @@ ICE = {
 }
 
 UKR = {
-	color = rgb { 52 68 153 }
-	color_ui = rgb { 52 68 153 }
+	color = rgb { 0  80  230 }
+	color_ui = rgb { 0  80  230 }	
 }
 
 AZR = {
@@ -535,8 +535,8 @@ MNT = {
 }
 
 BLR = {
-	color = rgb { 226 166 154 }
-	color_ui = rgb { 226 166 154 }
+	color = rgb { 180 220 190 }
+	color_ui = rgb { 180 220 190 }
 }
 MAN = {
 	color = rgb { 255 120 71 }
@@ -800,8 +800,8 @@ MEK = {
 	color_ui = rgb { 186 245 86 }
 }
 PRE = {
-	color = rgb { 101 60 73 }
-	color_ui = rgb { 101 60 73 }
+	color = rgb { 160  160  160 }
+	color_ui = rgb { 160  160  160 }
 }
 SAX = {
 	color = rgb { 102 102 0 }

@@ -2,8 +2,8 @@ state={
 	id=966
 	name="STATE_966"
 	history = {
-		owner = AUS
-		controller = AUS
+		owner = CRO
+		controller = CRO
 		
 		victory_points = {
 			3601 3
@@ -17,7 +17,6 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = AUS
 		add_core_of = CRO
 	}
 	provinces={

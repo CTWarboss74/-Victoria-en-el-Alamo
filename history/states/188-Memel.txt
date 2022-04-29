@@ -11,7 +11,7 @@ state=
 		victory_points = {
 			3288 3
 		}
-		owner = PRE
+		owner = GER
 		buildings = {
 			infrastructure = 3 #was: 5
 			3288 = {
@@ -19,7 +19,7 @@ state=
 			}
 		}
 		add_core_of = LIT
-		add_core_of = PRE
+		add_core_of = GER
 	}
 	provinces={
 		3288 	

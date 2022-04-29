@@ -2,8 +2,8 @@ state={
 	id=978
 	name="STATE_978"
 	history = {
-		owner = AUS
-		controller = AUS
+		owner = CRO
+		controller = CRO
 		
 		victory_points = {
 			13252 1
@@ -16,7 +16,6 @@ state={
 					naval_base = 2
 				}
 		}
-		add_core_of = AUS
 		add_core_of = CRO
 		add_core_of = MNT
 	}

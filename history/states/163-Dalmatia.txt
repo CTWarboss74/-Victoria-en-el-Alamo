@@ -7,8 +7,8 @@ state=
 	state_category = city
 	
 	history = {
-		owner = AUS
-		controller = AUS
+		owner = CRO
+		controller = CRO
 		
 		victory_points = {
 			13241 5
@@ -19,7 +19,6 @@ state=
 				naval_base = 2
 			}
 		}
-		add_core_of = AUS
 		add_core_of = CRO
 	}
 	provinces={	

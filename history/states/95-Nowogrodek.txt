@@ -6,21 +6,20 @@ state={
 		victory_points = {
 			9304 1
 		}
-		owner = POL
+		owner = BLR
 		buildings = {
 			infrastructure = 3
 			air_base = 3
 			industrial_complex = 1
 		}
-		add_core_of = POL
-		add_claim_by = BLR
+		add_core_of = BLR
 
 	}
 
 	provinces={
-		318 3281 3366 3393 13206 13331
+		318 3281 3366 3393 6359 6413 9236 9304 9359 11341 13206 
 	}
-	manpower=759890
+	manpower=1598900
 	buildings_max_level_factor=1.000
 	state_category=rural
 

@@ -3,8 +3,8 @@ state={
 	name="STATE_971"
 	
 	history = {
-		owner = AUS
-		controller = AUS
+		owner = CRO
+		controller = CRO
 		
 		victory_points = {
 			11845 1
@@ -12,7 +12,6 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = AUS
 		add_core_of = CRO
 		add_core_of = BOS
 		add_core_of = HRZ
