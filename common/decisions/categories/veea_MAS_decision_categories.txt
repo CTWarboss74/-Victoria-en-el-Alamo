@@ -1,0 +1,13 @@
+MAS_category_budget_crisis = {
+
+	icon = GFX_decision_category_generic_industry
+	visible_when_empty = yes
+
+
+	priority = 50
+
+	allowed = {
+		original_tag = MAS
+		has_country_flag = budget_crisis
+	}
+}

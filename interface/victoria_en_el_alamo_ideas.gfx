@@ -4,7 +4,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_idea_the_founding_fathers_fsa"
-		texturefile = "gfx/interface/ideas/the_founding_fathers_fsa.dds"
+		texturefile = "gfx/interface/ideas/FSA/the_founding_fathers_fsa.dds"
 	}
 
 
@@ -15,19 +15,25 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_idea_unstable_country_nov"
-		texturefile = "gfx/interface/ideas/unstable_country_nov.dds"
+		texturefile = "gfx/interface/ideas/NOV/unstable_country_nov.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_internal_factions_nov"
-		texturefile = "gfx/interface/ideas/internal_factions_nov.dds"
+		texturefile = "gfx/interface/ideas/NOV/internal_factions_nov.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_the_white_menace_nov"
-		texturefile = "gfx/interface/ideas/the_white_menace_nov.dds"
+		texturefile = "gfx/interface/ideas/NOV/the_white_menace_nov.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_red_militias_nov"
-		texturefile = "gfx/interface/ideas/red_militias_nov.dds"
+		texturefile = "gfx/interface/ideas/NOV/red_militias_nov.dds"
 	}
 
+	### New England ###
+	
+	SpriteType = {
+		name = "GFX_idea_MAS_colonial_nostalgia"
+		texturefile = "gfx/interface/ideas/MAS/MAS_colonial_nostalgia.dds"
+	}
 }

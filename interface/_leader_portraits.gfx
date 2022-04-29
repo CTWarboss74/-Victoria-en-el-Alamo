@@ -3,4 +3,11 @@ spriteTypes = {
 		name = "GFX_portrait_france_le_corbusier"
 		texturefile = "gfx/leaders/FRA/portrait_france_le_corbusier.dds"
 	}
+	
+	### New England Leaders
+	
+	spriteType = {
+		name = "GFX_portrait_MAS_channing_cox"
+		texturefile = "gfx/leaders/MAS/portrait_MAS_channing_cox.dds"
+	}
 }

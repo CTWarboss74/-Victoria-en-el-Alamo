@@ -1,0 +1,24 @@
+
+state={
+	id=1052
+	name="STATE_1052"
+	manpower = 854259
+
+	state_category = town
+
+	history={
+		owner = BLR
+		
+		buildings = {
+			infrastructure = 2
+		}
+		
+		add_core_of = BLR
+	}
+
+	provinces={
+		3309 6359 6413 9236 9304 9359 11341
+	}
+
+	local_supplies=0.0 
+}

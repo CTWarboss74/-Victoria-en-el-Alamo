@@ -15,9 +15,6 @@ state={
 			11975 = {
 				naval_base = 1
 			}
-			1572 = {
-				naval_base = 2
-			}
 		}
 		
 		add_core_of = NOV

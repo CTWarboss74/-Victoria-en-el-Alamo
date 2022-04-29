@@ -1,0 +1,1299 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = new_england_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = MAS
+		}
+	}
+	default = no
+	
+	
+	focus = {
+		id = MAS_status_quo
+		icon = GFX_goal_MAS_status_quo
+		x = 12
+		y = 0
+		#relative_position_id = MAS_status_quo
+		
+		available = {
+			
+		}
+		
+		#prerequisite = { }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			add_political_power = 50
+		}
+		
+		select_effect = {
+			country_event = {	
+				id = new_england.1
+				days = 3
+			}
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_emergency_subsidies
+		icon = GFX_goal_MAS_emergency_subsidies
+		x = 0
+		y = 1
+		relative_position_id = MAS_status_quo
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_status_quo }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			country_event = new_england.2
+		}
+		
+		completion_reward = {
+			country_event = new_england.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_german_question
+		icon = GFX_goal_MAS_german_question
+		x = 0
+		y = 2
+		relative_position_id = MAS_status_quo
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_emergency_subsidies }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			country_event = new_england.3
+		}
+		
+		completion_reward = {
+			country_event = new_england.3
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_out_with_old
+		icon = GFX_goal_MAS_out_with_old
+		x = -3
+		y = 1
+		relative_position_id = MAS_german_question
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_german_question }
+		mutually_exclusive = { focus = MAS_cox_administration }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			set_politics = {
+				ruling_party = liberal_conservatism
+			}
+		}
+		
+		completion_reward = {
+			set_politics = {
+				ruling_party = liberal_conservatism
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_in_with_new
+		icon = GFX_goal_MAS_in_with_new
+		x = 0
+		y = 1
+		relative_position_id = MAS_out_with_old
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_out_with_old }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MAS_purge_police_force
+		icon = GFX_goal_MAS_purge_police_force
+		x = -1
+		y = 1
+		relative_position_id = MAS_in_with_new
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_in_with_new }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_instill_loyal_captains
+		icon = GFX_goal_MAS_instill_loyal_captains
+		x = 0
+		y = 1
+		relative_position_id = MAS_purge_police_force
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_purge_police_force }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_arrange_chiefs_of_staff
+		icon = GFX_goal_MAS_arrange_chiefs_of_staff
+		x = 1
+		y = 1
+		relative_position_id = MAS_in_with_new
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_in_with_new }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_coolidges_compromise
+		icon = GFX_goal_MAS_coolidges_compromise
+		x = 0
+		y = 1
+		relative_position_id = MAS_arrange_chiefs_of_staff
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_arrange_chiefs_of_staff }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_integrate_moderate_germans
+		icon = GFX_goal_MAS_integrate_moderate_germans
+		x = 0
+		y = 3
+		relative_position_id = MAS_in_with_new
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_instill_loyal_captains }
+		prerequisite = { focus = MAS_compromise_with_coolidgers }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_cox_administration
+		icon = GFX_goal_MAS_cox_administration
+		x = 3
+		y = 1
+		relative_position_id = MAS_german_question
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_german_question }
+		mutually_exclusive = { focus = MAS_out_with_old }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			add_stability = -0.05
+		}
+		
+		completion_reward = {
+			add_stability = -0.05
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+	}
+	
+	focus = {
+		id = MAS_bribe_police_captains
+		icon = GFX_goal_MAS_bribe_police_captains
+		x = -1
+		y = 1
+		relative_position_id = MAS_cox_administration
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_cox_administration }
+		mutually_exclusive = { focus = MAS_monarchist_compromise }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_blackmail_allen
+		icon = GFX_goal_MAS_blackmail_allen
+		x = -1
+		y = 1
+		relative_position_id = MAS_bribe_police_captains
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_bribe_police_captains }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_fund_english_military_police
+		icon = GFX_goal_MAS_fund_english_military_police
+		x = -1
+		y = 2
+		relative_position_id = MAS_bribe_police_captains
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_bribe_police_captains }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_ban_german_vote
+		icon = GFX_goal_MAS_ban_german_vote
+		x = -1
+		y = 3
+		relative_position_id = MAS_bribe_police_captains
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_fund_english_military_police }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_monarchist_compromise
+		icon = GFX_goal_MAS_monarchist_compromise
+		x = 3
+		y = 1
+		relative_position_id = MAS_cox_administration
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_cox_administration }
+		mutually_exclusive = { focus = MAS_bribe_police_captains }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_monarchists_government_positions
+		icon = GFX_goal_MAS_monarchists_government_positions
+		x = 2
+		y = 1
+		relative_position_id = MAS_monarchist_compromise
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_monarchist_compromise }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_party_coup
+		icon = GFX_goal_MAS_party_coup
+		x = 0
+		y = 2
+		relative_position_id = MAS_monarchists_government_positions
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_monarchists_government_positions }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_memories_of_87
+		icon = GFX_goal_MAS_memories_of_87
+		x = -3
+		y = 1
+		relative_position_id = MAS_party_coup
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_party_coup }
+		mutually_exclusive = { focus = MAS_prussian_scheme focus = MAS_divine_right focus = MAS_colonial_nostalgia }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_ralph_of_house_cram
+		icon = GFX_goal_MAS_cox_administration
+		x = 0
+		y = 1
+		relative_position_id = MAS_memories_of_87
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_memories_of_87 }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_divine_right
+		icon = GFX_goal_MAS_cox_administration
+		x = -1
+		y = 1
+		relative_position_id = MAS_party_coup
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_party_coup }
+		mutually_exclusive = { focus = MAS_memories_of_87 focus = MAS_prussian_scheme focus = MAS_colonial_nostalgia }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_invite_the_kennedys
+		icon = GFX_goal_MAS_cox_administration
+		x = 0
+		y = 1
+		relative_position_id = MAS_divine_right
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_divine_right }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_american_coronation
+		icon = GFX_goal_MAS_cox_administration
+		x = 0
+		y = 2
+		relative_position_id = MAS_ralph_of_house_cram
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_ralph_of_house_cram focus = MAS_invite_the_kennedys }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_replace_police
+		icon = GFX_goal_MAS_cox_administration
+		x = -1
+		y = 1
+		relative_position_id = MAS_american_coronation
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_american_coronation }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_stabilize_the_kingdom
+		icon = GFX_goal_MAS_cox_administration
+		x = 1
+		y = 1
+		relative_position_id = MAS_american_coronation
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_american_coronation }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_purge_military
+		icon = GFX_goal_MAS_cox_administration
+		x = 0
+		y = 2
+		relative_position_id = MAS_american_coronation
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_replace_police }
+		prerequisite = { focus = MAS_stabilize_the_kingdom }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_execute_political_dissidence
+		icon = GFX_goal_MAS_cox_administration
+		x = -1
+		y = 1
+		relative_position_id = MAS_purge_military
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_purge_military }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_colonial_spirit
+		icon = GFX_goal_MAS_cox_administration
+		x = 1
+		y = 1
+		relative_position_id = MAS_stabilize_the_kingdom
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_stabilize_the_kingdom }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_prussian_scheme
+		icon = GFX_goal_MAS_prussian_scheme
+		x = 2
+		y = 1
+		relative_position_id = MAS_party_coup
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_party_coup }
+		mutually_exclusive = { focus = MAS_memories_of_87 focus = MAS_divine_right focus = MAS_colonial_nostalgia }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_prince_sigismund_von_hohenzollern
+		icon = GFX_goal_MAS_prince_sigismund_von_hohenzollern
+		x = 0
+		y = 1
+		relative_position_id = MAS_prussian_scheme
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_prussian_scheme }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_german_coronation
+		icon = GFX_goal_MAS_german_coronation
+		x = -1
+		y = 2
+		relative_position_id = MAS_prince_sigismund_von_hohenzollern
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_prince_sigismund_von_hohenzollern }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_colonial_nostalgia
+		icon = GFX_goal_MAS_colonial_nostalgia
+		x = 4
+		y = 3
+		relative_position_id = MAS_monarchists_government_positions
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_monarchists_government_positions }
+		mutually_exclusive = { focus = MAS_memories_of_87 focus = MAS_prussian_scheme focus = MAS_divine_right }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_maybe_british_were_right
+		icon = GFX_goal_MAS_maybe_british_were_right
+		x = 0
+		y = 1
+		relative_position_id = MAS_colonial_nostalgia
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_colonial_nostalgia }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	
+	focus = {
+		id = MAS_dominion_of_new_england
+		icon = GFX_goal_MAS_dominion_of_new_england
+		x = 0
+		y = 3
+		relative_position_id = MAS_colonial_nostalgia
+		
+		available = {
+			
+		}
+		
+		prerequisite = { focus = MAS_maybe_british_were_right }
+		
+		cost = 2
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+}

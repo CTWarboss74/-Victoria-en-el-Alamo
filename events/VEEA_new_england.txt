@@ -1,0 +1,48 @@
+﻿###########################
+# New England Events
+# By obamium and Cobbler
+# LET'S GO COX!
+###########################
+
+add_namespace = new_england
+
+country_event = {
+	id = new_england.1
+	title = new_england.1.t
+	desc = new_england.1.d
+	picture = 
+	
+	is_triggered_only = yes
+
+	option = {
+		name = new_england.1.a
+		set_country_flag = budget_crisis
+		unlock_decision_category_tooltip = MAS_category_budget_crisis
+	}
+}
+
+country_event = {
+	id = new_england.2
+	title = new_england.2.t
+	desc = new_england.2.d
+	picture = 
+	
+	is_triggered_only = yes
+
+	option = {
+		name = new_england.2.a
+	}
+}
+
+country_event = {
+	id = new_england.3
+	title = new_england.3.t
+	desc = new_england.3.d
+	picture = 
+	
+	is_triggered_only = yes
+
+	option = {
+		name = new_england.3.a
+	}
+}

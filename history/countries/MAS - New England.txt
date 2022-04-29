@@ -53,41 +53,22 @@ set_convoys = 20
 }
 
 
+add_ideas = {
+	MAS_colonial_nostalgia
+}
+
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = market_liberalism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 25
+	market_liberalism = 50
 	fascism = 20
 	communism = 5
-	neutrality = 50
+	neutrality = 25
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		democratic = 25
-		fascism = 20
-		communism = 5
-		neutrality = 50
-	}
-}
-
-create_country_leader = {
-	name = "Ahmed Ben Bella"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = MAS_channing_cox

@@ -6,13 +6,13 @@ state={
 	state_category = city
 
 	history={
-		owner = GER
-		controller = GER
+		owner = RHI
+		controller = RHI
 		
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = GER
+		add_core_of = RHI
 	}
 
 	provinces={

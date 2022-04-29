@@ -1,0 +1,24 @@
+
+state={
+	id=1058
+	name="STATE_1058"
+	manpower = 72153
+
+	state_category = rural
+
+	history={
+		owner = AUS
+		
+		buildings = {
+			infrastructure = 2
+		}
+		
+		add_core_of = AUS
+	}
+
+	provinces={
+		6584 6761 11689
+	}
+
+	local_supplies=0.0 
+}
