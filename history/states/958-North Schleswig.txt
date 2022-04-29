@@ -5,11 +5,11 @@ state={
 		332 11251 
 	}
 	history={
-		owner = GER
+		owner = DEN
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = GER
+		add_core_of = DEN
 	}
 	manpower=481600
 	state_category=rural

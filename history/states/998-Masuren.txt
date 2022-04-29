@@ -4,10 +4,10 @@ state={
 	name="STATE_998"
 	manpower = 323847
 
-	state_category = large_town
+	state_category = town
 
 	history={
-		owner = GER
+		owner = POL
 		
 		victory_points = {
 			6375 3
@@ -17,7 +17,7 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		add_core_of = GER
+		add_core_of = POL
 	}
 
 	provinces={

@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = PAL
+		owner = TUR
 		buildings = {
 			infrastructure = 2 #was: 5
 			industrial_complex = 1
@@ -25,6 +25,7 @@ state={
 		victory_points = {
 			1065 1 
 		}
+		add_core_of = TUR
 		add_core_of = PAL
 		add_core_of = ISR
 	}

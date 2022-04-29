@@ -5,7 +5,7 @@ state={
 		521 11516 11642 
 	}
 	history={
-		owner = GER
+		owner = FRA
 		victory_points = {
 			11516 5 
 		}
@@ -25,7 +25,6 @@ state={
 
 		}
 		add_core_of = FRA
-		add_core_of = GER
 	}
 	manpower=782490
 	state_category=town
