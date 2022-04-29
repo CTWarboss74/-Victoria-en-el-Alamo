@@ -9,8 +9,6 @@ if = {
 	}
 }
 
-set_cosmetic_tag = GER_PUPPET
-
 add_ideas = {
 	limited_conscription
 }
@@ -160,8 +158,6 @@ set_convoys = 10
 		dispersed_industry2 = 1
 	}
 }
-
-set_cosmetic_tag = GER_PUPPET
 
 
 set_politics = {

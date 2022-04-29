@@ -2,13 +2,13 @@
 state = {
 	id = 198
 	name = "STATE_198"
-	manpower = 1893391
+	manpower = 1393391
 
 	state_category = town
 
 	history = {
 		victory_points = {
-			476 3
+			9481 3
 		}
 		owner = UKR
 		buildings = {
@@ -19,7 +19,7 @@ state = {
 	}
 
 	provinces = {
-		476 6455 6480 9423 9435 9481 
+		6480 9481 
 	}
 
 	local_supplies = 0.0 

@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = HUN
+		owner = AUS
 		victory_points = {
 			9692 10
 		}
@@ -23,6 +23,8 @@ state={
 			arms_factory = 2
 			air_base = 3
 		}
+		add_core_of = AUS
+		add_core_of = SLO
 		add_core_of = HUN
 	}
 
